@@ -1,0 +1,76 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 10 - Energia dissipada durante um raio}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\begin{itemize}
+		\item \textbf{\textit{Energia dissipada durante o processo de um raio $\Rightarrow$ }} A energia dissipada por um raio varia muito e depende de vários fatores, como a carga elétrica do raio, a distância percorrida pelo raio, o tipo de solo e as condições atmosféricas locais. Em média, estima-se que um raio típico carregue uma carga elétrica de cerca de 30 Coulombs e tenha uma corrente elétrica de cerca de 30.000 Ampères. Essa corrente elétrica pode gerar uma energia de cerca de 1 bilhão de joules, o que é equivalente à energia necessária para acender uma lâmpada de 100 watts por mais de 3 anos. No entanto, é importante lembrar que esses números são apenas médias e que a energia dissipada por um raio pode ser muito maior em certos casos, como quando atinge um objeto ou estrutura específica.
+		
+		\item \textbf{\textit{Indo mais a fundo $\Rightarrow$ }}As descargas elétricas atmosféricas apresentam dois tipos diferentes de correntes. A primeira e mais intensa é a corrente de retorno, que tem uma intensidade entre 10 e 100 kA e duração de 100 a 200 $\mu s$. O pico de corrente estimado para uma corrente de retorno é de cerca de 300 kA em regiões temperadas e 450 a 500 kA em regiões tropicais. O outro tipo de corrente é a corrente lateral corona, que corresponde ao movimento radial de íons e elétrons em direção ao solo. A potência térmica dissipada é de cerca de $2,2 × 10^10 W$, com um valor de corrente inicial de Io = 22 kA. As descargas atmosféricas contêm uma enorme quantidade de energia, o que pode resultar em incêndios florestais, mortes e ferimentos em animais, danos em edifícios, sistemas de comunicação, linhas de energia e sistemas elétricos. Aviões e ônibus espaciais também não estão totalmente seguros contra raios. A maior parte da energia é dissipada pela parte resistiva da coluna de ar, que aparece como calor ou energia térmica que eleva a temperatura do canal. A temperatura da coluna é tão elevada que produz perturbações acústicas conhecidas como "trovões". A energia total radiada considerando a corrente de retorno e a corrente lateral corona como uma só corrente (return stroke-lateral corona) é da ordem de $3,23 × 10^3 J$. A energia térmica alcança um valor de pico da ordem de $10^{10} W$.
+	\end{itemize}
+	
+\end{document}

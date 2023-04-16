@@ -1,0 +1,114 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 8 - Revisão do Conteúdo}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Roadmap}
+	\subsection{Aula 1 - Engenharia das Descargas Atmosféricas}
+	
+	Aula expositiva sobre o tema engenharia dos raios. O objetivo da disciplina é versar sobre raios de A a Z, capacitando o aluno a compreender, modelar e explicar os diversos fenômenos da Eletricidade atmosférica. Descargas atmosféricas são fenômenos comuns, já observados desde a antiguidade. Porém, pouco ou nada se sabe sobre sua origem. As descargas atmosféricas são fenômenos com grande impacto em nossa rotina, tanto econômicos,	ambientais quanto sociais. As mortes por raios, embora sejam numericamente pouco significativas, são um tema sério e relevante, embora os impactos ambientais e econômicos sejam de maior monta e também importantes. Há muitos mitos e verdades acerca dos raios, entre os quais vale citar que pequenos objetos de metal que comumente temos junto ou no corpo não são suficientes para que o raio entenda que há um caminho de menor resistência para o solo e que para-raios não são certeza de que a estrutura ou pessoa não sejam atingidas por raios. Do ponto de vista normativo, já existem no Brasil normas ABNT e NRs, inclusive leis municipais regulamentando projetos e instalações de Sistemas de Proteção contra Descargas Atmosféricas (SPDA) e segurança de instalações elétricas, de modo a mitigar os efeitos dos raios. A mitologia mundial é repleta de contos e histórias sobre os raios, se referindo a um deus/deusa particular, ou à comunicação divina, ou mesmo seres folclóricos que dão origem a raios.
+	
+	\subsection{Aula 2 - Atividade Remota}
+	
+	Atividade remota sobre o \textbf{\textit{Vídeo 1 - Mistérios da Ciência: O Poder dos Raios (Dublado) - Documentário}}.
+	
+	Sinopse: Os raios são mais rápidos que uma bala e seis vezes mais quentes que a superfície do sol. Eles duram menos de uma fração de segundo e podem transformar areia em vidro. Diariamente cerca de oito milhões de raios atingem a Terra. Embora este fenômeno natural seja um dos mais observados, ele ainda está envolto em mistérios. Neste episódio, os telespectadores irão acompanhar a incrível jornada de um raio desde o espaço até o interior do corpo humano. Para isso, iremos à Darwin, na Austrália, cidade onde acontecem algumas das tempestades com relâmpagos mais violentas da Terra. No centro de uma monstruosa nuvem de tempestade observaremos as forças misteriosas que provocam um raio. Novas descobertas dramáticas e experiências chocantes revelam que os raios são um dos fenômenos mais estranhos, destrutivos e importantes do planeta.
+	
+	Sugestão do Professor: levar ao menos uma dúvida para discussão em sala de aula.
+	
+	\subsection{Aula 3 - Formação de Nuvens de Tempestade}
+	
+	As nuvens de tempestade se formam quando uma parcela de ar quente e úmido sobe na atmosfera e se resfria, causando a condensação do vapor de água presente no ar. Existem vários fatores que podem causar essa elevação do ar, como os efeitos orográficos (quando o ar úmido é forçado a subir ao encontrar uma montanha, por exemplo), as correntes de advecção (quando o ar quente é transportado horizontalmente e se encontra com uma massa de ar frio), a convergência de ventos e a convecção (quando o Sol aquece a superfície terrestre e gera correntes ascendentes de ar quente). Quando essas parcelas de ar quente e úmido se elevam, formam as nuvens de tempestade, que podem resultar em raios, trovões, chuvas fortes e outros fenômenos meteorológicos intensos. A receita de produção de nuvens envolve 2 elementos: parcela de ar úmido (Combustível) e um processo de resfriamento e condensação (Catalisador). Dentre os diversos tipos de nuvem, a que é comumente associada às tempestades e tempo ruim é a \textit{Cumulonimbus}, cujo desenvolvimento envolve 3 fases (Para algumas bibliografias, 4): Estágio de Desenvolvimento, Estágio de Maturidade, Estágio de Dissipação e (para algumas bibliografias) Estágio de Dissipação Completa.
+	
+	\subsection{Aula 4 - Campo magnético terrestre na alta atmosfera, camadas ionosféricas}
+	
+	A magnetosfera é a região do espaço em torno da Terra que é influenciada pelo campo magnético terrestre, formando uma espécie de escudo protetor contra as partículas carregadas que vêm do Sol. A plasmasfera é uma parte da magnetosfera que contém plasma denso, com densidade de elétrons mais elevada que a média. Já a ionosfera é uma camada da atmosfera terrestre que contém íons e elétrons, e que se estende desde cerca de 50 km a mais de 1.000 km de altitude. A ionosfera é importante para as comunicações de rádio de longa distância, refletindo as ondas de rádio de volta à Terra. Todas essas regiões têm importância significativa para as comunicações e para a proteção contra as partículas carregadas do Sol.
+	
+	\subsection{Aula 5 - Eventos Luminosos Transientes}
+	
+	Eventos Luminosos Transientes (ELTs) são fenômenos luminosos de curta duração que ocorrem na atmosfera superior da Terra, como flashes de raios, explosões solares, auroras, entre outros. Esses eventos geram perturbações na ionosfera e na magnetosfera, afetando a propagação de sinais de rádio e sistemas de navegação, além de poderem causar danos em satélites e redes elétricas. Os ELTs são estudados por cientistas para melhor compreender a dinâmica da atmosfera superior da Terra e seus efeitos no ambiente espacial e terrestre.
+	
+	\subsection{Aula 6 - Teoria do Carregamento de Tempestades}
+	
+	Recentes pesquisas sugerem que o modelo atual de tempestades consiste em uma configuração tripolo. Durante um flash nuvem-solo com grande momento de carga, os flashes negativos têm uma duração notavelmente mais curta em comparação aos flashes positivos, indicando que os \textit{flashes} de polaridade negativa que se conectam com o solo são cerca de dez vezes mais comuns do que os flashes de polaridade positiva. Isso se deve à proximidade do solo com as cargas negativas localizadas na região inferior das tempestades.
+	
+	Existem várias hipóteses para explicar como as nuvens se carregam eletricamente, sendo as principais:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Carregamento por convecção:}} Nessa hipótese, as correntes de convecção dentro da nuvem separariam as cargas, produzindo um excesso de cargas na parte superior e uma deficiência de cargas na parte inferior da nuvem.
+		
+		\item \textbf{\textit{Carregamento por precipitação:}} Nessa hipótese, as gotículas de água ou cristais de gelo que se formam dentro da nuvem colidem e se separam eletricamente, gerando uma separação de cargas.
+		
+		\item \textbf{\textit{Runaway breakdown:}} Nessa hipótese, elétrons livres na atmosfera colidem com átomos e moléculas da nuvem, ionizando-os e criando um processo em cadeia que resulta em uma separação de cargas dentro da nuvem.
+	\end{itemize}
+
+	
+	Essas hipóteses podem ocorrer simultaneamente ou isoladamente, pois nenhuma explica totalmente o efeito do carregamento das diversas camadas da nuvem de tempestades.
+	
+	\subsection{Aula 7 - Campos Elétricos em Tempestades}
+	
+	Para medir o campo elétrico atmosférico, é utilizada a diferença de potencial em uma coluna vertical de ar com altura $\Delta z$ em relação ao solo. O campo eletrostático é verticalmente orientado para baixo em condições de tempo bom, pois a atmosfera é carregada positivamente, enquanto o solo é negativo. Durante tempestades, flashes negativos de descargas CG e IC são predominantes. Os fortes campos elétricos dentro das tempestades geram fluxos de elétrons de alta energia, estudados por meio de Thunderstorm Ground Enhancement (TGE), e o processo de avalanche de elétrons na atmosfera, também chamado de Runaway Breakdown, é utilizado para correlacionar o fluxo de partículas com as perturbações do campo elétrico atmosférico local.
+	
+\end{document}

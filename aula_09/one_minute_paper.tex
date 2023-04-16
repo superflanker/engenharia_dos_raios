@@ -1,0 +1,142 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 9 - Iniciação de um raio e tipos de raios}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\begin{itemize}
+		\item \textbf{\textit{Processo de um Relâmpago $\Rightarrow$ }} O processo de um relâmpago é dividido em várias fases. Primeiramente, o raio começa em regiões da nuvem com um forte campo elétrico. Uma descarga pouco visível, conhecida como líder escalonado (stepped leader), move-se em saltos em direção ao solo. Quando o líder se aproxima do solo, um líder ascendente (upward leader) é liberado a partir de objetos elevados próximos ao solo, completando assim o canal do relâmpago. Com o canal completo, a descarga de retorno (return stroke) é iniciada, transportando cargas entre o solo e a nuvem com correntes de 10 kA até 150 kA. Devido ao aquecimento ôhmico, a temperatura no núcleo do canal do relâmpago pode atingir 30.000 K. A primeira descarga de retorno pode ser seguida por descargas de retorno subsequentes, cada uma delas precedida por um Dart Leader que se propagará pelo mesmo canal já ionizado. Essa série de descargas de retorno é composta por flashes de relâmpago, e o número de descargas de retorno subsequentes corresponde à multiplicidade dos flashes. Em geral, a duração total do flash é menor que 1 segundo, enquanto os intervalos de tempo entre as descargas de retorno são da ordem de 100 milissegundos.
+		
+		\item \textbf{\textit{Trovões $\Rightarrow$ }}Existem dois processos distintos que produzem trovões, cada um em frequências diferentes. O trovão é gerado principalmente pelo aquecimento rápido do canal condutivo do raio em resposta ao intenso fluxo de corrente [Few, 1969]. Durante um golpe típico, o pulso de corrente no canal condutor é da ordem de $3 \times 10^4 A$. Essa corrente aquece rapidamente o ar ($3 \times 10^4K$ em $5 \times 10^{-6} s$), gerando uma pressão de $10^6Pa$. A intensidade das pressões que se sobrepõem cria uma onda de choque que se propaga supersonicamente (acima de $3300 \frac{m}{s}$) [Rakov and Uman, 2003]. Essas ondas de choque rapidamente decaem para ondas acústicas, e como resultado, cada golpe irradia ondas acústicas ao longo do comprimento do canal.
+		
+		Os trovões produzidos por raios intra-nuvem apresentam baixas amplitudes e baixo pico de frequências se comparados com os trovões dos raios que atingem o solo (CG) [Holmes et al., 1971; Johnson, 2012]. O modelamento acústico requer um conhecimento da estrutura de propagação, ou seja, do ambiente. Infelizmente, as tempestades possuem estruturas atmosféricas complicadas e difíceis de medir. Devido a velocidade do som no ar ser proporcional ao quadrado da temperatura, a velocidade do som precisa também decrescer com a altitude, o que resulta em ondas acústicas refratadas para cima. Consequentemente, o trovão raramente é ouvido a mais de 25 km de distância de um raio, devido à refração [Fleagle, 1949].
+		
+		Devido à variação de temperatura durante uma tempestade, da falta de precisão na avaliação das informações do vento acima da superfície e das diferentes topografias, geralmente não é possível avaliar com precisão os efeitos da refração sobre o sinal dos trovões. Os trovões viajam a partir do relâmpago na forma de ondas, devido à compressão súbita do ar em volta do canal do raio. Se o som da parte inferior do raio chegar a um observador antes das ondas sonoras da parte superior do raio, o trovão é ouvido pelo observador. Se as ondas sonoras fizerem uma curva para cima, para longe do observador, o relâmpago pode ser visto, mas os trovões não serão ouvidos.
+		\item \textbf{\textit{Tipos de Raios $\Rightarrow$ }} 4 tipos básicos:
+		\begin{itemize}
+			\item \textbf{\textit{Raio Nuvem-Solo (CG): }}Um raio nuvem-solo é uma descarga elétrica que ocorre entre uma nuvem e o solo. Esse tipo de raio pode ocorrer de duas maneiras: o raio pode sair da base da nuvem e atingir o solo, ou pode ser iniciado por uma descarga ascendente que parte do solo em direção à nuvem.
+			
+			A descarga ascendente pode ser iniciada por objetos elevados no solo, como edifícios ou árvores, que criam um campo elétrico intenso o suficiente para ionizar o ar ao redor. Isso forma um canal de descarga que se estende em direção à nuvem, permitindo que a descarga elétrica viaje para cima do solo.
+			
+			O raio nuvem-solo é geralmente mais intenso do que um raio intra-nuvem, pois a descarga elétrica deve viajar por uma distância maior e superar a resistência do ar para atingir o solo. A corrente elétrica em um raio nuvem-solo pode variar de algumas dezenas de milhares a centenas de milhares de amperes e pode produzir temperaturas no canal de descarga de até 30.000 Kelvin. Além disso, a rápida expansão do ar aquecido pode gerar uma onda de choque que produz o trovão que ouvimos após a descarga elétrica.
+			\item \textbf{\textit{Raio Intra-Nuvem (IC): }}Um raio intra-nuvem é um tipo de descarga elétrica que ocorre completamente dentro de uma única nuvem de tempestade. É o tipo mais comum de raio, representando cerca de 80\% de todos os raios que ocorrem na Terra.
+			
+			Durante uma tempestade, as nuvens ficam eletricamente carregadas, com cargas positivas acumulando-se nas partes superiores e negativas nas partes inferiores. À medida que o campo elétrico dentro da nuvem aumenta, ocorre uma descarga elétrica entre as regiões carregadas. Este tipo de raio é chamado de intra-nuvem, pois não se conecta diretamente com o solo.
+			
+			Os raios intra-nuvem podem se apresentar de várias formas, como ramificações ou descargas mais lineares, e podem durar vários segundos. Eles também podem ser responsáveis por fenômenos como trovões e relâmpagos que parecem piscar dentro da nuvem.
+			
+			\item \textbf{\textit{Raio Nuvem-Nuvem (CC): }}O raio nuvem-nuvem é um tipo de descarga elétrica que ocorre entre duas nuvens eletricamente carregadas de polaridade oposta. Geralmente, as nuvens com carga elétrica oposta se aproximam e descarregam a energia acumulada na forma de um raio que pode ser visível ou não. Esse tipo de raio é menos comum do que o raio nuvem-solo ou o raio intra-nuvem, mas ainda assim é uma forma importante de transferência de energia elétrica na atmosfera. Os raios nuvem-nuvem podem ocorrer entre nuvens dentro de uma mesma tempestade ou entre nuvens de tempestades diferentes.
+			
+			\item \textbf{\textit{Raio Nuvem-Céu(CS): }}O termo "raio nuvem-céu" é comumente usado para se referir a raios que se propagam da nuvem para a atmosfera superior, em vez de atingir o solo. Esse tipo de raio é menos comum do que raios nuvem-solo, mas ainda pode ser perigoso, especialmente para aviões e outras aeronaves que voam na região afetada.
+			
+			Os raios nuvem-céu geralmente ocorrem em tempestades elétricas muito intensas, onde a carga elétrica acumulada na nuvem é tão grande que a descarga elétrica pode se propagar para a atmosfera superior, atingindo altitudes de até 80 km acima do solo. Esse tipo de raio é conhecido como "sprite" e é um fenômeno atmosférico fascinante.
+			
+			Ao contrário dos raios nuvem-solo, os raios nuvem-céu não produzem trovões audíveis, pois o som produzido pela descarga elétrica se propaga para o espaço aberto, sem atingir a superfície terrestre. No entanto, as ondas de rádio geradas pela descarga elétrica podem ser detectadas por equipamentos de rádio amador e científicos, permitindo que os pesquisadores estudem esses fenômenos com mais detalhes.
+			
+		\end{itemize}
+		
+		\item \textbf{\textit{Outros Tipos de Raios $\Rightarrow$ }}
+		\begin{itemize}
+			\item \textbf{\textit{Raio Quase-Horizontal ou Aranha: }}O raio quase-horizontal, também conhecido como raio aranha, é um tipo de raio que se desenvolve horizontalmente a partir de uma nuvem tempestuosa. Esse tipo de raio é mais comumente observado em tempestades de vento ou tempestades de granizo. O raio quase-horizontal se parece com uma teia de aranha, com raios secundários se estendendo a partir do raio principal.
+			
+			Esse tipo de raio é diferente dos raios nuvem-solo, nuvem-nuvem e intra-nuvem, que se desenvolvem verticalmente. O raio quase-horizontal ocorre quando o campo elétrico horizontal na base da nuvem é suficientemente forte para ionizar o ar e produzir um raio que se propaga horizontalmente. À medida que o raio se expande, ele pode criar ramos secundários que se estendem horizontalmente, dando a aparência de uma teia de aranha.
+			
+			O raio quase-horizontal é uma forma menos comum de raio e pode ser mais difícil de observar do que outros tipos de raios, já que geralmente ocorre em altitudes mais elevadas e pode ser obscurecido por outras nuvens. No entanto, é um fenômeno fascinante e único que continua a intrigar cientistas e entusiastas do clima.
+			
+			\item \textbf{\textit{Descargas Tornádicas: }}As descargas tornádicas, também conhecidas como raios de tornado, são um tipo de descarga elétrica que ocorre durante tornados e tempestades severas. Essas descargas são diferentes dos raios normais, pois ocorrem em um ambiente altamente dinâmico e em um padrão circular em torno do tornado.
+			
+			As descargas tornádicas podem assumir várias formas, incluindo filamentos finos, bolas de fogo, esferas luminosas, entre outras. Elas são mais comuns em tornados intensos e podem ser extremamente perigosas para pessoas que estejam perto do tornado.
+			
+			As descargas tornádicas ocorrem porque os tornados criam um forte campo elétrico, que pode ionizar o ar e criar um caminho para a corrente elétrica. A intensidade da descarga pode variar de alguns ampères a centenas de milhares de ampères.
+			
+			\item \textbf{\textit{Raios Estratosféricos: }}Os Raios Estratosféricos são eventos elétricos transientes que ocorrem na estratosfera, entre cerca de 20 e 50 km de altitude. Eles foram descobertos na década de 1980, quando os astronautas da nave espacial Columbia observaram uma série de flashes de luz azul e vermelha acima de tempestades em desenvolvimento.
+			
+			Esses raios são muito diferentes dos raios convencionais que ocorrem na troposfera, tanto em termos de sua localização quanto de sua aparência. Eles se propagam horizontalmente ao invés de verticalmente, e são muito mais extensos do que os raios normais, podendo se estender por centenas de quilômetros. Além disso, eles geralmente ocorrem em conjunto com as tempestades, mas não são diretamente associados aos raios intra-nuvem ou nuvem-solo que produzem trovões.
+			
+			Os raios estratosféricos são produzidos por descargas elétricas muito poderosas que ocorrem no interior das tempestades, e que produzem pulsos de radiação eletromagnética de baixa frequência. Esses pulsos, por sua vez, interagem com a atmosfera superior, produzindo as características luzes azuis e vermelhas.
+			
+			Os raios estratosféricos são extremamente raros e difíceis de detectar. A maioria das pessoas nunca viu um, e eles só foram observados a partir do solo em algumas ocasiões. No entanto, eles são um tópico de grande interesse para os cientistas, porque sua compreensão pode ajudar a melhorar nosso conhecimento sobre os processos elétricos nas tempestades, bem como sobre as interações entre a atmosfera superior e a radiação cósmica.
+			
+			\item \textbf{\textit{Raios Piroclásticos: }}Os raios piroclásticos são uma forma de descarga elétrica atmosférica que ocorre durante erupções vulcânicas explosivas. Durante uma erupção, cinzas, gases e outros materiais são ejetados para a atmosfera, criando nuvens de cinzas carregadas eletricamente. Essas nuvens podem gerar raios piroclásticos, que se assemelham aos raios comuns, mas são muito mais poderosos e perigosos.
+			
+			Os raios piroclásticos são criados quando as partículas carregadas eletricamente na nuvem de cinzas colidem e se separam, criando uma diferença de potencial elétrico. Quando essa diferença de potencial se torna grande o suficiente, uma descarga elétrica pode ocorrer, criando um raio piroclástico.
+			
+			Esses raios são extremamente perigosos, pois podem percorrer grandes distâncias e causar incêndios, explosões e danos estruturais. Eles também podem ser acompanhados por trovões e fortes rajadas de vento, tornando as condições ainda mais perigosas para aqueles que estão próximos à erupção vulcânica.
+			
+			\item \textbf{\textit{Raios Nuvem-Ar: }}Raios Nuvem-Ar, também conhecidos como Descargas Elétricas de Nuvem para Ar (DENA), são um tipo de raio que ocorre dentro de uma nuvem de tempestade e descarrega para o ar, em vez de atingir o solo. Essas descargas elétricas são semelhantes aos raios intra-nuvem, mas em vez de permanecer dentro da nuvem, eles se estendem para fora dela.
+			
+			Os raios nuvem-ar são geralmente menos intensos e menos comuns do que os raios nuvem-solo, mas ainda podem ser perigosos para aeronaves que voam através de uma tempestade com raios, uma vez que os raios nuvem-ar podem se estender por vários quilômetros além da nuvem. Além disso, esses raios podem ser um indicador de outras condições meteorológicas perigosas, como granizo e ventos fortes, que podem afetar a aviação e a navegação marítima.
+			
+		\end{itemize}
+			
+	\end{itemize}
+
+	\section{Temas Impactantes, dúvidas e questionamentos}
+	
+	Poderia dizer que estou impressionado com a complexidade do assunto, inclusive dizer que estou impressionado com o fenômeno dos raios, mas seria mentir para mim mesmo. O que mais me impressiona é, ao ver uma simulação de descarga atmosférica como a vista em sala de aula, imaginar minúsculos centros de carga por onde o raio dá saltos. No artigo do Rakov que utilizamos para fazer as simulações de descargas, não me lembro quando, a descrição do artigo dava a entender que as distribuições de carga no centro da nuvem são praticamente iguais, ou seja, no centro de carga não há diferenciação de concentração de carga que seja significativa. Imagine que este centro de carga está em movimento, é um corolário que estas cargas também estarão. É razoável que, dentro do centro de carga, haja uma diferenciação maior que permita um campo elétrico de ruptura, e que o raio comece a partir deste ponto. De resto, é razoável supor que estes minúsculos centros de carga se distribuam aleatoriamente ao longo do assim suposto centro de carga e consequentemente, na nuvem. O resto, é seleção de Bernoulli.....
+	
+	Aquele vídeo do algoritmo \textit{Depth First} mostrando uma simulação simples de raio, utilizando para isto a construção de um labirinto aleatório, não é simples nem está incompleto: está mal explicado!!! Poderíamos montar um labirinto em 3D somente com as idéias acima apresentadas, calcular correntes de pico através dos equacionamentos do Rakov e tentar apresentar uma nova teoria de formação de raios. É só uma idéia!!!
+\end{document}

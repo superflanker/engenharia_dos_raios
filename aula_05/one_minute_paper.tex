@@ -1,0 +1,115 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 5 - Eventos Luminosos Transientes}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\begin{itemize}
+		\item \textbf{\textit{O que são Eventos Luminosos Transientes $\Rightarrow$ }}Eventos Luminosos Transientes (ELTs) são fenômenos luminosos de curta duração que ocorrem na atmosfera superior da Terra, como flashes de raios, explosões solares, auroras, entre outros. Esses eventos geram perturbações na ionosfera e na magnetosfera, afetando a propagação de sinais de rádio e sistemas de navegação, além de poderem causar danos em satélites e redes elétricas. Os ELTs são estudados por cientistas para melhor compreender a dinâmica da atmosfera superior da Terra e seus efeitos no ambiente espacial e terrestre.
+		\subitem \textbf{\textit{Tipos de ELTs $\Rightarrow$ }}Existem vários tipos de Eventos Luminosos Transientes (ELTs), alguns dos quais incluem:
+		\begin{itemize}
+			\item \textbf{\textit{Raios:}} Descargas elétricas atmosféricas que ocorrem durante tempestades e produzem flashes de luz brilhantes.
+			
+			\item \textbf{\textit{Explosões solares:}} Liberação repentina de energia na atmosfera do Sol, que pode produzir flashes de luz visíveis na Terra.
+			
+			\item \textbf{\textit{Meteoro:}} Quando um objeto de tamanho variável entra na atmosfera da Terra e começa a queimar devido à fricção com a atmosfera, pode produzir um flash de luz conhecido como meteoro.
+			
+			\item \textbf{\textit{Relâmpagos globulares:}} Descargas elétricas que ocorrem na atmosfera superior e são mais difíceis de observar do que os raios, mas ainda assim produzem flashes de luz.
+			
+			\item \textbf{\textit{Outros fenômenos elétricos:}} Há vários outros tipos de ELTs que ocorrem em diferentes partes da atmosfera e são causados por diferentes processos elétricos, como \textit{sprites}, \textit{elves} e \textit{blue jets}.
+		\end{itemize}
+		\item \textbf{\textit{ELTs exógenos $\Rightarrow$ }} Os ELTs que ocorrem na alta atmosfera são:
+		\begin{itemize}
+			\item \textbf{\textit{Sprites: }} \textit{Sprites} são um tipo de Evento Luminoso Transiente (ELT) que ocorre acima de tempestades elétricas intensas. Eles são caracterizados por uma rápida e brilhante emissão de luz na atmosfera superior da Terra, a cerca de 50 a 90 km de altitude. Essa emissão de luz tem uma aparência semelhante a um raio em forma de cenoura e pode se estender por dezenas de quilômetros acima da tempestade. Os \textit{sprites} geralmente são observados durante a noite, pois sua luz é ofuscada pela luz do sol durante o dia. Eles foram descobertos em 1989 e são uma das muitas descobertas recentes de fenômenos elétricos na atmosfera superior da Terra.
+			\item \textbf{\textit{Blue Jets: }}\textit{Blue jets} são outro tipo de evento luminoso transitório (ELT) que ocorrem na alta atmosfera. Eles são descargas elétricas que se propagam para cima a partir do topo das nuvens de tempestade, atingindo altitudes de até 50 km acima da superfície da Terra. Os \textit{blue jets} geralmente apresentam uma cor azulada devido à emissão de linhas espectrais de nitrogênio ionizado e ocorrem em uma escala de tempo de algumas dezenas de milissegundos a alguns segundos. Eles foram descobertos em 1994, e desde então foram estudados em detalhes para entender melhor a física dos processos atmosféricos que ocorrem durante tempestades.
+			\subitem \textbf{\textit{Blue Starters: }}\textit{Blue starters} são um tipo de descarga elétrica atmosférica de alta altitude, semelhante aos \textit{sprites} e \textit{blue jets}. Eles são caracterizados por uma rápida descarga elétrica ascendente que ocorre acima das tempestades eletromagnéticas e se estende até a borda da ionosfera, cerca de 50 a 90 km acima da superfície da Terra. Eles geralmente aparecem como uma bola azul brilhante, com duração de alguns milissegundos a poucos segundos. Ainda há muitos mistérios sobre esses eventos luminosos transientes, e pesquisas em andamento buscam entender melhor suas características e mecanismos de formação.
+			\item \textbf{\textit{Gigantic Jets: }}\textit{Gigantic Jets}, também conhecidos como jatos gigantes em português, são eventos luminosos transientes que ocorrem na alta atmosfera da Terra, acima das tempestades elétricas. Eles são caracterizados por serem descargas elétricas em forma de jatos de plasma altamente energéticos que se propagam para cima a partir do topo das nuvens de tempestade, atingindo altitudes de até 90 km acima da superfície da Terra. Os \textit{Gigantic Jets} são muito mais raros do que outros tipos de ELTs, como os \textit{sprites} e \textit{blue jets}, e foram descobertos apenas na última década, com o avanço da tecnologia de monitoramento atmosférico.
+			\item \textbf{\textit{Elves: }}\textit{``Elves''} (Emissões de Luz e Vibrações Atmosféricas) são fenômenos ópticos de curta duração e altamente luminosos que ocorrem na alta atmosfera terrestre, a cerca de 90 km de altitude. São produzidos por descargas elétricas na atmosfera inferior, especialmente por raios que atingem as nuvens de tempestade. Os \textit{``Elves''} têm uma forma circular ou elíptica e podem se expandir rapidamente, com uma duração que varia de alguns milissegundos a alguns segundos. O nome \textit{``Elves''} é um acrônimo para \textit{``Emissions of Light and Very low frequency perturbations due to Electromagnetic Pulse Sources''}
+			\item \textbf{\textit{Raios Globulares ou Raios Bola: }}Os raios globulares, também conhecidos como bola de fogo, são fenômenos elétricos naturais que ocorrem na atmosfera durante as tempestades elétricas. Eles são caracterizados por uma esfera luminosa de plasma que se move rapidamente através do ar, com duração de apenas alguns segundos. Os raios globulares são muito raros e pouco compreendidos pela ciência, mas acredita-se que eles sejam uma forma de descarga elétrica que se forma dentro da nuvem de tempestade, em vez de se originar do solo como os raios convencionais. Alguns estudos sugerem que os raios globulares podem ser relacionados a outras formas de descargas atmosféricas, como \textit{sprites} e \textit{blue jets}.
+		\end{itemize}
+		
+	\end{itemize}
+
+	\section{Curiosidades Mitológicas}
+	
+	Na mitologia, raios globulares são frequentemente associados a eventos sobrenaturais ou divinos. Por exemplo, na cultura africana, os raios globulares eram considerados manifestações da ira dos deuses ou espíritos ancestrais. Em algumas lendas nórdicas, os raios globulares eram vistos como o trabalho de elfos ou espíritos malignos. Já na cultura hindu, os raios globulares eram interpretados como a presença do deus \textit{Shiva}, e em algumas lendas, eles são descritos como um círculo de fogo que cerca a deidade.
+	
+	Embora a ciência moderna tenha fornecido explicações para a natureza dos raios globulares, eles ainda são considerados misteriosos e incompreendidos em muitas culturas. Como resultado, eles ainda são associados a eventos sobrenaturais e divinos em algumas tradições.
+	
+	No Brasil, os raios bola são conhecidos popularmente como \textit{``fogo-fátuo''} ou \textit{``fogo-corredor''}. Na cultura popular brasileira, esses fenômenos estão associados a superstições e lendas regionais, geralmente relacionadas a assombrações e espíritos.
+	
+	Por exemplo, em algumas regiões do interior do país, acredita-se que os fogo-fátuos são espíritos de pessoas que morreram de forma trágica e que ficaram presos na Terra. Já em outras regiões, esses fenômenos são considerados um mau presságio, indicando que uma tragédia está por acontecer.
+	
+	Os fogo-fátuos também são frequentemente mencionados na literatura brasileira, em obras que retratam a cultura e a vida no interior do país. Alguns exemplos são os contos de Guimarães Rosa, como \textit{``A Hora e a Vez de Augusto Matraga''} e \textit{``A Terceira Margem do Rio''}, que exploram a relação entre a natureza e o sobrenatural na vida dos personagens.
+	
+	O Boitatá é uma lenda do folclore brasileiro, presente em diversas regiões do país, especialmente nas regiões Norte, Nordeste e Centro-Oeste. Ele é descrito como uma serpente de fogo que tem como principal característica a capacidade de cuspir fogo pelos olhos, semelhante a um raio bola.
+	
+	De acordo com a lenda, o Boitatá é o guardião das matas e das florestas e protege os animais dos caçadores que ameaçam a natureza. Por isso, ele é muito respeitado pelos índios e pelos povos da região.
+	
+	A figura do Boitatá também é usada para explicar fenômenos naturais, como a formação de raios bola, que muitas vezes são associados à presença do Boitatá na região. Essa crença é comum em comunidades rurais, onde os relatos de avistamentos de Boitatá e raios bola são mais frequentes.`
+	
+	
+\end{document}

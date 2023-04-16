@@ -1,0 +1,102 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 6 - Teoria do Carregamento de Tempestades}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\begin{itemize}
+		
+		\item \textbf{\textit{Modelos de Carregamento de Uma Nuvem $\Rightarrow$ }}Recentes pesquisas sugerem que o modelo atual de tempestades consiste em uma configuração tripolo. Durante um flash nuvem-solo com grande momento de carga, os flashes negativos têm uma duração notavelmente mais curta em comparação aos flashes positivos, indicando que os \textit{flashes} de polaridade negativa que se conectam com o solo são cerca de dez vezes mais comuns do que os flashes de polaridade positiva. Isso se deve à proximidade do solo com as cargas negativas localizadas na região inferior das tempestades.
+		
+		O crescimento das gotas de chuva começa na parte inferior da nuvem, quando as gotas de diferentes tamanhos e velocidades de queda se fundem por coalescência. Enquanto a gotícula captura mais umidade, pedaços de granizo (\textit{graupel}) são criados, geralmente em níveis mais elevados da nuvem. O desenvolvimento e crescimento do granizo continuam até que a gravidade vença a força de convecção, responsável pelo processo de crescimento do granizo. O crescimento das partículas de precipitação continua até que seu tamanho e concentração se tornem tão grandes que não possam mais ser suportados pelo arrasto ascendente e, portanto, começam a cair em direção à superfície. Quando a nuvem ultrapassa a isoterma de 0 °C, ela é definida como nuvem fria e os processos de formação de gelo tornam-se dominantes. O princípio da eletrização por atrito e contato é mais evidente e os processos de eletrização da nuvem são mais eficientes na presença de gelo (granizo).
+		
+		Nuvens frias são formadas acima da isoterma, apresentam grande desenvolvimento vertical e condições favoráveis para precipitação, podendo ter ação da força cisalhante que forma uma ``Bigorna''. Nuvens quentes, por outro lado, são formadas abaixo da isoterma de 0 °C e apresentam pouca ou nenhuma condição de precipitação.
+		
+		\subitem \textbf{\textit{Hipótese de carregamento por convecção $\Rightarrow$}} A hipótese de carregamento por convecção é uma das formas de carregamento elétrico das nuvens. Esse processo ocorre devido à movimentação vertical do ar, que é causada pela diferença de temperatura entre a superfície terrestre e a atmosfera. Durante esse processo, o ar quente e úmido sobe, enquanto o ar frio e seco desce.
+		
+		À medida que o ar quente sobe, ele encontra uma região mais fria e entra em processo de resfriamento. Com isso, o vapor de água presente no ar condensa, formando gotículas de água que se agrupam e formam as nuvens. Durante esse processo de condensação, a liberação de energia pode gerar uma diferença de potencial elétrico entre as diferentes regiões da nuvem.
+		
+		Essa diferença de potencial elétrico pode gerar um campo elétrico intenso na atmosfera, que pode resultar em descargas elétricas, como raios. A hipótese de carregamento por convecção é uma das teorias que tentam explicar a origem dos raios nas nuvens.
+		
+		\subitem \textbf{\textit{Hipótese de Carregamento por Precipitação $\Rightarrow$ }}A hipótese de carregamento por precipitação é uma das teorias que explicam a formação de cargas elétricas nas nuvens. Essa teoria sugere que a colisão e a fragmentação de gotículas de água e cristais de gelo dentro de nuvens de tempestade podem gerar cargas elétricas separadas.
+		
+		Nas nuvens, existem regiões com grande concentração de gotículas de água e cristais de gelo em suspensão. Essas partículas são transportadas pelas correntes de ar dentro da nuvem e colidem entre si, gerando eletricidade estática. À medida que a nuvem cresce e se desenvolve, a força de convecção pode separar as cargas elétricas e gerar uma diferença de potencial elétrico entre as partes superior e inferior da nuvem.
+		
+		A hipótese de carregamento por precipitação é uma das hipóteses que explicam a formação de cargas elétricas em nuvens de tempestade, juntamente com a hipótese de carregamento por convecção e a hipótese de carregamento por atrito. Acredita-se que esses três processos podem trabalhar em conjunto para produzir as cargas elétricas observadas nas nuvens de tempestade.
+		
+		\subitem \textbf{\textit{Hipótese de carregamento por runaway breakdown $\Rightarrow$ }}\textit{Runaway breakdown} é um fenômeno atmosférico que pode ocorrer em nuvens de tempestade e que pode contribuir para a geração de descargas elétricas, incluindo raios. Esse processo envolve a ionização do ar em altas altitudes, o que pode ocorrer devido à interação entre partículas carregadas, como elétrons, e moléculas de ar.
+		
+		Quando uma nuvem de tempestade é carregada eletricamente, pode ocorrer a formação de um campo elétrico muito forte no seu interior. Esse campo elétrico pode acelerar elétrons a altas velocidades, que colidem com moléculas de ar e ionizam o gás. Quando isso acontece, é possível que ocorra um processo de cascata, em que as partículas carregadas geradas pelas colisões aceleram ainda mais elétrons, gerando mais ionização e assim por diante. Esse processo de cascata é chamado de \textit{runaway breakdown}.
+		
+		O resultado do \textit{runaway breakdown} é a formação de uma região altamente ionizada na nuvem de tempestade, que pode contribuir para a geração de descargas elétricas, incluindo raios. O processo de avalanche de elétrons gerado pelo \textit{runaway breakdown }é capaz de produzir elétrons de alta energia, que podem colidir com moléculas de ar e gerar novas ionizações, aumentando ainda mais a corrente elétrica na nuvem e a probabilidade de descargas elétricas.
+		
+	\end{itemize}
+	\section{Temas impactantes, dúvidas e questionamentos}
+	\begin{itemize}
+		\item Embora sejam hipóteses elaboradas e até sofisticadas, sempre há algum ponto onde a hipótese falha. Uma hipótese não explica um aspecto, porém a que explica o aspecto faltante gera lacunas a serem preenchidas. De fato, me parece ser uma coleção de processos ou hipóteses um modelo mais adequado para o problema do carregamento da nuvem de tempestade. Nota: seria complicado, se não impossível, fazer a comprovação ou prova de qualquer hipótese a respeito, mesmo porque só temos acesso a informações fragmentadas. Por exemplo: consigo gerar eletricidade estática friccionando meus pés no carpete, se utilizar meias - consigo demonstrar como funciona a eletrização por fricção. Porém, quando se trata de ampliar este conhecimento para que englobe o carregamento das nuvens, a história é outra. Surgem perguntas: como se define realmente a eletricidade em questão? é estática, convencional ou não convencional? São íons perambulando pela nuvem, partículas eletrizadas se movendo, ou existe uma nuvem eletrônica altamente energética em algum canto da nuvem que seja responsável pelo acúmulo de cargas na nuvem? Isoladamente, conseguimos medir e classificar tais fenômenos, porém, em conjunto em um ambiente como uma nuvem, não se consegue mais do que elaborar modelos que dê talvez um horizonte próximo de previsão. Neste ponto, entra em questão o paradoxo do pato: se meu modelo é de uma ordem a mais ou a menos que o de outra pessoa, qual o problema? A principio nenhum!!!
+	\end{itemize}
+	
+\end{document}

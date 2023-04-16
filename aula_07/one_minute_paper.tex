@@ -1,0 +1,109 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 7 - Campos Elétricos em Tempestades }
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\begin{itemize}
+		
+		\item \textbf{\textit{Campos Elétricos em Tempestades $\Rightarrow$ }}Para medir o campo elétrico atmosférico, é comum utilizar técnicas que consideram a diferença de potencial em uma coluna vertical de ar, com altura $\Delta$z em relação ao solo. A partir dessa relação, é possível determinar o campo elétrico através da fórmula $E = \frac{\Delta V}{\Delta z}$, em que o sinal do campo elétrico é o mesmo da diferença de potencial. Em condições de tempo bom, o campo eletrostático atmosférico é verticalmente orientado para baixo, ou seja, é negativo, pois a atmosfera é carregada positivamente, enquanto o solo possui uma polaridade oposta, com cargas negativas.
+		
+		Durante as tempestades, os flashes negativos de descargas CG e IC são predominantes próximos e abaixo delas. Estudos recentes mostram que os fortes campos elétricos dentro das tempestades geram fluxos de elétrons de alta energia, cujas variações são estudadas por meio do Thunderstorm Ground Enhancement (TGE), um novo campo de estudo. O processo de avalanche de elétrons na atmosfera, também chamado de Relativistic Runaway Electron Avalanche ou Runaway Breakdown, é utilizado para correlacionar matematicamente o fluxo de partículas mensuradas com as perturbações do campo elétrico atmosférico local (entre -10 e -30 kV/m) por meio de sensores de campo elétrico.
+		
+		\item \textbf{\textit{Desenvolvimento de Campo Elétrico Na Nuvem de Tempestade $\Rightarrow$ }} Os fenômenos atmosféricos conhecidos como descargas elétricas são gerados a partir de campos elétricos que podem atingir valores entre 100 e 300 kV/m. Entretanto, para que esses campos elétricos surjam na atmosfera, são necessários outros processos. Atualmente, existem dois tipos de mecanismos aceitos para o carregamento dos hidrometeoros e a separação de cargas elétricas: os mecanismos indutivos e os mecanismos não-indutivos. Esses processos são responsáveis por gerar a eletricidade necessária para as descargas elétricas na atmosfera.
+		
+		\subitem \textbf{\textit{Mecanismos não indutivos $\Rightarrow$}} Os mecanismos não indutivos de carregamento de hidrometeoros são aqueles que não envolvem diretamente a indução eletromagnética, mas sim a transferência de elétrons por colisões entre partículas. Dentre os principais mecanismos não indutivos, destacam-se:
+		\begin{itemize}
+			
+			\item \textbf{\textit{Camada elétrica dupla: }}De acordo com essa hipótese, é assumido que ocorre a formação de uma camada elétrica dupla nas interfaces entre a água e o ar, o gelo e o ar ou o gelo e a água, devido à orientação das moléculas de água. Em relação à separação de cargas, geralmente há mais cargas removidas da região externa da camada dupla do que das internas, resultando em um excesso de cargas internas deixadas para trás após a colisão das partículas.
+			
+			\item \textbf{\textit{Efeito triboelétrico:}} É o processo de geração de eletricidade estática por atrito entre dois materiais diferentes. Quando as gotas de água ou cristais de gelo colidem uns com os outros, ou com outros objetos na nuvem, pode ocorrer a transferência de elétrons, gerando a separação de cargas.
+			
+			\item \textbf{\textit{Efeito termoelétrico:}} É o processo de geração de eletricidade estática por variações de temperatura. Quando há variações de temperatura dentro da nuvem, como na região de crescimento do granizo, podem ocorrer gradientes de potencial elétrico, gerando a separação de cargas.
+			
+			\item \textbf{\textit{Efeito fotoelétrico:}} É o processo de geração de eletricidade estática por radiação eletromagnética. Quando a luz solar ou outras formas de radiação atingem a nuvem, pode ocorrer a ionização de átomos e moléculas, gerando elétrons livres que podem se depositar na superfície dos hidrometeoros e gerar a separação de cargas.
+		\end{itemize}
+
+		
+		Esses mecanismos podem atuar em conjunto com os mecanismos indutivos na geração de campos elétricos na atmosfera e na formação de descargas atmosféricas.
+		
+		\subitem \textbf{\textit{Mecanismos Indutivos $\Rightarrow$ }}O mecanismo indutivo de transporte de carga em nuvens é baseado na separação de cargas elétricas por meio do movimento relativo entre as partículas eletricamente carregadas. Esse movimento relativo pode ser causado pelo processo de colisão entre as partículas, pela sedimentação de partículas com diferentes tamanhos ou pela interação de partículas com o campo elétrico da nuvem.
+		
+		Uma vez que as partículas estão eletricamente carregadas, elas são sujeitas à força elétrica que age sobre elas no campo elétrico da nuvem. As partículas menores são geralmente carregadas positivamente, enquanto as maiores são carregadas negativamente. Isso ocorre porque as partículas menores têm uma maior relação superfície-volume do que as maiores, o que as torna mais propensas a perder elétrons durante a colisão ou interação com o campo elétrico.
+		
+		Conforme as partículas carregadas se movem na nuvem, elas criam um campo elétrico local que pode induzir a carga em outras partículas próximas. Esse processo de indução e transporte de carga pode continuar até que as partículas atinjam uma camada onde o arrasto ascendente não é mais capaz de mantê-las suspensas, e então começam a cair em direção à superfície como precipitação.
+		
+		Esse mecanismo de transporte de carga pode ocorrer em todas as camadas da nuvem, desde a região inferior onde a coalescência das gotas é predominante até a região superior onde a formação de gelo e granizo ocorre. O resultado final desse processo é uma separação de cargas elétricas, com a região superior da nuvem carregada negativamente e a região inferior carregada positivamente, o que pode levar ao surgimento de uma descarga elétrica.
+		
+		\subitem \textbf{\textit{Mecanismo de Captura de Íons $\Rightarrow$ }}O mecanismo de captura de íons é um dos mecanismos indutivos de transporte de carga que ocorre na nuvem durante a formação de descargas elétricas. Esse mecanismo envolve a captura de íons presentes na atmosfera pela superfície das gotas de água e cristais de gelo na nuvem.
+		
+		Os íons presentes na atmosfera são formados por processos como a radiação cósmica, raios-X solares e raios cósmicos. Quando esses íons são capturados pela superfície das gotas de água e cristais de gelo, eles transferem sua carga elétrica para essas partículas. Como resultado, as partículas ficam eletricamente carregadas.
+		
+		Esse processo é importante para o carregamento da nuvem, pois as partículas carregadas eletricamente podem interagir com outras partículas na nuvem e transferir sua carga elétrica. Isso pode levar à formação de regiões carregadas positiva e negativamente na nuvem, o que é um pré-requisito para a ocorrência de descargas elétricas.
+	
+	\end{itemize}
+	
+\end{document}
