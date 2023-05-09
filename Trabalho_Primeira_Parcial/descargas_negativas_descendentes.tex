@@ -1,0 +1,93 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Trabalho 01 - Descargas Negativas Descendentes Nuvem - Solo}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+
+	\section{Resumo do Processo de Descarga}
+	A descarga negativa descendente em direção ao solo é o tipo mais comum e estudado de raios. Cada \textit{flash} para o solo geralmente contém de três a cinco \textit{strokes}, sendo que o número máximo de \textit{strokes} já observados em um único \textit{flash} é de 26. A maioria esmagadora, com cerca de 80\% ou mais, dos \textit{flashes} contém mais de um \textit{stroke}. O intervalo de tempo entre os sucessivos \textit{strokes} em um \textit{flash} é geralmente de várias dezenas de milissegundos, embora possa ser tão grande quanto centenas de milissegundos se uma corrente contínua longa estiver envolvida ou tão pequeno quanto um milissegundo ou menos. A duração total de um \textit{flash} é tipicamente algumas centenas de milissegundos, e a carga total transferida para o solo é de algumas dezenas de coulombs. Cerca de metade de todos os \textit{flashes} de descargas para o solo criam mais de uma terminação no solo, com a separação espacial entre as terminações do canal podendo chegar a muitos quilômetros. Cada \textit{stroke} é composto por um líder que se move para baixo e um líder que se move para cima no curso de retorno. O líder cria um caminho condutor entre a fonte de carga na nuvem e o solo e deposita carga negativa ao longo desse caminho, enquanto o canal de retorno percorre esse caminho, movendo-se do solo em direção à fonte de carga na nuvem e neutraliza a carga negativa do líder. O líder escalonado inicia os movimentos do primeiro \textit{stroke} de retorno intermitentemente, enquanto os líderes dos \textit{strokes} subsequentes geralmente parecem se mover continuamente.
+	
+	Após a quebra inicial, possivelmente entre as principais regiões de carga negativa e positiva inferiores na nuvem, o líder escalonado se propaga em direção ao solo com uma velocidade média de $2 \times 10^{5}$ $\frac{m}{s}$. Abaixo do limite inferior da nuvem, cada passo do líder tem uma duração típica de 1 $\mu s$ e um comprimento de dezenas de metros, com um intervalo de tempo entre os passos de 20 a 50 $\mu s$ . A corrente média do líder escalonado está entre 100 e 1000 $A$, e o valor máximo do pulso de corrente associado a um único passo é de pelo menos 1 $kA$. A transição da fase do líder para a fase do canal de retorno é referida como o processo de anexação. A velocidade de propagação ascendente de um canal de retorno abaixo do limite inferior da nuvem é tipicamente entre um terço e metade da velocidade da luz, ou seja, cerca de três ordens de magnitude mais alta que a velocidade do líder escalonado. A primeira corrente do canal de retorno medida no solo sobe para um pico inicial de cerca de 30 $kA$ (valor mediano) em alguns microssegundos e diminui para metade do valor de pico em algumas dezenas de microssegundos. O canal de retorno descarrega ao solo os vários coulombs de carga originalmente depositados no canal do líder escalonado. A onda de corrente do canal de retorno aquece rapidamente o canal para uma temperatura máxima próxima a 30.000 $K$ e cria uma pressão de canal da ordem de 10 atm ou mais, resultando na expansão do canal, radiação óptica intensa e uma onda de choque acústica que eventualmente se torna o trovão que ouvimos à distância.
+	
+	As descargas subsequentes ocorrem após a cessação do fluxo de corrente para o solo. Processos na nuvem chamados de processos J envolvem uma redistribuição de cargas na nuvem em uma escala de tempo de dezenas de milissegundos em resposta ao retorno de curso anterior. Transitórios ocorrendo durante o processo mais lento J são referidos como processos K. Ambos os processos J e K em descargas entre nuvens e o solo efetivamente transportam cargas negativas frescas para dentro e ao longo do canal existente (ou seus remanescentes), embora não até o solo. O líder \textit{dart} progride para baixo a uma velocidade típica de $10^7$ $\frac{m}{s}$ e deposita uma carga total ao longo do canal da ordem de 1 $C$. A corrente de pico do líder \textit{dart} é de cerca de 1 $kA$. A corrente de retorno subsequente medida no solo atinge um valor de pico de 10 a 15 $kA$ em menos de um microssegundo e decai para metade do valor de pico em algumas dezenas de microssegundos. A derivada máxima da corrente é tipicamente da ordem de 100 $\frac{kA}{\mu s}$. A velocidade média de propagação ascendente de cursos de retorno subsequentes é semelhante à dos primeiros cursos de retorno. O componente de canal de retorno de uma corrente de canal de retorno subsequente é frequentemente seguido por uma corrente contínua contínua que tem uma magnitude de dezenas a centenas de amperes e uma duração de até centenas de milissegundos. Os processos transitórios que ocorrem durante o estágio de corrente contínua contínua e servem para transportar carga negativa para o solo são referidos como componentes M. O modo de transferência de carga M para o solo, em oposição ao modo líder-curso de retorno, requer a existência de um canal aterrado transportando corrente.
+	
+	\section{Características da Forma De Onda Detectada ($\vec{E}$, $\vec{B}$)}
+	
+	a fazer
+	
+	\section{Descrição do Modelo de Campo $\vec{E}$ e $\vec{B}$ (Thottapillil) }
+	
+	A fazer
+	
+	\section{O que é radiação "\textit{Narrowband}"}
+	
+	A radiação \textit{Narrowband} em descargas atmosféricas refere-se à emissão de ondas eletromagnéticas em uma faixa de frequência estreita (também conhecida como banda estreita) que é produzida por descargas elétricas na atmosfera. Essas descargas incluem raios e outros eventos elétricos que podem ocorrer durante tempestades e outros fenômenos meteorológicos.
+	
+	A radiação \textit{Narrowband} é geralmente emitida em frequências de rádio de algumas centenas de kilohertz a algumas dezenas de megahertz, e é caracterizada por uma largura de banda estreita de apenas alguns kilohertz. Essa radiação é produzida por elétrons que são acelerados a altas velocidades durante as descargas atmosféricas, o que causa a emissão de ondas eletromagnéticas em frequências específicas.
+	
+	A radiação \textit{Narrowband} pode ser detectada por equipamentos de monitoramento de raios eletromagnéticos e é usada em pesquisa científica para estudar os processos físicos que ocorrem durante as descargas atmosféricas. Também pode ser usada em aplicações de comunicação de rádio de longo alcance, como a transmissão de sinais de rádio para satélites e outras formas de comunicação sem fio de longo alcance.
+	
+	\section{Descrição Gráfica dos Processos $M$, $J$ e $K$}
+	
+\end{document}
