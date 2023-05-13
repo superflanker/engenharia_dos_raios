@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  9 MAY 2023 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  13 MAY 2023 08:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1121,40 +1121,86 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
- [2] [3]
-(./descargas_negativas_descendentes.aux) ) 
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+<imagens/initial_breakdown.png, id=14, 161.8848pt x 74.1972pt>
+File: imagens/initial_breakdown.png Graphic file (type png)
+<use imagens/initial_breakdown.png>
+Package pdftex.def Info: imagens/initial_breakdown.png  used on input line 84.
+(pdftex.def)             Requested size: 307.57936pt x 140.97385pt.
+ [2] [3 <./imagens/initial_breakdown.png>]
+[4] [5] [6]
+<imagens/componente_m_a.png, id=32, 105.996pt x 64.8021pt>
+File: imagens/componente_m_a.png Graphic file (type png)
+<use imagens/componente_m_a.png>
+Package pdftex.def Info: imagens/componente_m_a.png  used on input line 160.
+(pdftex.def)             Requested size: 154.78653pt x 94.6409pt.
+<imagens/componente_m_b.png, id=34, 105.7551pt x 59.7432pt>
+File: imagens/componente_m_b.png Graphic file (type png)
+<use imagens/componente_m_b.png>
+Package pdftex.def Info: imagens/componente_m_b.png  used on input line 163.
+(pdftex.def)             Requested size: 154.78653pt x 87.44582pt.
+<imagens/componente_m_c.png, id=35, 105.996pt x 67.2111pt>
+File: imagens/componente_m_c.png Graphic file (type png)
+<use imagens/componente_m_c.png>
+Package pdftex.def Info: imagens/componente_m_c.png  used on input line 166.
+(pdftex.def)             Requested size: 154.78653pt x 98.15918pt.
+ [7] [8 <./imagens/componente_m_a.png> <./imagens/componente_m_b.png> <./imagen
+s/componente_m_c.png>]
+<imagens/process_J_K_EFIELD.png, id=46, 148.3944pt x 122.1363pt>
+File: imagens/process_J_K_EFIELD.png Graphic file (type png)
+<use imagens/process_J_K_EFIELD.png>
+Package pdftex.def Info: imagens/process_J_K_EFIELD.png  used on input line 187
+.
+(pdftex.def)             Requested size: 281.94774pt x 232.05765pt.
+ [9 <./imagens/process_J_K_EFIELD.png>]
+[10]
+
+LaTeX Warning: Citation `.' on page 11 undefined on input line 220.
+
+[11]
+<imagens/processo_componente_m.jpg, id=56, 1553.44pt x 797.89pt>
+File: imagens/processo_componente_m.jpg Graphic file (type jpg)
+<use imagens/processo_componente_m.jpg>
+Package pdftex.def Info: imagens/processo_componente_m.jpg  used on input line 
+228.
+(pdftex.def)             Requested size: 483.69687pt x 248.43907pt.
+ [12 <./imagens/processo_componente_m.jpg>] [13]
+(./descargas_negativas_descendentes.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 32669 strings out of 478287
- 781141 string characters out of 5849290
- 1193058 words of memory out of 5000000
- 50254 multiletter control sequences out of 15000+600000
- 537712 words of font info for 147 fonts, out of 8000000 for 9000
+ 32769 strings out of 478287
+ 783383 string characters out of 5849290
+ 1194156 words of memory out of 5000000
+ 50342 multiletter control sequences out of 15000+600000
+ 546086 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,131p,1839b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on descargas_negativas_descendentes.pdf (3 pages, 78800 bytes).
+ 99i,8n,131p,1857b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on descargas_negativas_descendentes.pdf (13 pages, 508657 bytes)
+.
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
