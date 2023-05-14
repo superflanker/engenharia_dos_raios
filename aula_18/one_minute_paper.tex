@@ -1,0 +1,129 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 18 - Raios e o Setor Elétrico (Linhas de Transmissão e Distribuição)}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\paragraph{Contextualização}
+	
+	Os raios representam um fenômeno natural que envolve uma descarga elétrica intensa entre as nuvens e a superfície da Terra. Essas descargas elétricas podem ter efeitos significativos no setor elétrico, especialmente nas redes de distribuição e transmissão de energia.
+	
+	Os raios podem causar interrupções no fornecimento de energia elétrica, danificar equipamentos e infraestrutura elétrica e, em casos extremos, provocar incêndios. A alta corrente e voltagem envolvidas em um raio podem sobrecarregar os sistemas de proteção e causar falhas em transformadores, linhas de transmissão e outros componentes elétricos.
+	
+	Para proteger as redes elétricas contra os efeitos dos raios, são utilizados dispositivos de proteção, como para-raios. Esses dispositivos são projetados para interceptar e desviar as descargas elétricas dos raios, direcionando-as com segurança para o solo e evitando danos às instalações elétricas.
+	
+	Além disso, as empresas do setor elétrico implementam programas de manutenção e inspeção regulares para identificar e reparar danos causados por raios. Isso inclui a revisão de sistemas de proteção, verificação da integridade das estruturas e a substituição de equipamentos danificados.
+	
+	\paragraph{Raios e o Setor Elétrico}
+	
+	As teorias mencionadas afirmam que a corrente no condutor de fase de uma linha de transmissão influencia o raio de atração, que é a distância estimada entre o canal descendente do raio e uma estrutura terrestre onde ocorrerá eventual ruptura do dielétrico.
+	
+	Quando há correntes mais altas nos condutores de fase, isso resulta em maiores campos elétricos ao redor dos condutores. Esses campos elétricos se somam ao campo elétrico da atmosfera durante uma tempestade, o que facilita o processo de ionização do ar.
+	
+	Altos potenciais nas linhas de transmissão podem resultar em correntes mais altas nos condutores de fase, o que, por sua vez, aumenta o campo elétrico ao redor desses condutores. Esse aumento no campo elétrico pode influenciar o raio de atração, fazendo com que a descarga do raio seja atraída mais facilmente para as estruturas próximas aos condutores.
+	
+	É importante considerar essas teorias ao projetar e proteger linhas de transmissão e estruturas elétricas, levando em conta a influência da corrente, campo elétrico e potencial nas características de atração dos raios. Dessa forma, medidas adequadas de proteção, como o uso de para-raios e a manutenção regular dos sistemas de proteção, podem ser implementadas para minimizar os riscos associados aos raios.
+	
+	\paragraph{Acidentes com Descargas Atmosféricas}
+	
+	O parâmetro "energia por unidade de resistência" é calculado integrando o quadrado da corrente durante o intervalo de duração de uma corrente de retorno. Esse cálculo permite determinar a quantidade de energia transferida para uma vítima quando ela é percorrida por uma corrente de uma descarga atmosférica.
+	
+	A potência dissipada por uma corrente durante o fluxo por uma vítima pode ser expressa como $RI^2$, onde $R$ é a resistência da vítima. Integrando essa expressão ao longo do tempo e dividindo pelo valor da resistência, obtemos o parâmetro "energia por unidade de resistência".
+	
+	Esse parâmetro é utilizado para avaliar os efeitos e a severidade dos acidentes causados por descargas atmosféricas em seres humanos ou equipamentos. Ele fornece uma medida da quantidade de energia transferida para a vítima durante a passagem da corrente elétrica, levando em consideração a resistência do caminho percorrido.
+	
+	É importante considerar esses parâmetros ao projetar sistemas de proteção contra descargas atmosféricas e ao desenvolver diretrizes de segurança para evitar acidentes e minimizar os riscos associados às correntes elétricas resultantes de raios.
+	
+	\paragraph{Formalização da Energia por Unidade de Resistência} A energia transferida para um condutor em função de sua resistência é dada por:
+	
+	\begin{equation}
+		F(t) = \frac{\mu_0}{2 \pi} i^2(t) \frac{l}{d}
+	\end{equation}
+
+	onde:
+	
+	\begin{itemize}
+		\item $F(t)$: força eletrodinâmica
+		\item $i(t)$: corrente elétrica
+		\item $\mu_0$: permeabilidade magnética do meio ($4 \pi \times 10^{-7}$ $H/m$)
+		\item $l$: comprimento do condutor
+		\item $d$: distância entre condutores paralelos
+	\end{itemize}
+
+	\paragraph{Outras Considerações}
+	Na grande maioria das descargas nuvem-solo, a energia por unidade de resistência, calculada através da integração do quadrado da corrente, apresenta um valor mediano da ordem de $5 \times 10^4$ $A^2s$.
+	
+	A ordem de grandeza da impedância do corpo humano ao percurso de uma corrente de descarga é estimada entre 300 e 600 $\Omega$. Se considerarmos a resistência de uma vítima como sendo 500 $\Omega$, a corrente de descarga seria capaz de transferir aproximadamente $2.5 \times 10^4$ $kJ$ de energia ($500 \Omega \times 5 \times 10^4 A^2s$).
+	
+	Se o tempo de duração da corrente for de $0.5 s$, isso corresponde a uma dissipação de potência média de 50.000 $kW$ ($\frac{2.5 \times 10^4 kJ}{0.5s}$). Essa potência é cerca de 10.000 vezes superior à potência de um chuveiro elétrico residencial e é suficiente para causar parada cardiorrespiratória e, eventualmente, carbonização dos tecidos da vítima.
+	
+	Esses números destacam a extrema periculosidade das descargas atmosféricas e os riscos associados a ser atingido por uma corrente de descarga. É fundamental adotar medidas de proteção adequadas e seguir as diretrizes de segurança para minimizar esses riscos e garantir a segurança das pessoas em situações de tempestades elétricas.
+	
+	\section{Temas Impactantes, dúvidas e questionamentos}
+	
+	Nem tenho condições de imaginar o que seria 10000 vezes superior à potência de um chuveiro residencial.....
+	
+\end{document}

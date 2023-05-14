@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  13 MAY 2023 08:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  13 MAY 2023 23:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -919,48 +919,96 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count359
 \AM@templatesizebox=\box81
 )
+(/usr/share/texlive/texmf-dist/tex/latex/diffcoeff/diffcoeff.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count360
+\l__pdf_internal_box=\box82
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen322
+\l__xtemplate_tmp_int=\count361
+\l__xtemplate_tmp_muskip=\muskip17
+\l__xtemplate_tmp_skip=\skip66
+)
+Package: diffcoeff 2021/12/24 v4.0 Write differential coefficients consistently
+ and easily.
+\l__diffcoeff_spaced_int=\count362
+\l__diffcoeff_vars_int=\count363
+\l__diffcoeff_format_int=\count364
+\l__diffcoeff_curr_tok_int=\count365
+\l__diffcoeff_curr_state_int=\count366
+\l__diffcoeff_nos_int=\count367
+\l__diffcoeff_parenvar_int=\count368
+
+Package xtemplate Info: Declaring object type 'derivative' taking 5
+(xtemplate)             argument(s) on line 63.
+
+\l__diffcoeff_oporder_muskip=\muskip18
+\l__diffcoeff_derivsep_muskip=\muskip19
+\l__diffcoeff_varsep_muskip=\muskip20
+\l__diffcoeff_sep_adj_muskip=\muskip21
+\l__diffcoeff_elbowrm_muskip=\muskip22
+\l__diffcoeff_subnudge_muskip=\muskip23
+\l__diffcoeff_derivsepi_muskip=\muskip24
+\l__diffcoeff_opnudge_muskip=\muskip25
+\l__diffcoeff_derivsepii_muskip=\muskip26
+\l_tmpc_muskip=\muskip27
+\l_tmpd_muskip=\muskip28
+\l__diffcoeff_derivsepiii_muskip=\muskip29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen322
-\lightrulewidth=\dimen323
-\cmidrulewidth=\dimen324
-\belowrulesep=\dimen325
-\belowbottomsep=\dimen326
-\aboverulesep=\dimen327
-\abovetopsep=\dimen328
-\cmidrulesep=\dimen329
-\cmidrulekern=\dimen330
-\defaultaddspace=\dimen331
-\@cmidla=\count360
-\@cmidlb=\count361
-\@aboverulesep=\dimen332
-\@belowrulesep=\dimen333
-\@thisruleclass=\count362
-\@lastruleclass=\count363
-\@thisrulewidth=\dimen334
+\heavyrulewidth=\dimen323
+\lightrulewidth=\dimen324
+\cmidrulewidth=\dimen325
+\belowrulesep=\dimen326
+\belowbottomsep=\dimen327
+\aboverulesep=\dimen328
+\abovetopsep=\dimen329
+\cmidrulesep=\dimen330
+\cmidrulekern=\dimen331
+\defaultaddspace=\dimen332
+\@cmidla=\count369
+\@cmidlb=\count370
+\@aboverulesep=\dimen333
+\@belowrulesep=\dimen334
+\@thisruleclass=\count371
+\@lastruleclass=\count372
+\@thisrulewidth=\dimen335
 )
 (/usr/share/texlive/texmf-dist/tex/latex/arydshln/arydshln.sty
 Package: arydshln 2019/02/21 v1.76 
-\dashlinedash=\dimen335
-\dashlinegap=\dimen336
-\adl@box=\box82
-\adl@height=\dimen337
-\adl@heightsave=\dimen338
-\adl@depth=\dimen339
-\adl@depthsave=\dimen340
-\adl@finaldepth=\dimen341
-\adl@columns=\count364
-\adl@ncol=\count365
-\adl@currentcolumn=\count366
-\adl@currentcolumnsave=\count367
-\adl@totalheight=\count368
-\adl@totalheightsave=\count369
-\adl@dash=\count370
-\adl@gap=\count371
-\adl@cla=\count372
-\adl@clb=\count373
+\dashlinedash=\dimen336
+\dashlinegap=\dimen337
+\adl@box=\box83
+\adl@height=\dimen338
+\adl@heightsave=\dimen339
+\adl@depth=\dimen340
+\adl@depthsave=\dimen341
+\adl@finaldepth=\dimen342
+\adl@columns=\count373
+\adl@ncol=\count374
+\adl@currentcolumn=\count375
+\adl@currentcolumnsave=\count376
+\adl@totalheight=\count377
+\adl@totalheightsave=\count378
+\adl@dash=\count379
+\adl@gap=\count380
+\adl@cla=\count381
+\adl@clb=\count382
 \adl@everyvbox=\toks50
-\adl@LTpagetotal=\dimen342
+\adl@LTpagetotal=\dimen343
 )
 runsystem(which pygmentize && touch descargas_negativas_descendentes.aex)...exe
 cuted.
@@ -968,41 +1016,36 @@ cuted.
 runsystem(rm descargas_negativas_descendentes.aex)...executed.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count374
-\l__pdf_internal_box=\box83
-)
 (./descargas_negativas_descendentes.aux)
 \openout1 = `descargas_negativas_descendentes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count375
-\scratchdimen=\dimen343
+\scratchcounter=\count383
+\scratchdimen=\dimen344
 \scratchbox=\box84
-\nofMPsegments=\count376
-\nofMParguments=\count377
+\nofMPsegments=\count384
+\nofMParguments=\count385
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count378
-\MPscratchDim=\dimen344
-\MPnumerator=\count379
-\makeMPintoPDFobject=\count380
+\MPscratchCnt=\count386
+\MPscratchDim=\dimen345
+\MPnumerator=\count387
+\makeMPintoPDFobject=\count388
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1015,21 +1058,21 @@ e
 ))
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 61.
-Package gensymb Info: Math companion symbols declared on input line 61.
-LaTeX Info: Redefining \degree on input line 61.
-LaTeX Info: Redefining \celsius on input line 61.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 62.
+Package gensymb Info: Math companion symbols declared on input line 62.
+LaTeX Info: Redefining \degree on input line 62.
+LaTeX Info: Redefining \celsius on input line 62.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 61.
-LaTeX Info: Redefining \ohm on input line 61.
-Package gensymb Info: Using \textohm for \ohm on input line 61.
-Package gensymb Info: Using \textmu for \micro on input line 61.
+erthousand on input line 62.
+LaTeX Info: Redefining \ohm on input line 62.
+Package gensymb Info: Using \textohm for \ohm on input line 62.
+Package gensymb Info: Using \textmu for \micro on input line 62.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 61.
+ on input line 62.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1077,130 +1120,133 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 66.
+ 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 66.
+ 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 66.
+ 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 66.
+ 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 6
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+ [2]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
-<imagens/initial_breakdown.png, id=14, 161.8848pt x 74.1972pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
+<imagens/initial_breakdown.png, id=17, 161.8848pt x 74.1972pt>
 File: imagens/initial_breakdown.png Graphic file (type png)
 <use imagens/initial_breakdown.png>
-Package pdftex.def Info: imagens/initial_breakdown.png  used on input line 84.
+Package pdftex.def Info: imagens/initial_breakdown.png  used on input line 92.
 (pdftex.def)             Requested size: 307.57936pt x 140.97385pt.
- [2] [3 <./imagens/initial_breakdown.png>]
+ [3 <./imagens/initial_breakdown.png>]
 [4] [5] [6]
 <imagens/componente_m_a.png, id=32, 105.996pt x 64.8021pt>
 File: imagens/componente_m_a.png Graphic file (type png)
 <use imagens/componente_m_a.png>
-Package pdftex.def Info: imagens/componente_m_a.png  used on input line 160.
+Package pdftex.def Info: imagens/componente_m_a.png  used on input line 169.
 (pdftex.def)             Requested size: 154.78653pt x 94.6409pt.
 <imagens/componente_m_b.png, id=34, 105.7551pt x 59.7432pt>
 File: imagens/componente_m_b.png Graphic file (type png)
 <use imagens/componente_m_b.png>
-Package pdftex.def Info: imagens/componente_m_b.png  used on input line 163.
+Package pdftex.def Info: imagens/componente_m_b.png  used on input line 172.
 (pdftex.def)             Requested size: 154.78653pt x 87.44582pt.
 <imagens/componente_m_c.png, id=35, 105.996pt x 67.2111pt>
 File: imagens/componente_m_c.png Graphic file (type png)
 <use imagens/componente_m_c.png>
-Package pdftex.def Info: imagens/componente_m_c.png  used on input line 166.
+Package pdftex.def Info: imagens/componente_m_c.png  used on input line 175.
 (pdftex.def)             Requested size: 154.78653pt x 98.15918pt.
  [7] [8 <./imagens/componente_m_a.png> <./imagens/componente_m_b.png> <./imagen
-s/componente_m_c.png>]
-<imagens/process_J_K_EFIELD.png, id=46, 148.3944pt x 122.1363pt>
+s/componente_m_c.png>] [9]
+<imagens/process_J_K_EFIELD.png, id=49, 148.3944pt x 122.1363pt>
 File: imagens/process_J_K_EFIELD.png Graphic file (type png)
 <use imagens/process_J_K_EFIELD.png>
-Package pdftex.def Info: imagens/process_J_K_EFIELD.png  used on input line 187
+Package pdftex.def Info: imagens/process_J_K_EFIELD.png  used on input line 207
 .
 (pdftex.def)             Requested size: 281.94774pt x 232.05765pt.
- [9 <./imagens/process_J_K_EFIELD.png>]
-[10]
+ [10 <./imagens/process_J_K_EFIELD.png>]
+[11] [12] [13] [14]
+<imagens/lightning_process.png, id=69, 133.2177pt x 124.7862pt>
+File: imagens/lightning_process.png Graphic file (type png)
+<use imagens/lightning_process.png>
+Package pdftex.def Info: imagens/lightning_process.png  used on input line 316.
 
-LaTeX Warning: Citation `.' on page 11 undefined on input line 220.
-
-[11]
-<imagens/processo_componente_m.jpg, id=56, 1553.44pt x 797.89pt>
+(pdftex.def)             Requested size: 483.69687pt x 453.18468pt.
+ [15 <./imagens/lightning_process.png>] [16]
+<imagens/processo_componente_m.jpg, id=76, 1553.44pt x 797.89pt>
 File: imagens/processo_componente_m.jpg Graphic file (type jpg)
 <use imagens/processo_componente_m.jpg>
 Package pdftex.def Info: imagens/processo_componente_m.jpg  used on input line 
-228.
+348.
 (pdftex.def)             Requested size: 483.69687pt x 248.43907pt.
- [12 <./imagens/processo_componente_m.jpg>] [13]
-(./descargas_negativas_descendentes.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ [17 <./imagens/processo_componente_m.jpg>] [18] (./descargas_negativas_descend
+entes.aux) ) 
 Here is how much of TeX's memory you used:
- 32769 strings out of 478287
- 783383 string characters out of 5849290
- 1194156 words of memory out of 5000000
- 50342 multiletter control sequences out of 15000+600000
- 546086 words of font info for 153 fonts, out of 8000000 for 9000
+ 33352 strings out of 478287
+ 799431 string characters out of 5849290
+ 1216836 words of memory out of 5000000
+ 50895 multiletter control sequences out of 15000+600000
+ 550858 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,8n,131p,1857b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on descargas_negativas_descendentes.pdf (13 pages, 508657 bytes)
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on descargas_negativas_descendentes.pdf (18 pages, 704983 bytes)
 .
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

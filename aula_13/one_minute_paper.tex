@@ -67,6 +67,49 @@
 	
 	\section{Aprendizado da Aula}
 	
+	\paragraph{Contextualização} A física das descargas atmosféricas é um campo de estudo que se dedica a compreender os processos físicos envolvidos nas descargas elétricas que ocorrem na atmosfera, como os raios.
+	
+	As descargas atmosféricas são fenômenos naturais de alta energia que envolvem a transferência de cargas elétricas entre nuvens, entre nuvens e a Terra, ou dentro de uma única nuvem. Elas ocorrem devido a uma diferença de potencial elétrico significativa entre duas regiões na atmosfera, que pode ser causada por processos de eletrificação das nuvens, movimento vertical de partículas carregadas, entre outros fatores.
+	
+	Existem vários tipos de descargas atmosféricas, sendo os raios nuvem-terra (cloud-to-ground) os mais conhecidos e estudados. Esses raios são caracterizados por uma corrente elétrica intensa que percorre um caminho condutor entre uma nuvem carregada eletricamente e a superfície da Terra. Essa corrente é composta por pulsos de alta velocidade chamados de líderes, que são descargas elétricas ascendentes e descendentes que procuram estabelecer um caminho condutor através do ar ionizado.
+	
+	A formação de um raio envolve uma série complexa de processos físicos, incluindo a ionização do ar, a formação de líderes e o desenvolvimento de um canal condutor para a corrente elétrica. Durante o processo, ocorrem colisões entre partículas eletricamente carregadas, a geração de campos elétricos intensos, a criação de plasma e o aquecimento do ar, resultando em emissões de luz (relâmpagos) e sons (trovões).
+	
+	A física das descargas atmosféricas é estudada utilizando uma combinação de observações em campo, experimentos laboratoriais e modelagem computacional. Os pesquisadores procuram entender os mecanismos fundamentais que governam a ocorrência, a propagação e os efeitos das descargas atmosféricas, a fim de melhorar a previsão de tempestades e desenvolver medidas de proteção contra raios.
+	
+	\paragraph{Modelo do Canal de Descargas}
+	
+	Ao considerar o Modelo de Fonte-Carga para descrever a propagação de um Leader de relâmpago, fazemos a consideração de que a propagação é unidirecional e unipolar. Nesse modelo, a alteração do campo elétrico total no solo, produzido pelo Leader ao longo de um canal (L), pode ser descrita pela seguinte fórmula:
+	
+	\begin{equation}
+		\Delta E = -\frac{\lambda_q}{2 \pi \epsilon} \left[\frac{1}{D} - \frac{1 + H_T^2}{\sqrt{H_T^2+D^2}}\right]
+	\end{equation}
+
+	Onde $D = \sqrt{\left(x - x_i\right)^2 + \left(y - y_i\right)^2}$. Se considerarmos o processo do líder escalonado e da descarga de retorno, a carga elétrica final será reduzida a um ponto onde a variação de carga é $ \Delta Q = \lambda qH_T$. Isso ocorre porque a descarga de retorno neutraliza a carga elétrica do líder escalonado (Stepped Leader). Nesse caso, o campo elétrico pode ser definido da seguinte forma:
+	
+	\begin{equation}
+		\Delta E = -\frac{2 \Delta Q H_T}{4 \pi \epsilon \sqrt{\left(H_T^2 + D^2\right)^3}}
+	\end{equation}
+	
+	\paragraph{Modelo Leader Bi-direcional} No modelo do Leader Bi-direcional, consideramos uma propagação bidirecional e bipolar do \textit{Stepped Leade}r, onde são admitidos dois canais de propagação a partir de um ponto inicial localizado em $H_T$, com orientações e polaridades opostas. Nesse caso, a distribuição de carga $\lambda_q$ varia linearmente em relação ao comprimento do canal do líder escalonado.
+	
+	Por assumir a mesma velocidade para os líderes positivos e negativos, a variação total do campo elétrico em solo, produzido pelo canal do líder, pode ser calculada da seguinte forma:
+	
+	\begin{equation}
+		\Delta E = \frac{K}{2 \pi \epsilon} \left[\frac{H_T}{\sqrt{4H_T^2 + D^2}}\right] + \frac{K}{2 \pi \epsilon} ln \left[\frac{2H_T + \sqrt{4H_T^2 + D^2}}{D}\right]
+	\end{equation}
+
+	sendo $\lambda_q = -KH_t$. A variação final do campo elétrico no solo após este
+	processo pode ser calculado pela expressão:
+	
+	\begin{equation}
+		\Delta E = \frac{\Delta Q}{4 \pi \epsilon} \left[\frac{-2 H_T}{\sqrt{4H^2 + D^2}} + ln \left(\frac{2H_T + \sqrt{4H_T^2+ D^2}}{D}\right)\right]
+	\end{equation}
+
+	onde $\Delta Q = K H_T^2$ e demais variáveis no S.I.
+	
 	\section{Temas Impactantes, dúvidas e questionamentos}
+	
+	Nada que os livros e artigos não possam sanar.
 	
 \end{document}
