@@ -30,9 +30,10 @@
 \usepackage{tikz}
 \usepackage{subcaption}
 \usepackage{minted}
-\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
 \usepackage{makecell}
 \usepackage{pdfpages}
+\usepackage{bm}
 
 \renewcommand\theadalign{bc}
 \renewcommand\theadfont{\bfseries}
@@ -65,31 +66,80 @@
 	% título
 	\maketitle
 	
-	\section{Aprendizado da Aula}
+	\section{Roadmap}
 	
-	\begin{itemize}
-		\item \textbf{\textit{Como Se formam os Raios $\Rightarrow$ }} Os raios são formados por cargas elétricas que se acumulam em nuvens de tempestade. Quando essas cargas atingem um nível crítico, a resistência do ar é rompida e ocorre uma descarga elétrica em direção ao solo ou entre nuvens. Essa descarga é vista como um flash brilhante de luz, e é acompanhada por um som alto conhecido como trovão. Nesta aula, estuda-se o que acontece nas camadas superiores da atmosfera.
-		\item \textbf{\textit{Magnetosfera $\Rightarrow$ }}A magnetosfera é a camada mais externa da Terra, que se estende até a magnetopausa, situada a uma distância variável entre 10 e 15 vezes o raio da Terra. Ela é delimitada na parte inferior pela ionosfera, que se estende em torno de 1000 km acima da superfície terrestre. A magnetosfera é uma região dominada pelo campo magnético da Terra, que influencia a dinâmica do plasma presente na região, composto principalmente de prótons e elétrons. Na parte voltada para o Sol, as linhas de fluxo magnético são achatadas devido à ação do vento solar, enquanto na extremidade oposta, a magnetosfera se alonga.
-		\item \textbf{\textit{Plasmasfera $\Rightarrow$ }} A Plasmasfera é a região da alta atmosfera terrestre onde ocorrem os primeiros fenômenos associados às tempestades na Terra e está acoplada à região F da ionosfera. Descargas atmosféricas podem causar a propagação de ondas eletromagnéticas naturais de baixa frequência que se dirigem para as camadas mais altas da atmosfera e entram na Plasmasfera, propagando-se em formato espiralado entre os polos Norte e Sul. Essas ondas, geralmente na ordem de 5-10 kHz no espectro de frequência, são detectadas como assobios atmosféricos Whistlers. O estudo dos Whistlers está relacionado ao processo de compreensão da dinâmica da magnetosfera e das propriedades magnetoionicas dos elétrons e íons, que podem afetar a propagação de sinais eletromagnéticos neste meio.
-		\item \textbf{\textit{Ionosfera $\Rightarrow$ }}A ionosfera é uma região da atmosfera terrestre que se estende entre cerca de 60 km e 1000 km de altitude, e é composta por íons e elétrons livres. É uma região altamente eletricamente condutiva e é influenciada pela radiação solar e pelas correntes elétricas que fluem na magnetosfera da Terra.
-		
-		A ionização da atmosfera superior é produzida pela radiação ultravioleta e pelos raios cósmicos que bombardeiam a atmosfera terrestre, o que resulta na ionização dos átomos e moléculas presentes. Os íons e elétrons livres na ionosfera interagem com as ondas eletromagnéticas, permitindo a propagação de sinais de rádio e televisão por longas distâncias, além de influenciar a transmissão de dados de sistemas de navegação por satélite.
-		
-		A ionosfera é dividida em várias camadas que são determinadas pela sua altura e densidade. As camadas da ionosfera são:
-		\begin{itemize}
-			\item \textbf{\textit{Camada D:}} A camada D é a mais próxima da superfície da Terra e está localizada entre 60 e 90 km de altitude. Esta camada é a mais densa de todas as camadas da ionosfera e é composta principalmente por íons N+ e O2+. A camada D é responsável pela reflexão das ondas de rádio de alta frequência (HF) e é por isso que é usada para comunicações de longa distância.
-			
-			\item \textbf{\textit{Camada E:}} A camada E está localizada acima da camada D, entre 90 e 120 km de altitude. Esta camada é menos densa do que a camada D e é composta principalmente de íons O+ e NO+. A camada E é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência muito alta (VHF).
-			
-			\item \textbf{\textit{Camada F1:}} A camada F1 está localizada acima da camada E, entre 150 e 200 km de altitude. Esta camada é menos densa do que as camadas D e E e é composta principalmente por íons O+ e H+. A camada F1 é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência ultra-alta (UHF).
-			
-			\item \textbf{\textit{Camada F2:}} A camada F2 é a camada mais alta da ionosfera e está localizada entre 200 e 500 km de altitude. Esta camada é composta principalmente de íons O+ e H+ e é menos densa do que as camadas D, E e F1. A camada F2 é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência muito alta (VHF) e é a camada mais utilizada para comunicações de longa distância.
-		\end{itemize}
+	\subsection{Iniciação de um raio e tipos de raio}
 	
-		Distúrbios na ionosfera polar podem ocasionar interrupções na comunicação por ondas curtas, conhecidos como “apagões de rádio”. Além disso, correntes elétricas induzidas na ionosfera podem influenciar o fornecimento de energia e causar corrosão em oleodutos, entre outros problemas. Os raios cósmicos são divididos em partículas primárias, que permeiam o espaço interplanetário, e partículas secundárias, que surgem a partir de interações com outras partículas presentes na atmosfera. Quando hádrons incidem na alta atmosfera, geralmente sofrem interações de natureza forte ao colidir com núcleos atmosféricos como nitrogênio e oxigênio. Quando a energia das partículas de hádrons atinge cerca de $10^9$ eV, ocorre uma cascata de partículas, conhecida como Chuveiro de Partículas ou Avalanche de Partículas Cósmicas. Essas interações sucessivas geram uma série de partículas secundárias, incluindo mésons.
-		
-		A avalanche de partículas cósmicas, por sua vez, é utilizada como base para a teoria de eletrização da nuvem denominada \textbf{\textit{Runaway Breakdown}}.
-
-	\end{itemize}
+	A iniciação de um raio ocorre em diferentes etapas. Primeiro, há o desenvolvimento de um forte campo elétrico dentro de uma nuvem de tempestade. Isso resulta em uma descarga elétrica chamada de líder escalonado, que se move em direção ao solo em saltos. Quando o líder escalonado se aproxima do solo, ocorre a liberação de um líder ascendente a partir de objetos elevados próximos ao solo, completando o caminho para o raio.
+	
+	Existem diferentes tipos de raios que podem ocorrer durante uma tempestade. Os mais comuns são os raios intra-nuvem (IC) e os raios nuvem-solo (CG). Os raios IC ocorrem dentro da nuvem, envolvendo o movimento de cargas elétricas entre diferentes regiões da mesma nuvem. Os raios CG são aqueles que se estendem do topo da nuvem até o solo, conectando a nuvem e o solo com uma descarga elétrica intensa.
+	
+	Além desses, também existem outros tipos de raios menos comuns, como os raios nuvem-nuvem, que ocorrem entre diferentes nuvens, e os raios ascendentes, que se originam no solo e se propagam em direção à nuvem. Esses diferentes tipos de raios podem apresentar características distintas em relação à sua aparência, intensidade e duração.
+	
+	O estudo dos diferentes tipos de raios é importante para entender os mecanismos envolvidos nas descargas elétricas atmosféricas e os riscos associados a elas, como incêndios, danos em estruturas e riscos para a segurança humana.
+	
+	\subsection{Energia dissipada durante um raio}
+	
+	Durante um raio, ocorre a dissipação de uma grande quantidade de energia. A descarga do raio consiste em diferentes correntes elétricas, sendo a mais intensa a corrente de retorno, que dura cerca de 100-200 microssegundos e tem uma intensidade entre 10.000 e 100.000 amperes. O pico de corrente estimado para a corrente de retorno pode chegar a 300.000 amperes em regiões temperadas e 450.000-500.000 amperes em regiões tropicais.
+	
+	A dissipação de energia durante um raio ocorre principalmente devido à parte resistiva do canal de ar percorrido pela corrente elétrica. Essa dissipação se manifesta como calor ou energia térmica, aumentando a temperatura do canal do raio. A temperatura no núcleo do canal do raio pode atingir valores extremamente altos, da ordem de 30.000 Kelvin.
+	
+	A energia total dissipada durante um raio é significativa e pode ter diferentes efeitos observáveis, como incêndios florestais, danos em estruturas, sistemas de comunicação, linhas de energia e sistemas elétricos. A energia térmica dissipada durante um raio pode chegar a um valor de pico em torno de 10 bilhões de watts ($10^{10}$ W).
+	
+	É importante compreender a dissipação de energia durante os raios para avaliar os riscos associados a eles e implementar medidas de proteção adequadas para prevenir danos e minimizar os perigos potenciais.
+	
+	\subsection{Tempestades Como Geradores de Energia}	
+	
+	As tempestades são fenômenos atmosféricos que podem funcionar como poderosos geradores elétricos. Durante uma tempestade, ocorrem processos que levam à separação de cargas elétricas dentro das nuvens e entre as nuvens e a superfície da Terra. Isso cria um campo elétrico significativo, resultando em descargas elétricas, como raios.
+	
+	A formação de nuvens de tempestade envolve a ascensão de ar quente e úmido, que, ao subir, esfria e condensa, formando gotículas de água e cristais de gelo. Durante esse processo, as colisões entre as partículas resultam na separação de cargas elétricas, com cargas positivas concentradas nas partes superiores das nuvens e cargas negativas nas partes inferiores.
+	
+	Essa separação de cargas cria um campo elétrico verticalmente orientado dentro da nuvem. À medida que o campo elétrico se intensifica, ocorre a formação de líderes elétricos, que são descargas elétricas invisíveis que se movem em direção ao solo ou entre as nuvens.
+	
+	Quando um líder elétrico alcança o solo ou entra em contato com outro líder elétrico, ocorre uma descarga elétrica visível conhecida como raio. O raio é uma descarga elétrica intensa e de curta duração que equilibra as cargas elétricas entre a nuvem e o solo ou entre as nuvens.
+	
+	Durante a ocorrência de raios, correntes elétricas extremamente altas são geradas, atingindo valores de dezenas a centenas de milhares de amperes. Essas correntes elétricas resultam em uma dissipação significativa de energia, aquecendo o ar ao redor do canal do raio a temperaturas extremamente altas.
+	
+	As tempestades, portanto, funcionam como geradores elétricos naturais, convertendo a energia potencial elétrica armazenada na separação de cargas em energia cinética durante as descargas elétricas dos raios. O estudo e compreensão desses processos são essenciais para a previsão e mitigação de riscos relacionados a raios e tempestades, bem como para o desenvolvimento de tecnologias de proteção contra descargas elétricas.
+	
+	\subsection{Circuito Elétrico Atmosférico Global e Local}
+	
+	\paragraph{Circuito Elétrico Atmosférico Global} O Circuito Elétrico Atmosférico Global é um sistema complexo de correntes elétricas que ocorrem na atmosfera da Terra. Envolve a interação entre a ionosfera, a atmosfera inferior e a superfície terrestre, formando um circuito elétrico completo.
+	
+	Na ionosfera, localizada a uma altitude de cerca de 60 a 1.000 km, ocorrem processos de ionização, nos quais partículas carregadas são formadas devido à interação com a radiação solar. Essa região é influenciada principalmente pela luz ultravioleta do Sol.
+	
+	A atmosfera inferior, incluindo a troposfera e a estratosfera, é onde ocorrem os fenômenos meteorológicos, como tempestades e nuvens. Durante as tempestades, a separação de cargas elétricas cria campos elétricos intensos. Descargas elétricas, como raios, ocorrem para equilibrar essas cargas e transferir energia entre a atmosfera e a superfície terrestre.
+	
+	A superfície da Terra, por sua vez, atua como uma parte condutora do circuito, permitindo a transferência de cargas elétricas entre a atmosfera e a terra. A topografia, a cobertura vegetal e a presença de corpos d'água afetam a distribuição e a intensidade das correntes elétricas.
+	
+	Esse circuito elétrico global é influenciado por vários fatores, como a atividade solar, a composição da atmosfera, as características geográficas e as condições meteorológicas locais. Além disso, fenômenos como as correntes de jato, as frentes atmosféricas e as variações na condutividade atmosférica também desempenham um papel importante na dinâmica desse circuito.
+	
+	O estudo do Circuito Elétrico Atmosférico Global é fundamental para entender os processos elétricos na atmosfera, a ocorrência de fenômenos meteorológicos e a influência das correntes elétricas na ionosfera. Também é relevante para o desenvolvimento de tecnologias de monitoramento e previsão de tempestades, bem como para a proteção de infraestruturas sensíveis a descargas elétricas, como sistemas de energia e comunicações.
+	
+	\paragraph{Circuito Elétrico Atmosférico Local}
+	
+	O Circuito Elétrico Atmosférico Local refere-se ao sistema de correntes elétricas que ocorrem em uma área específica da atmosfera durante a ocorrência de tempestades e descargas elétricas. É uma parte do Circuito Elétrico Atmosférico Global e está intimamente relacionado às condições meteorológicas locais.
+	
+	Durante as tempestades, ocorre a separação de cargas elétricas dentro das nuvens, resultando na formação de campos elétricos intensos. Esses campos elétricos podem criar uma diferença de potencial significativa entre a nuvem e a superfície terrestre, estabelecendo assim um circuito elétrico local.
+	
+	Nesse circuito, as nuvens atuam como a fonte de energia, fornecendo a carga elétrica e gerando campos elétricos intensos. As descargas elétricas, como os raios, ocorrem para equalizar essa diferença de potencial, permitindo a transferência de carga elétrica entre a nuvem e a superfície terrestre.
+	
+	A superfície terrestre desempenha um papel importante como uma parte condutora do circuito. Através de objetos elevados, como edifícios, árvores ou montanhas, ocorre a ionização do ar e a formação de líderes ascendentes, que são canais condutivos que se estendem em direção à nuvem. Esses líderes ascendentes são responsáveis pela formação dos canais de retorno, nos quais ocorre a descarga de retorno, conectando a nuvem à superfície terrestre.
+	
+	O Circuito Elétrico Atmosférico Local é influenciado por uma variedade de fatores, incluindo a intensidade das tempestades, a presença de partículas carregadas na atmosfera, a condutividade atmosférica e as características da superfície terrestre. A topografia, a presença de corpos d'água e a vegetação também podem afetar a dinâmica desse circuito.
+	
+	O estudo do Circuito Elétrico Atmosférico Local é essencial para compreender a geração de descargas elétricas, a formação de raios e os efeitos associados, como trovões e fenômenos luminosos transientes, como os sprites. Além disso, é importante para a proteção de infraestruturas e para a segurança humana durante tempestades, permitindo o desenvolvimento de tecnologias de monitoramento e previsão de descargas elétricas.
+	
+	\subsection{Física das Descargas Atmosféricas}
+	
+	A física das descargas atmosféricas é um campo de estudo que se dedica a compreender os processos físicos envolvidos nas descargas elétricas que ocorrem na atmosfera, como osraios.
+	
+	As descargas atmosféricas são fenômenos naturais de alta energia que envolvem a transferência de cargas elétricas entre nuvens, entre nuvens e a Terra, ou dentro de uma única nuvem. Elas ocorrem	devido a uma diferença de potencial elétrico significativa entre duas regiões na atmosfera, que pode ser causada por processos de eletrificação das nuvens, movimento vertical de partículas carregadas,	entre outros fatores.
+	
+	Existem vários tipos de descargas atmosféricas, sendo os raios nuvem-terra (cloud-to-ground) os mais conhecidos e estudados. Esses raios são caracterizados por uma corrente elétrica intensa que percorre um caminho condutor entre uma nuvem carregada eletricamente e a superfície da Terra. Essa corrente é composta por pulsos de alta velocidade chamados de líderes, que são descargas elétricas ascendentes e descendentes que procuram estabelecer um caminho condutor através do ar ionizado.
+	
+	A formação de um raio envolve uma série complexa de processos físicos, incluindo a ionização do	ar, a formação de líderes e o desenvolvimento de um canal condutor para a corrente elétrica. Durante o processo, ocorrem colisões entre partículas eletricamente carregadas, a geração de campos elétricos intensos, a criação de plasma e o aquecimento do ar, resultando em emissões de luz (relâmpagos) e sons (trovões).
+	
+	A física das descargas atmosféricas é estudada utilizando uma combinação de observações em campo, experimentos laboratoriais e modelagem computacional. Os pesquisadores procuram entender os mecanismos fundamentais que governam a ocorrência, a propagação e os efeitos das descargas atmosféricas, a fim de melhorar a previsão de tempestades e desenvolver medidas de proteção contra	raios.
 	
 \end{document}

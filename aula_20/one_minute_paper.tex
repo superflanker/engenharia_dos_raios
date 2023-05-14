@@ -30,9 +30,10 @@
 \usepackage{tikz}
 \usepackage{subcaption}
 \usepackage{minted}
-\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
 \usepackage{makecell}
 \usepackage{pdfpages}
+\usepackage{bm}
 
 \renewcommand\theadalign{bc}
 \renewcommand\theadfont{\bfseries}
@@ -51,7 +52,7 @@
 % padrao 1.5 de espacamento entre linhas
 \setstretch{1.5}
 
-\title{Aula 15 - Energia das Descargas Atmosféricas}
+\title{Aula 20 - Linhas de Tranmissão e Distribuição}
 
 \author[1]{Augusto Mathias Adams}
 \affil[1]{augusto.adams@ufpr.br}
@@ -66,30 +67,174 @@
 	\maketitle
 	
 	\section{Aprendizado da Aula}
-	
-	\begin{itemize}
-		\item \textbf{\textit{Como Se formam os Raios $\Rightarrow$ }} Os raios são formados por cargas elétricas que se acumulam em nuvens de tempestade. Quando essas cargas atingem um nível crítico, a resistência do ar é rompida e ocorre uma descarga elétrica em direção ao solo ou entre nuvens. Essa descarga é vista como um flash brilhante de luz, e é acompanhada por um som alto conhecido como trovão. Nesta aula, estuda-se o que acontece nas camadas superiores da atmosfera.
-		\item \textbf{\textit{Magnetosfera $\Rightarrow$ }}A magnetosfera é a camada mais externa da Terra, que se estende até a magnetopausa, situada a uma distância variável entre 10 e 15 vezes o raio da Terra. Ela é delimitada na parte inferior pela ionosfera, que se estende em torno de 1000 km acima da superfície terrestre. A magnetosfera é uma região dominada pelo campo magnético da Terra, que influencia a dinâmica do plasma presente na região, composto principalmente de prótons e elétrons. Na parte voltada para o Sol, as linhas de fluxo magnético são achatadas devido à ação do vento solar, enquanto na extremidade oposta, a magnetosfera se alonga.
-		\item \textbf{\textit{Plasmasfera $\Rightarrow$ }} A Plasmasfera é a região da alta atmosfera terrestre onde ocorrem os primeiros fenômenos associados às tempestades na Terra e está acoplada à região F da ionosfera. Descargas atmosféricas podem causar a propagação de ondas eletromagnéticas naturais de baixa frequência que se dirigem para as camadas mais altas da atmosfera e entram na Plasmasfera, propagando-se em formato espiralado entre os polos Norte e Sul. Essas ondas, geralmente na ordem de 5-10 kHz no espectro de frequência, são detectadas como assobios atmosféricos Whistlers. O estudo dos Whistlers está relacionado ao processo de compreensão da dinâmica da magnetosfera e das propriedades magnetoionicas dos elétrons e íons, que podem afetar a propagação de sinais eletromagnéticos neste meio.
-		\item \textbf{\textit{Ionosfera $\Rightarrow$ }}A ionosfera é uma região da atmosfera terrestre que se estende entre cerca de 60 km e 1000 km de altitude, e é composta por íons e elétrons livres. É uma região altamente eletricamente condutiva e é influenciada pela radiação solar e pelas correntes elétricas que fluem na magnetosfera da Terra.
 		
-		A ionização da atmosfera superior é produzida pela radiação ultravioleta e pelos raios cósmicos que bombardeiam a atmosfera terrestre, o que resulta na ionização dos átomos e moléculas presentes. Os íons e elétrons livres na ionosfera interagem com as ondas eletromagnéticas, permitindo a propagação de sinais de rádio e televisão por longas distâncias, além de influenciar a transmissão de dados de sistemas de navegação por satélite.
+		\paragraph{Efeito Corona}
 		
-		A ionosfera é dividida em várias camadas que são determinadas pela sua altura e densidade. As camadas da ionosfera são:
+		O efeito corona é um fenômeno elétrico que ocorre em linhas de transmissão de alta tensão. Quando a tensão em uma linha atinge um determinado valor crítico, ocorre a ionização do ar circundante, formando uma região de descarga elétrica chamada de corona.
+		
+		A corona é composta por íons e elétrons que são liberados a partir das moléculas de ar ionizado. Essas partículas carregadas podem interagir com a superfície condutora da linha de transmissão, gerando correntes elétricas que fluem para a atmosfera. A corona é visualmente perceptível como um halo luminoso ao redor dos condutores da linha.
+		
+		Esse fenômeno tem algumas consequências indesejadas nas linhas de transmissão. Primeiro, a corona resulta em perdas de energia, uma vez que parte da energia elétrica é dissipada na forma de luz e calor. Essas perdas podem reduzir a eficiência da transmissão de energia.
+		
+		Além disso, a corona pode produzir ruídos de rádio devido à radiação eletromagnética gerada durante o processo de ionização do ar. Esses ruídos podem causar interferência em sistemas de comunicação próximos às linhas de transmissão.
+		
+		Outra preocupação relacionada ao efeito corona é o desgaste dos materiais isolantes utilizados nas linhas de transmissão. A formação da corona está associada a um estresse elétrico elevado nos isoladores, o que pode levar ao envelhecimento prematuro e à redução da vida útil desses componentes.
+		
+		Para minimizar os efeitos do efeito corona, as linhas de transmissão são projetadas levando em consideração fatores como o espaçamento adequado entre os condutores, o uso de materiais isolantes apropriados e o controle da tensão nas linhas. Além disso, a utilização de cabos com superfícies lisas e a aplicação de dispositivos redutores de corona, como anéis corona, também são técnicas empregadas para mitigar esse fenômeno.
+		
+		O efeito corona em linhas de transmissão de alta tensão pode atuar como um precursor para a ocorrência de raios. Durante a formação da corona, há a ionização do ar circundante, o que resulta na liberação de elétrons e íons.
+		
+		Essas partículas carregadas podem interagir com partículas e moléculas presentes na atmosfera, criando um caminho de menor resistência para a descarga elétrica. Esse caminho pode ser utilizado como um "gatilho" para o desenvolvimento de um raio.
+		
+		A ionização do ar e a formação da corona podem ocorrer quando a tensão elétrica na linha de transmissão atinge um valor crítico. O campo elétrico intenso nas proximidades dos condutores da linha pode ionizar o ar ao redor, criando um canal de plasma condutor.
+		
+		Esse canal de plasma funciona como uma espécie de "ponte" entre a nuvem de tempestade e a linha de transmissão, permitindo que a carga elétrica flua através dele, resultando na descarga atmosférica conhecida como raio.
+		
+		Embora o efeito corona possa desempenhar um papel como precursor de raios, não é o único fator envolvido na formação de uma descarga atmosférica. Outros mecanismos, como o processo de separação de cargas dentro das nuvens, também desempenham um papel significativo na geração de raios.
+		
+		O efeito corona em uma torre de transmissão depende de vários fatores, incluindo:
+		
 		\begin{itemize}
-			\item \textbf{\textit{Camada D:}} A camada D é a mais próxima da superfície da Terra e está localizada entre 60 e 90 km de altitude. Esta camada é a mais densa de todas as camadas da ionosfera e é composta principalmente por íons N+ e O2+. A camada D é responsável pela reflexão das ondas de rádio de alta frequência (HF) e é por isso que é usada para comunicações de longa distância.
+			\item \textbf{\textit{Tensão elétrica:}} O efeito corona ocorre quando a tensão elétrica na torre de transmissão atinge um valor crítico. Quanto maior a tensão aplicada, maior a probabilidade de ocorrer a ionização do ar e a formação da corona.
 			
-			\item \textbf{\textit{Camada E:}} A camada E está localizada acima da camada D, entre 90 e 120 km de altitude. Esta camada é menos densa do que a camada D e é composta principalmente de íons O+ e NO+. A camada E é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência muito alta (VHF).
+			\item \textbf{\textit{Geometria e espaçamento dos condutores:}} A configuração e o espaçamento dos condutores na torre de transmissão afetam o campo elétrico ao redor deles. Uma configuração que resulta em um campo elétrico mais intenso pode aumentar a probabilidade de ocorrência da corona.
 			
-			\item \textbf{\textit{Camada F1:}} A camada F1 está localizada acima da camada E, entre 150 e 200 km de altitude. Esta camada é menos densa do que as camadas D e E e é composta principalmente por íons O+ e H+. A camada F1 é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência ultra-alta (UHF).
+			\item \textbf{\textit{Características do ar ambiente:}} A densidade e a umidade do ar circundante podem influenciar o efeito corona. O ar seco e a baixa umidade facilitam a ionização e a formação da corona.
 			
-			\item \textbf{\textit{Camada F2:}} A camada F2 é a camada mais alta da ionosfera e está localizada entre 200 e 500 km de altitude. Esta camada é composta principalmente de íons O+ e H+ e é menos densa do que as camadas D, E e F1. A camada F2 é importante para comunicações de rádio devido à sua capacidade de refletir ondas de rádio de frequência muito alta (VHF) e é a camada mais utilizada para comunicações de longa distância.
+			\item \textbf{\textit{Condições meteorológicas:}} Fatores climáticos, como temperatura, pressão atmosférica e presença de chuva ou nevoeiro, também podem afetar o efeito corona. Mudanças nas condições meteorológicas podem alterar as propriedades elétricas do ar e, consequentemente, influenciar a formação da corona.
+			
+			\item \textbf{\textit{Condições da superfície da torre:}} A rugosidade e a limpeza da superfície da torre de transmissão podem afetar o efeito corona. Superfícies irregulares ou sujas podem facilitar a formação da corona devido a uma maior concentração de campo elétrico em certas regiões.
+			
+			\item \textbf{\textit{Isolamento da torre:}} A qualidade do isolamento utilizado na torre de transmissão desempenha um papel importante na ocorrência do efeito corona. Materiais isolantes de boa qualidade e devidamente dimensionados ajudam a minimizar a formação da corona.
+			
 		\end{itemize}
-	
-		Distúrbios na ionosfera polar podem ocasionar interrupções na comunicação por ondas curtas, conhecidos como “apagões de rádio”. Além disso, correntes elétricas induzidas na ionosfera podem influenciar o fornecimento de energia e causar corrosão em oleodutos, entre outros problemas. Os raios cósmicos são divididos em partículas primárias, que permeiam o espaço interplanetário, e partículas secundárias, que surgem a partir de interações com outras partículas presentes na atmosfera. Quando hádrons incidem na alta atmosfera, geralmente sofrem interações de natureza forte ao colidir com núcleos atmosféricos como nitrogênio e oxigênio. Quando a energia das partículas de hádrons atinge cerca de $10^9$ eV, ocorre uma cascata de partículas, conhecida como Chuveiro de Partículas ou Avalanche de Partículas Cósmicas. Essas interações sucessivas geram uma série de partículas secundárias, incluindo mésons.
 		
-		A avalanche de partículas cósmicas, por sua vez, é utilizada como base para a teoria de eletrização da nuvem denominada \textbf{\textit{Runaway Breakdown}}.
+		\subparagraph{Dimensionamento dos Fios} A dimensão dos fios de uma linha de transmissão pode ter influência no efeito corona. As características geométricas, como o diâmetro e a forma dos fios, podem afetar o campo elétrico ao redor deles e, por sua vez, influenciar a formação da corona.
+		
+		Quanto maior for o diâmetro do fio, menor será a intensidade do campo elétrico em sua superfície. Isso ocorre porque um fio de maior diâmetro tem uma área de superfície maior em comparação a um fio de menor diâmetro, distribuindo a carga elétrica de forma mais uniforme. Um campo elétrico mais uniforme reduz a probabilidade de ionização do ar e formação da corona.
+		
+		Além do diâmetro, a forma dos fios também pode desempenhar um papel na ocorrência do efeito corona. Fios com formas irregulares, como fios com bordas ásperas ou salientes, podem gerar uma maior concentração do campo elétrico em pontos específicos. Essas irregularidades podem facilitar a formação da corona nessas regiões, aumentando a probabilidade de ocorrer o fenômeno.
+		
+		\subparagraph{Distanciamento dos Fios} A distância entre os fios de uma linha de transmissão também pode ter influência no efeito corona. O espaçamento adequado entre os condutores é um aspecto importante a ser considerado para controlar a ocorrência da corona.
+		
+		Quando os fios estão muito próximos um do outro, o campo elétrico intenso gerado pelo potencial elétrico entre eles pode aumentar a probabilidade de ionização do ar e formação da corona. Um espaçamento inadequado pode levar a uma maior concentração do campo elétrico em regiões específicas, facilitando a formação da corona nessas áreas.
+		
+		Por outro lado, se os fios estiverem muito distantes um do outro, o campo elétrico entre eles será reduzido e a probabilidade de ocorrência da corona diminuirá. Um espaçamento maior entre os fios pode ser eficaz para minimizar o efeito corona, mas também pode levar a uma maior carga mecânica na estrutura da linha de transmissão, exigindo torres mais altas e reforçadas.
+		
+		\subparagraph{Altura da Torre} De fato, a altura da torre de transmissão pode ter um efeito no fenômeno da corona. A altura da torre influencia a distância vertical entre os condutores e o solo, o que pode afetar o efeito corona de duas maneiras principais:
+		\begin{itemize}
+			\item \textbf{\textit{Distância do condutor ao solo:}} Quando a altura da torre é maior, os condutores da linha de transmissão ficam mais afastados do solo. Essa maior distância reduz a probabilidade de ocorrência do efeito corona, pois diminui a influência das irregularidades e impurezas presentes no solo que poderiam promover a ionização do ar.
+			
+			\item \textbf{\textit{Gradiente de campo elétrico:}} A altura da torre também pode afetar o gradiente de campo elétrico ao redor dos condutores. Um gradiente de campo elétrico mais suave pode reduzir a probabilidade de ionização do ar e formação da corona. A altura adequada da torre pode ajudar a alcançar um campo elétrico mais uniforme, minimizando as regiões de alta concentração de carga elétrica e, assim, reduzindo o efeito corona.
+			
+		\end{itemize}
+		
+		\subparagraph{Altitude} A altitude pode ter um efeito no fenômeno da corona em linhas de transmissão, devido às variações nas condições atmosféricas que ocorrem em diferentes altitudes. No entanto, os efeitos específicos da altitude no efeito corona podem variar e dependem de vários fatores.
+		
+		Uma mudança significativa na altitude afeta principalmente as propriedades do ar circundante, como a densidade do ar, a pressão atmosférica e a umidade. Essas mudanças podem afetar o comportamento do efeito corona de várias maneiras:
+		
+		\begin{itemize}
+			\item \textbf{\textit{Densidade do ar:}} Em altitudes mais elevadas, a densidade do ar é geralmente menor devido à menor pressão atmosférica. Uma menor densidade do ar pode resultar em uma menor taxa de ionização, o que pode reduzir a probabilidade de formação da corona.
+			
+			\item \textbf{\textit{Pressão atmosférica:}} A pressão atmosférica diminui com o aumento da altitude. Isso pode levar a uma menor rigidez dielétrica do ar, facilitando a formação da corona em comparação com altitudes mais baixas. No entanto, os efeitos da pressão atmosférica na formação da corona são mais sutis e podem variar dependendo de outros fatores envolvidos.
+			
+			\item \textbf{\textit{Umidade:}} A umidade relativa do ar também pode variar com a altitude. Em geral, a umidade mais baixa aumenta a probabilidade de ocorrência da corona, pois o ar seco facilita a ionização. No entanto, os efeitos específicos da umidade na formação da corona dependem da combinação com outros fatores, como a densidade do ar e a pressão atmosférica.
+			
+		\end{itemize}
 
-	\end{itemize}
+		\paragraph{Modelo de Linhas de Transmissão e Distribuição} Existem vários modelos utilizados para representar linhas de transmissão e distribuição de energia elétrica. Esses modelos são usados para estudar o comportamento das linhas, calcular parâmetros elétricos, simular fluxo de potência, análise de curto-circuito, entre outras aplicações. Alguns dos modelos mais comuns são:
+		
+		\begin{itemize}
+			\item \textbf{\textit{Modelo de Linha de Transmissão Distribuída:}} Este modelo considera a linha de transmissão como uma série de elementos distribuídos ao longo da extensão da linha. Cada elemento representa a impedância, admitância e capacitância distribuída da linha. É um modelo mais detalhado e preciso, utilizado para estudos de transientes eletromagnéticos e análises de alta frequência.
+			
+			\item \textbf{\textit{Modelo Pi ($\pi$):}} O modelo Pi é uma simplificação da linha de transmissão, onde os parâmetros elétricos são concentrados em duas impedâncias e uma capacitância. É um modelo amplamente utilizado para estudos de fluxo de potência e análise de curto-circuito em sistemas de transmissão e distribuição.
+			
+			\item \textbf{\textit{Modelo T:}} O modelo T é uma variação do modelo Pi, onde as impedâncias são representadas em uma configuração em forma de T. É utilizado em estudos de fluxo de potência, análise de curto-circuito e estudos de estabilidade em sistemas elétricos.
+			
+			\item \textbf{\textit{Modelo de Linha de Transmissão em Sequência de Componentes:}} Este modelo considera a linha de transmissão como uma sequência de componentes discretos, como resistências, indutâncias e capacitâncias. Cada componente é representado separadamente, permitindo um estudo mais detalhado do comportamento da linha.
+		\end{itemize}
+		
+		Além desses modelos, existem também modelos mais complexos e sofisticados, como o modelo de parâmetros distribuídos, o modelo de ondas viajantes (\textit{wave propagation model}) e o modelo de elementos finitos. Esses modelos são utilizados para simulações mais avançadas e precisas, levando em consideração efeitos como perdas, reflexões e distorções em frequência.
+		
+		\paragraph{Modelos de Acoplamento Entre Nuvem e Linha de Transmissão}
+		
+		O acoplamento elétrico entre nuvens e linhas de transmissão ocorre principalmente devido à diferença de potencial elétrico entre a nuvem e os condutores da linha. Quando uma nuvem carregada eletricamente se aproxima de uma linha de transmissão, pode ocorrer um acoplamento elétrico que resulta em correntes indesejadas na linha. Esse acoplamento pode ser dividido em dois principais tipos:
+		
+		\begin{itemize}
+			\item \textbf{\textit{Descarga Atmosférica Direta (DAD):}} Quando a nuvem carregada eletricamente se aproxima o suficiente dos condutores da linha de transmissão, a diferença de potencial elétrico entre a nuvem e os condutores pode se tornar suficientemente alta para que ocorra uma descarga direta. Essa descarga, conhecida como raio, pode transferir uma grande quantidade de carga elétrica para os condutores, causando danos à linha de transmissão.
+			
+			\item \textbf{\textit{Descarga Atmosférica Indireta (DAI):}} Mesmo que não ocorra uma descarga direta entre a nuvem e os condutores, a diferença de potencial elétrico entre eles pode induzir correntes indesejadas na linha de transmissão. Essas correntes são conhecidas como correntes de surto ou correntes induzidas por campos eletromagnéticos transientes gerados pela nuvem. Essas correntes de surto podem causar interferências e danos aos equipamentos conectados à linha de transmissão.
+			
+		\end{itemize}
+				
+		Para mitigar os efeitos do acoplamento elétrico entre nuvens e linhas de transmissão, várias medidas de proteção são adotadas, incluindo:
+		
+		\begin{itemize}
+			\item \textbf{\textit{Instalação de para-raios:}} Os para-raios são dispositivos de proteção projetados para desviar as descargas atmosféricas diretas para o solo, evitando que atinjam os condutores da linha de transmissão.
+			\item \textbf{\textit{Aterramento adequado:}} Um sistema de aterramento adequado é essencial para fornecer um caminho seguro para a corrente de descarga atmosférica. O aterramento eficiente ajuda a desviar a energia da descarga para o solo, protegendo os equipamentos e condutores da linha.
+			\item \textbf{\textit{Proteção de equipamentos:}} Equipamentos sensíveis conectados à linha de transmissão devem ser protegidos por dispositivos de proteção contra surtos, como varistores e supressores de surto, para evitar danos causados por correntes indesejadas.
+		\end{itemize}
+		
+		O acoplamento elétrico entre nuvens e linhas de transmissão é uma área complexa e em constante estudo. Os projetos de linhas de transmissão são desenvolvidos levando em consideração os riscos de descargas atmosféricas e a proteção adequada para minimizar os efeitos indesejados causados pelo acoplamento elétrico.
+		
+		\paragraph{Modelo de Heilmann \& Dartora}
+		
+		Um estudo teórico realizado por Heilmann \& Dartora (2014) propõe um modelo para estimar a ionização do ar e a condutividade elétrica em torno de uma linha de transmissão de 765 kV. Eles observaram que a condutividade do ar aumenta significativamente nas proximidades da linha de transmissão, em comparação com as condições normais. Esse aumento ocorre devido à quebra da rigidez dielétrica, o que favorece o processo de avalanche e aumenta a probabilidade de ocorrência de raios.
+		
+		O modelo considera a presença de três condutores aéreos abaixo de uma tempestade. Em uma situação em que a altura dos condutores de fase ($h_j$) é igual à altura do solo ($h_{solo}$), fixada neste exemplo em 54 m, Heilmann \& Dartora (2014) mostram que o campo elétrico do condutor ($E_{cond}$) pode ser estimado da seguinte forma:
+		
+		\begin{equation}	
+			\begin{split}
+			\vec E_{cond} = \sum_{j=1}^{N} \frac{V_{o_j} e^{i\theta_j}}{\frac{2h_j}{a_j}} \left[E_{jx} \hat{a_x} + E_{jy} \hat{a_y}\right]\\
+			E_{jx} =  \frac{x}{x^2 + ( y - h_j^2)^2} - \frac{x}{x^2 + ( y + h_j^2)^2}\\
+			E_{jy} = \frac{y -h_j}{x^2 + ( y - h_j^2)^2} - \frac{y + h_j}{x^2 + ( y + h_j^2)^2}
+			\end{split}
+		\end{equation}
+	
+		O campo elétrico atmosférico abaixo da nuvem($E_{atm}$), que se soma ao campo elétrico do condutor ($E_{cond}$), é dado por:
+		
+		\begin{equation}
+			\vec E_{atm} = \frac{Q cos\theta}{2 \pi \epsilon_0 r^2} \hat{a_y}
+		\end{equation}
+		
+		O campo magnético gerado pelo condutor ($H_{cond}$) pode ser estimado da seguinte forma:
+		
+		\begin{equation}	
+			\begin{split}
+				\vec H_{cond} = \sum_{k=1}^{N} \frac{I_{k} e^{i\theta_k}}{2 \pi} \left[H_{xk} \hat{a_x} + H_{yk} \hat{a_y}\right]\\
+				H_{xk} = \frac{y -h_j}{x^2 + ( y - h_j)^2} - \frac{y + h_j}{x^2 + ( y + h_j)^2}\\
+				H_{yk} =  \frac{x}{x^2 + ( y - h_j)^2} - \frac{x}{x^2 + ( y + h_j)^2}
+			\end{split}
+		\end{equation}
+	
+		Considerando $x$ como a distância na direção $\vec x$  ($\pm 30m$), $y$ como a distância na direção $y$ e $\theta$ como a diferença de fase na linha de transmissão, é possível descrever o comportamento do vetor de Poynting criado pelo condutor por unidade de área, levando em conta os efeitos do campo magnético descritos para um condutor linear. O módulo da intensidade de potência média é dado por:
+		
+		\begin{equation}
+			S_{mean} = \frac{1}{2} \Re{ \left\{\vec E \times \vec H^{*}\right\}}
+		\end{equation}
+		
+		Ou seja, é a metade da parte real do vetor de Poynting. Com base na definição do vetor de Poynting do condutor, podemos discutir os efeitos da densidade de potência média em linhas de transmissão. Nesse contexto, Heilmann e Dartora (2014) mostraram que a densidade de energia eletromagnética ($\mathbf u$), em comparação com a taxa de ionização do ar, pode ser expressa como:
+		
+		\begin{equation}
+			u = \frac{S_{mean}}{c}
+		\end{equation}
+		
+		Nessa equação, $S_{mean}$ representa o módulo da densidade de potência média em watts por metro quadrado ($W/m^2$), u é a densidade de energia eletromagnética em joules por metro cúbico ($J/m^3$), e c é a velocidade da luz.
+		
+		Ao tomar a razão da energia eletromagnética total contida em 1 metro cúbico de ar e a média da energia de ionização por molécula de ar, que é aproximadamente 14.7 $eV$ (elétron-volts), podemos estimar o número de elétrons livres gerados por metro cúbico ($\overline{e}$). Esse número é da ordem de $6.7938 \times 10^{16} \frac{\overline{e}}{m^3}$. Essa magnitude está em concordância com os valores apresentados em outras literaturas, que variam de $10^13$ a $10^19$ $\frac{\overline{e}}{m^3}$.
+		
+		Essa relação nos fornece uma estimativa do número de elétrons livres gerados por unidade de volume de ar, permitindo uma compreensão da magnitude desse efeito em relação à densidade de energia eletromagnética presente. 
+		
+		Segundo teorias, a ocorrência dos chamados \textit{pre-strikes} depende da antecipação da corrente da descarga de retorno devido à transferência de carga ao redor do condutor linear. Essa transferência de carga resulta no aumento da condutividade nas proximidades dos condutores da linha de transmissão, o que possibilita a formação de pequenas faíscas filamentosas conhecidas como \textit{Sparks}.
+		
+		Uma descarga de retorno pode ser gerada a partir do condutor quando o campo elétrico atinge um valor crítico. Esse fenômeno pode ser interpretado como a formação de um líder ascendente em um canal pré-ionizado a partir do condutor de fase da linha de transmissão.
+		
+		Portanto, a probabilidade de um raio atingir uma linha de transmissão antes de atingir outro ponto é maior quando a densidade de energia eletromagnética no condutor é maior. De acordo com Uman (1984), a densidade de partículas ionizadas varia ao longo do tempo, o que influencia a velocidade do movimento de retorno.
+		
+		Conclui-se, então, que uma região com uma alta taxa de ionização cria descargas corona, oferecendo condições para a formação de um canal direto com um líder descendente. Além disso, essa região pode gerar pequenas faíscas que, por sua vez, podem ser interpretadas como opções de conexão com portadores de carga durante a ocorrência de um raio.
+
+	\section{Temas Impactantes, dúvidas e questionamentos}
+	
+	Nunca vi efeito corona sob uma perspectiva tão clara quanto nesta aula. 
 	
 \end{document}

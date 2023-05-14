@@ -1,0 +1,93 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Atividade Remota (Video 01)}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	Atividade remota sobre o \textbf{\textit{Vídeo 1 - Mistérios da Ciência: O Poder dos Raios (Dublado) - Documentário}}.
+	
+	Sinopse: Os raios são mais rápidos que uma bala e seis vezes mais quentes que a superfície do sol. Eles duram menos de uma fração de segundo e podem transformar areia em vidro. Diariamente cerca de oito milhões de raios atingem a Terra. Embora este fenômeno natural seja um dos mais observados, ele ainda está envolto em mistérios. Neste episódio, os telespectadores irão acompanhar a incrível jornada de um raio desde o espaço até o interior do corpo humano. Para isso, iremos à Darwin, na Austrália, cidade onde acontecem algumas das tempestades com relâmpagos mais violentas da Terra. No centro de uma monstruosa nuvem de tempestade observaremos as forças misteriosas que provocam um raio. Novas descobertas dramáticas e experiências chocantes revelam que os raios são um dos fenômenos mais estranhos, destrutivos e importantes do planeta.
+	
+	Sugestão do Professor: levar ao menos uma dúvida para discussão em sala de aula.
+	
+	\section{Dúvidas e Questionamentos}
+	
+	\begin{itemize}
+		\item Sabe-se que os relâmpagos e outros tipos de raios são fenômenos de origem elétrica. Sabe-se que o plasma é (a grosso modo) um gás ionizado superaquecido pela corrente elétrica. Questionamento: além da corrente elétrica convencional, quantos tipos de corrente elétrica existem? É pertinente pois \textit{sprites}, \textit{blue jets} e \textit{elves}, segundo o vídeo, são formados por plasma que, por ser um gás ionizado, se caracteriza como uma corrente elétrica não convencional se posto em movimento.
+	
+		\item Segundo o vídeo, os raios bola ou esféricos são bolas de plasma, contudo estas bolas de plasma desaparecem em questão de meio segundo, Porém, os raios bola costumam durar minutos e ainda se movimentam de forma errática. No vídeo, há uma tentativa de explicar com a adição de esferas de poeira junto ao plasma, fazendo-o durar mais. Porém, esta teoria é incompleta. Questionamento: segundo o estado da arte, qual o real motivo dos raios bola durarem mais que o previsto pelo vídeo?
+		
+		\item Existe explicação para esta bola de plasma aparecer do nada?
+		
+		\item Existe algum mecanismo que permita que o raio bola atravesse superfícies rígidas, ou é meio fantasioso o relato do documentário?
+	
+		\item No início do vídeo, há a apresentação de um caso de vítima de descarga atmosférica. Também há uma referência estatística ao número de sobreviventes (cerca de 90\%). Não seria um caso de uma releitura dos casos antes de fazer a estatística? Necessitaria de mais informação antes de dizer tal coisa, pois assim parece a um leigo que o raio nem é tão grave assim (e de fato, é mais grave do que imaginamos).
+		
+		\item Ao explicar como uma nuvem adquire carga elétrica, o script do documentário utiliza de forma simplificada o modelo de carregamento por fricção e, logo em seguida, diz que o ar não é um bom condutor de eletricidade. O que acontece com a rigidez dielétrica do ar em condições de tempestade? para $E_{max}$ sair de $3MV/m$ e parar em $300kV/m$, algo tem de acontecer, certo? Ou será que existe algo na dinâmica do raio que permita ao mesmo driblara rigidez dielétrica do ar e escoar corrente por um caminho mais fácil?
+		
+	\end{itemize}
+	
+\end{document}

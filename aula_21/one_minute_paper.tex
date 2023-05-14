@@ -1,0 +1,223 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{bm}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Aula 21 - Revisão do Conteúdo}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Roadmap}
+	
+	\subsection{Energia das Descargas Atmosféricas}
+	
+	A energia das descargas atmosféricas, como raios e raios, é um fenômeno natural	de grande magnitude que ocorre durante tempestades elétricas. Essas descargas resultam em uma	rápida liberação de energia elétrica na atmosfera, gerando fortes campos elétricos e magnéticos.
+	
+	A energia de uma descarga atmosférica é impressionante. Um único raio pode liberar energia
+	na faixa de vários bilhões de joules. Essa energia é gerada através do movimento rápido de cargas elétricas dentro das nuvens e entre as nuvens e a superfície da Terra.
+	
+	A energia das descargas atmosféricas é capaz de aquecer o ar ao seu redor a temperaturas extremamente altas, resultando em um rápido aumento de temperatura e uma expansão explosiva do ar,o que gera o som característico do trovão. Além disso, a energia elétrica liberada pode causar danos significativos a estruturas, árvores, equipamentos eletrônicos e até mesmo representar riscos para	seres humanos e animais.
+	
+	Devido à sua alta energia e capacidade de causar danos, a compreensão e o estudo da energia	das descargas atmosféricas são importantes para a segurança e a proteção contra raios. Pesquisas científicas e tecnológicas têm sido realizadas para desenvolver sistemas de detecção e prevenção de	raios, bem como para entender melhor os mecanismos envolvidos nas descargas atmosféricas e sua interação com o ambiente.
+	
+	\subsection{NBEs e Campo Elétrico Abaixo das Tempestades}
+	
+	\paragraph{NBEs} Os Pulsos Bipolares Estreitos (\textit{Narrow Bipolar Pulses - NBPs}) são um tipo de descarga atmosférica intranuvem que ocorre durante tempestades elétricas. Esses pulsos são caracterizados por sua curta duração e forte emissão de radiofrequência (\textit{RF}) no espectro de frequência muito alta (\textit{VHF}).
+	
+	Os \textit{NBPs} são observados comumente em regiões tropicais e subtropicais, mais do que em regiões temperadas. Eles estão associados à iniciação de descargas intranuvem sem a formação de líderes escalonados, o que significa que eles não requerem o processo de formação gradual de canais elétricos como outros tipos de descargas.
+	
+	Existem dois tipos principais de \textit{NBPs}: os Pulsos Bipolares Estreitos Positivos (\textit{Narrow Positive Bipolar Pulses - NPBPs}) e os Pulsos Bipolares Estreitos Negativos (\textit{Narrow Negative Bipolar Pulses - NNBPs}). Os \textit{NPBPs} ocorrem em altitudes de aproximadamente 6 km a 15 km, enquanto os \textit{NNBPs} ocorrem em altitudes entre 15 km e 21 km.
+	
+	Os campos elétricos medidos durante os \textit{NBPs} são relativamente baixos, com valores em torno de 22.7 $V/m$ para \textit{NPBPs} e 17.6 $V/m$ para \textit{NNBPs}. Essas descargas representam áreas de estudo importantes para entender melhor os processos elétricos na atmosfera durante as tempestades.
+	
+	Atualmente, os sistemas \textit{wireless} operam em frequências que variam de 2.4 $GHz$ a 5.8 $GHz$. Essas faixas de frequência são escolhidas porque são livres e abertas para uso por qualquer pessoa. Observações recentes da radiação de micro-ondas proveniente de relâmpagos despertaram interesse no estudo de seus efeitos em redes de comunicação sem fio.
+	
+	Cientistas observaram uma forte radiação de micro-ondas em 1.63 $GHz$ associada a eventos de relâmpagos do tipo nuvem-solo, como \textit{NBPs}, \textit{Steep Leader}, \textit{Dart Leader} e retorno do raio. Medições detectaram radiação de micro-ondas em ondas milimétricas a 37.5 $GHz$ a partir de um retorno do raio a uma distância inferior a 5 $km$. O sinal teve uma duração de 20 a 60 $\mu s$. A intensidade máxima de radiação espectral foi superior a 10-19 $W/(m^2·Hz)$, ou aproximadamente -180 $dB$.
+	
+	Essas descobertas têm aumentado a conscientização sobre o impacto potencial da radiação de micro-ondas induzida por relâmpagos em sistemas de comunicação sem fio. Pesquisas adicionais são necessárias para entender melhor e mitigar esses efeitos, a fim de garantir uma comunicação sem fio confiável e ininterrupta na presença de atividade de relâmpagos.
+	
+	\paragraph{Campo Elétrico Abaixo da Tempestade}
+	
+	Durante condições de tempo bom, o campo elétrico vertical oscila em torno de valores negativos, pois o potencial elétrico aumenta com a altura. Isso significa que uma antena vertical terá um potencial positivo em relação à sua base fixada no solo.
+	
+	No entanto, durante uma tempestade, o campo elétrico vertical pode se tornar muito grande, da ordem de 4 kV/m, e geralmente muda de sinal (polaridade) a partir dos valores negativos. Essas oscilações no campo elétrico vertical são causadas pelo movimento das nuvens, que se deslocam de forma relativamente lenta, influenciando as variações do campo elétrico também no solo.
+	
+	As nuvens carregadas de uma tempestade podem induzir uma distribuição desigual de cargas no solo, criando diferenças de potencial significativas entre diferentes pontos. À medida que as nuvens se movem, o campo elétrico pode variar devido a alterações na distribuição de carga atmosférica.
+	
+	Essas variações no campo elétrico são um dos fatores que contribuem para a ocorrência de descargas atmosféricas, como raios. Quando o campo elétrico atinge um valor crítico, pode ocorrer a quebra dielétrica do ar, resultando em uma descarga elétrica intensa entre as nuvens e o solo, equilibrando momentaneamente as diferenças de potencial.
+	
+	
+	\subsection{Representação do Campo Elétrico Por Descargas}
+	
+	O sensor Field Mill é um dispositivo essencial na detecção e medição do campo elétrico na atmosfera. Ele consiste em um conjunto de placas condutoras sensíveis ao campo elétrico,	dispostas em um arranjo circular ou em formato de moinho. Essas placas são eletricamente isoladas e podem girar livremente em torno de um eixo central.
+	
+	O princípio de funcionamento do sensor Field Mill baseia-se na interação entre as placas condutoras e o campo elétrico ambiente. Quando um campo elétrico está presente, ocorre uma redistribuição de cargas nas placas do sensor. Isso cria uma diferença de potencial entre as placas, que é medida e registrada por meio de circuitos eletrônicos associados ao sensor. A rotação das placas é realizada por um motor ou por forças do vento. À medida que as placas	giram, diferentes áreas são expostas ao campo elétrico, permitindo a medição em diferentes direções. A taxa de rotação das placas pode variar dependendo da aplicação e das necessidades de amostragem do campo elétrico.
+	
+	O sensor Field Mill é amplamente utilizado em estudos meteorológicos e de descargas atmosféricas. Ele fornece informações valiosas sobre as características do campo elétrico na atmosfera, como	sua intensidade, direção e variabilidade temporal. Esses dados são cruciais para entender os processos elétricos que ocorrem nas tempestades e outras fenômenos atmosféricos, além de contribuir para a previsão e monitoramento de tempestades e descargas elétricas.
+	
+	É importante ressaltar que o sensor Field Mill é um dos vários tipos de sensores utilizados para medir o campo elétrico atmosférico. Outros métodos de medição, como sensores de carga, antenas e radares, também são empregados para obter uma visão abrangente e precisa das propriedades elétricas da atmosfera. A combinação desses diferentes sensores e técnicas de medição contribui para um melhor entendimento dos fenômenos elétricos na atmosfera e sua relação com o clima e o meio ambiente.
+	
+	\subsection{Raios e o Setor Elétrico}
+	
+	Os raios representam um fenômeno natural que envolve uma descarga elétrica intensa entre as nuvens e a superfície da Terra. Essas descargas elétricas podem ter efeitos significativos no setor elétrico, especialmente nas redes de distribuição e transmissão de energia.
+	
+	Os raios podem causar interrupções no fornecimento de energia elétrica, danificar equipamentos e infraestrutura elétrica e, em casos extremos, provocar incêndios. A alta corrente e voltagem envolvidas em um raio podem sobrecarregar os sistemas de proteção e causar falhas em transformadores, linhas de transmissão e outros componentes elétricos.
+	
+	Para proteger as redes elétricas contra os efeitos dos raios, são utilizados dispositivos de proteção, como para-raios. Esses dispositivos são projetados para interceptar e desviar as descargas elétricas dos raios, direcionando-as com segurança para o solo e evitando danos às instalações elétricas.
+	
+	Além disso, as empresas do setor elétrico implementam programas de manutenção e inspeção regulares para identificar e reparar danos causados por raios. Isso inclui a revisão de sistemas de proteção, verificação da integridade das estruturas e a substituição de equipamentos danificados.
+	
+	\subsection{Sistemas de Monitoramento}
+		O monitoramento de raios é uma atividade importante para fins de prevenção, segurança e pesquisa relacionados a descargas atmosféricas. Existem diferentes métodos e tecnologias utilizados para monitorar a ocorrência de raios. Alguns dos principais métodos de monitoramento de raios incluem:
+	
+		\begin{itemize}
+			\item \textbf{\textit{Sistemas de detecção de descargas atmosféricas:}} Esses sistemas utilizam sensores eletromagnéticos para detectar as características elétricas das descargas atmosféricas, como a corrente, a taxa de subida e a polaridade. Eles podem ser baseados em antenas direcionais ou em sensores distribuídos em uma determinada área.
+			
+			\item \textbf{\textit{Localização de raios por triangulação:}} Ao utilizar uma rede de sensores de descargas atmosféricas em diferentes locais, é possível determinar a localização aproximada de um raio por meio da triangulação dos dados coletados pelos sensores. Isso ajuda a identificar a área onde ocorreu a descarga.
+			
+			\item \textbf{\textit{Sensores de campo elétrico e magnético:}} Esses sensores são capazes de medir as variações do campo elétrico e magnético causadas por uma descarga atmosférica. Eles são úteis para monitorar a intensidade e a proximidade dos raios.
+			
+			\item \textbf{\textit{Redes de detecção de raios por satélite:}} Satélites equipados com sensores de raios são capazes de detectar e localizar descargas atmosféricas em grandes áreas geográficas. Esses sistemas fornecem informações valiosas sobre a distribuição espacial e temporal dos raios em escala global.
+		\end{itemize}
+		
+		O monitoramento de raios desempenha um papel fundamental na prevenção de danos causados por descargas atmosféricas, especialmente em setores como aviação, energia, telecomunicações e atividades ao ar livre. Além disso, os dados coletados pelo monitoramento de raios são utilizados para pesquisas científicas, estudos climáticos e aprimoramento de modelos de previsão de tempestades.
+		
+	\subsection{Linhas de Tranmissão e Distribuição}
+	
+	\paragraph{Efeito Corona}
+	
+	O efeito corona é um fenômeno elétrico que ocorre em linhas de transmissão de alta tensão. Quando a tensão em uma linha atinge um determinado valor crítico, ocorre a ionização do ar circundante, formando uma região de descarga elétrica chamada de corona.
+	
+	A corona é composta por íons e elétrons que são liberados a partir das moléculas de ar ionizado. Essas partículas carregadas podem interagir com a superfície condutora da linha de transmissão, gerando correntes elétricas que fluem para a atmosfera. A corona é visualmente perceptível como um halo luminoso ao redor dos condutores da linha.
+	
+	Esse fenômeno tem algumas consequências indesejadas nas linhas de transmissão. Primeiro, a corona resulta em perdas de energia, uma vez que parte da energia elétrica é dissipada na forma de luz e calor. Essas perdas podem reduzir a eficiência da transmissão de energia.
+	
+	Além disso, a corona pode produzir ruídos de rádio devido à radiação eletromagnética gerada durante o processo de ionização do ar. Esses ruídos podem causar interferência em sistemas de comunicação próximos às linhas de transmissão.
+	
+	Outra preocupação relacionada ao efeito corona é o desgaste dos materiais isolantes utilizados nas linhas de transmissão. A formação da corona está associada a um estresse elétrico elevado nos isoladores, o que pode levar ao envelhecimento prematuro e à redução da vida útil desses componentes.
+	
+	Para minimizar os efeitos do efeito corona, as linhas de transmissão são projetadas levando em consideração fatores como o espaçamento adequado entre os condutores, o uso de materiais isolantes apropriados e o controle da tensão nas linhas. Além disso, a utilização de cabos com superfícies lisas e a aplicação de dispositivos redutores de corona, como anéis corona, também são técnicas empregadas para mitigar esse fenômeno.
+	
+	O efeito corona em linhas de transmissão de alta tensão pode atuar como um precursor para a ocorrência de raios. Durante a formação da corona, há a ionização do ar circundante, o que resulta na liberação de elétrons e íons.
+	
+	Essas partículas carregadas podem interagir com partículas e moléculas presentes na atmosfera, criando um caminho de menor resistência para a descarga elétrica. Esse caminho pode ser utilizado como um "gatilho" para o desenvolvimento de um raio.
+	
+	A ionização do ar e a formação da corona podem ocorrer quando a tensão elétrica na linha de transmissão atinge um valor crítico. O campo elétrico intenso nas proximidades dos condutores da linha pode ionizar o ar ao redor, criando um canal de plasma condutor.
+	
+	Esse canal de plasma funciona como uma espécie de "ponte" entre a nuvem de tempestade e a linha de transmissão, permitindo que a carga elétrica flua através dele, resultando na descarga atmosférica conhecida como raio.
+	
+	Embora o efeito corona possa desempenhar um papel como precursor de raios, não é o único fator envolvido na formação de uma descarga atmosférica. Outros mecanismos, como o processo de separação de cargas dentro das nuvens, também desempenham um papel significativo na geração de raios.
+	
+	\paragraph{Modelos de Linhas de Transmissão}
+	
+	 Existem vários modelos utilizados para representar linhas de transmissão e distribuição de energia elétrica. Esses modelos são usados para estudar o comportamento das linhas, calcular parâmetros elétricos, simular fluxo de potência, análise de curto-circuito, entre outras aplicações. Alguns dos modelos mais comuns são:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Modelo de Linha de Transmissão Distribuída:}} Este modelo considera a linha de transmissão como uma série de elementos distribuídos ao longo da extensão da linha. Cada elemento representa a impedância, admitância e capacitância distribuída da linha. É um modelo mais detalhado e preciso, utilizado para estudos de transientes eletromagnéticos e análises de alta frequência.
+		
+		\item \textbf{\textit{Modelo Pi ($\pi$):}} O modelo Pi é uma simplificação da linha de transmissão, onde os parâmetros elétricos são concentrados em duas impedâncias e uma capacitância. É um modelo amplamente utilizado para estudos de fluxo de potência e análise de curto-circuito em sistemas de transmissão e distribuição.
+		
+		\item \textbf{\textit{Modelo T:}} O modelo T é uma variação do modelo Pi, onde as impedâncias são representadas em uma configuração em forma de T. É utilizado em estudos de fluxo de potência, análise de curto-circuito e estudos de estabilidade em sistemas elétricos.
+		
+		\item \textbf{\textit{Modelo de Linha de Transmissão em Sequência de Componentes:}} Este modelo considera a linha de transmissão como uma sequência de componentes discretos, como resistências, indutâncias e capacitâncias. Cada componente é representado separadamente, permitindo um estudo mais detalhado do comportamento da linha.
+	\end{itemize}
+	
+	Além desses modelos, existem também modelos mais complexos e sofisticados, como o modelo de parâmetros distribuídos, o modelo de ondas viajantes (\textit{wave propagation model}) e o modelo de elementos finitos. Esses modelos são utilizados para simulações mais avançadas e precisas, levando em consideração efeitos como perdas, reflexões e distorções em frequência.
+	
+	\paragraph{Modelos de Acoplamento entre nuvem e linhas de transmissão}
+	
+			O acoplamento elétrico entre nuvens e linhas de transmissão ocorre principalmente devido à diferença de potencial elétrico entre a nuvem e os condutores da linha. Quando uma nuvem carregada eletricamente se aproxima de uma linha de transmissão, pode ocorrer um acoplamento elétrico que resulta em correntes indesejadas na linha. Esse acoplamento pode ser dividido em dois principais tipos:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Descarga Atmosférica Direta (DAD):}} Quando a nuvem carregada eletricamente se aproxima o suficiente dos condutores da linha de transmissão, a diferença de potencial elétrico entre a nuvem e os condutores pode se tornar suficientemente alta para que ocorra uma descarga direta. Essa descarga, conhecida como raio, pode transferir uma grande quantidade de carga elétrica para os condutores, causando danos à linha de transmissão.
+		
+		\item \textbf{\textit{Descarga Atmosférica Indireta (DAI):}} Mesmo que não ocorra uma descarga direta entre a nuvem e os condutores, a diferença de potencial elétrico entre eles pode induzir correntes indesejadas na linha de transmissão. Essas correntes são conhecidas como correntes de surto ou correntes induzidas por campos eletromagnéticos transientes gerados pela nuvem. Essas correntes de surto podem causar interferências e danos aos equipamentos conectados à linha de transmissão.
+		
+	\end{itemize}
+	
+	Para mitigar os efeitos do acoplamento elétrico entre nuvens e linhas de transmissão, várias medidas de proteção são adotadas, incluindo:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Instalação de para-raios:}} Os para-raios são dispositivos de proteção projetados para desviar as descargas atmosféricas diretas para o solo, evitando que atinjam os condutores da linha de transmissão.
+		\item \textbf{\textit{Aterramento adequado:}} Um sistema de aterramento adequado é essencial para fornecer um caminho seguro para a corrente de descarga atmosférica. O aterramento eficiente ajuda a desviar a energia da descarga para o solo, protegendo os equipamentos e condutores da linha.
+		\item \textbf{\textit{Proteção de equipamentos:}} Equipamentos sensíveis conectados à linha de transmissão devem ser protegidos por dispositivos de proteção contra surtos, como varistores e supressores de surto, para evitar danos causados por correntes indesejadas.
+	\end{itemize}
+	
+	O acoplamento elétrico entre nuvens e linhas de transmissão é uma área complexa e em constante estudo. Os projetos de linhas de transmissão são desenvolvidos levando em consideração os riscos de descargas atmosféricas e a proteção adequada para minimizar os efeitos indesejados causados pelo acoplamento elétrico.
+	
+	\paragraph{Modelo de Heilmann \& Dartora (2014)}
+	
+		Um estudo teórico realizado por Heilmann \& Dartora (2014) propõe um modelo para estimar a ionização do ar e a condutividade elétrica em torno de uma linha de transmissão de 765 kV. Eles observaram que a condutividade do ar aumenta significativamente nas proximidades da linha de transmissão, em comparação com as condições normais. Esse aumento ocorre devido à quebra da rigidez dielétrica, o que favorece o processo de avalanche e aumenta a probabilidade de ocorrência de raios.
+		
+		Ao tomar a razão da energia eletromagnética total contida em 1 metro cúbico de ar e a média da energia de ionização por molécula de ar, que é aproximadamente 14.7 $eV$ (elétron-volts), podemos estimar o número de elétrons livres gerados por metro cúbico ($\overline{e}$). Esse número é da ordem de $6.7938 \times 10^{16} \frac{\overline{e}}{m^3}$. Essa magnitude está em concordância com os valores apresentados em outras literaturas, que variam de $10^13$ a $10^19$ $\frac{\overline{e}}{m^3}$.
+		
+		Essa relação nos fornece uma estimativa do número de elétrons livres gerados por unidade de volume de ar, permitindo uma compreensão da magnitude desse efeito em relação à densidade de energia eletromagnética presente. 
+		
+		Segundo teorias, a ocorrência dos chamados \textit{pre-strikes} depende da antecipação da corrente da descarga de retorno devido à transferência de carga ao redor do condutor linear. Essa transferência de carga resulta no aumento da condutividade nas proximidades dos condutores da linha de transmissão, o que possibilita a formação de pequenas faíscas filamentosas conhecidas como \textit{Sparks}.
+		
+		Uma descarga de retorno pode ser gerada a partir do condutor quando o campo elétrico atinge um valor crítico. Esse fenômeno pode ser interpretado como a formação de um líder ascendente em um canal pré-ionizado a partir do condutor de fase da linha de transmissão.
+		
+		Portanto, a probabilidade de um raio atingir uma linha de transmissão antes de atingir outro ponto é maior quando a densidade de energia eletromagnética no condutor é maior. De acordo com Uman (1984), a densidade de partículas ionizadas varia ao longo do tempo, o que influencia a velocidade do movimento de retorno.
+		
+		Conclui-se, então, que uma região com uma alta taxa de ionização cria descargas corona, oferecendo condições para a formação de um canal direto com um líder descendente. Além disso, essa região pode gerar pequenas faíscas que, por sua vez, podem ser interpretadas como opções de conexão com portadores de carga durante a ocorrência de um raio.
+	
+\end{document}
