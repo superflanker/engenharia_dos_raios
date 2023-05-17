@@ -1,0 +1,85 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage[ISO]{diffcoeff}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{Tradução de Artigo - FRACTAL MODEL OF A COMPACT INTRACLOUD DISCHARGE. I. FEATURES OF THE STRUCTURE AND EVOLUTION - D. I. Iudin and S. S. Davydenko}
+
+\author[1]{Augusto Mathias Adams}
+\affil[1]{augusto.adams@ufpr.br}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+
+	\section{RESUMO}
+	
+	Nós examinamos as características da emissão eletromagnética de uma descarga compacta intra-nuvem (CID) dentro do contexto da abordagem fractal [1] descrita na primeira parte do artigo. A descarga compacta intra-nuvem é considerada como resultado da interação elétrica de duas estruturas do tipo streamer bipolar previamente desenvolvidas nas regiões de campo elétrico forte dentro da nuvem de tempestade. Para estimar a emissão eletromagnética da descarga, a estrutura complexa em forma de árvore das correntes elétricas nas fases preliminar e principal da CID foi representada como a soma de um componente médio linear de grande escala que varia relativamente lentamente e constituintes pequenos e rápidos correspondentes à formação inicial de canais condutores elementares da árvore de descarga. A corrente linear média da descarga é considerada como uma fonte efetiva de emissão VLF/LF tanto nas fases preliminar quanto principal de uma CID. Componentes eletrostáticos, de indução e de radiação do campo elétrico em diferentes distâncias da corrente média são calculados levando em consideração características específicas de ambas as fases da descarga dentro do modelo de linha de transmissão. É mostrado que na fase preliminar apenas o componente eletrostático pode ser principalmente detectado, enquanto na fase principal todos os componentes acima mencionados do campo elétrico podem ser medidos de forma confiável. A dependência do campo elétrico de radiação na fase principal em relação ao comprimento do canal de descarga e à velocidade de propagação da frente de corrente é analisada. Verifica-se que, devido à expansão bidirecional da corrente na fase principal de uma CID, o pulso do campo de radiação permanece estreito em uma ampla gama de parâmetros de descarga. As correntes de pequena escala correspondentes à quebra inicial entre as células vizinhas do domínio da descarga são consideradas como as fontes de radiação HF/VHF. É mostrado que a emissão HF/VHF na fase preliminar é negligenciável em comparação com a emissão na fase principal. Também é estabelecido que na fase principal, em primeiro lugar, a explosão de emissão HF/VHF correlaciona-se bem com o pico inicial do pulso do campo elétrico VLF/LF e, em segundo lugar, seu espectro corresponde à lei de potência com um expoente entre -2 e -1.
+	
+	\section{HISTÓRIA DOS ESTUDOS E MODELOS FÍSICOS DE DESCARGAS COMPACTAS INTRANUVEM}
+	
+	Os resultados de observações de descargas intra-nuvem incomuns, cujo campo elétrico na zona distante tinha a forma de um único pulso bipolar com duração de 10 a 30 $\mu s$ e acompanhado por uma explosão curta de alta potência de radiação de alta frequência, foram publicados pela primeira vez em [1]. Mais tarde, essas fontes elétricas foram classificadas como uma classe separada e denominadas descargas compactas intra-nuvem (CIDs). Apesar dos estudos plurianuais das CIDs e do significativo volume de dados experimentais acumulados até o momento, a natureza desse fenômeno é, em muitos aspectos, pouco clara. Neste artigo, propomos um novo modelo de descargas compactas intra-nuvem, que se baseia na abordagem fractal para a descrição de sua estrutura elétrica.
+	
+	\subsection{HISTÓRICO DOS ESTUDOS DE DESCARGAS COMPACTAS INTRANUVEM}
+	
+	Os resultados da detecção de radiação eletromagnética de descargas elétricas nas nuvens com propriedades incomuns foram publicados no início dos anos 80 do século passado [1]. A característica principal dessas descargas era uma explosão de alta potência de radiação de alta frequência nas frequências de 3 a 300 MHz, cujo nível excedia consideravelmente os valores das descargas intra-nuvem típicas e das descargas entre nuvem e solo. Sincronamente com a explosão de radiação de alta frequência, sensores terrestres não calibrados registraram uma variação característica no campo elétrico de baixa frequência na forma de um pulso bipolar com duração total de 10 a 20 $\mu s$ (no experimento [1], o critério para o início do pulso de campo elétrico era o excedente da intensidade de radiação do nível dado, relativamente alto, em uma frequência de 3, 139 ou 295 MHz). De acordo com [1], a duração de um pulso bipolar excedeu consideravelmente a duração do pulso de alta frequência registrado nas proximidades do máximo do pulso do campo elétrico, e a amplitude do pulso bipolar era cerca de 1/3 do valor de pico do campo elétrico para um retorno típico. Em tal caso, a direção do campo elétrico no primeiro semiperíodo de um pulso bipolar era oposta à direção do campo de tempo bom, ou seja, o pulso bipolar tinha uma polaridade oposta em comparação com as rajadas de campo para a descarga negativa da nuvem para o solo.
+	
+	Nos anos seguintes, o estudo experimental e teórico dessas descargas tem sido objeto de um número significativo de trabalhos, que proporcionaram uma visão bastante completa da radiação eletromagnética. Em particular, os autores de [2] realizaram medições de banda larga do componente de radiação do campo elétrico $E$ e sua derivada $\frac{dE}{dt}$ para dezenas de pulsos bipolares curtos e, utilizando os dados de medição de $\frac{dE}{dt}$, calcularam as densidades espectrais de energia e potência do pulso do campo elétrico. Normalizando e fazendo uma média dos pulsos bipolares de polaridade positiva (quando o campo elétrico no primeiro semiciclo do pulso é direcionado para cima para o observador em terra), os autores de [2] obtiveram os seguintes parâmetros do pulso: duração da parte inicial (positiva) do pulso em HPPW de 2,4 $\mu s$, intervalo entre os máximos do campo positivo e negativo de 11 $\mu s$, razão entre esses máximos de 8,9 e duração total de 20 a 30 $\mu s$. O valor de pico médio do campo elétrico do pulso calculado para uma distância de 100 km da descarga foi (8 $\pm$ 5,3) V/m (0,72 do valor correspondente para o pulso médio do campo de retorno), e a potência de pico média da derivada do campo foi igual a (20 $\pm$ 15) V/($m \dot \mu s$). Nenhuma variação no campo elétrico de fundo foi observada em um intervalo de medição de 400 $\mu s$, e o perfil da derivada do campo elétrico do pulso continha um componente considerável de ruído em comparação com o perfil correspondente para outras descargas nas nuvens. Em [2], foram detectados pulsos curtos de ambas as polaridades (os pulsos positivos predominaram), mas não foi observada uma dependência significativa da forma do pulso em relação à polaridade do pulso. A análise quantitativa do espectro de energia do campo elétrico de pulsos bipolares mostrou que, em frequências de centenas de quilohertz a 8 MHz, esse espectro é comparável ao espectro de radiação de um típico pulso de retorno, mas já em uma frequência de 18 MHz, na qual o espectro de radiação do pulso de retorno diminui para o nível de ruído, o espectro dos pulsos bipolares curtos o excede em 16 dB, estendendo-se acima de 50 MHz. Assim, em [2], a conclusão de [1] de que essas descargas são a fonte mais poderosa de radiação de alta frequência nas nuvens de tempestade foi confirmada. Medições de banda larga dos pulsos bipolares do campo elétrico em frequências de 3 a 50 MHz também foram apresentadas em [3], onde foi constatado que os pulsos de polaridades positiva e negativa têm durações diferentes e não há correlação temporal dos pulsos de polaridade positiva e negativa com qualquer atividade de relâmpago conhecida na nuvem.
+	
+	
+
+\end{document}
