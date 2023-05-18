@@ -91,34 +91,26 @@
 	
 	\begin{table}[htbp]
 		\centering
-		\caption{Average characteristics of short bipolar pulses of the electric field and synchronous high-frequency radiation bursts in the range 3--30 MHz according to [8].}
-		\begin{tabularx}{\textwidth}{@{}p{10cm}c@{}}
+		\caption{Características médias de pulsos bipolares curtos do campo elétrico e explosões síncronas de radiação de alta frequência na faixa de 3--30 MHz, de acordo com [8].}
+		\begin{tabularx}{\textwidth}{@{}p{12cm}c@{}}
 			\toprule
-			\multicolumn{2}{c}{\textbf{Characteristics of Short Bipolar Pulses of the Electric Field}} \\
+			\multicolumn{2}{c}{\textbf{Características de Pulsos Bipolares Curtos do Campo Elétrico}} \\
 			\midrule
-			Field rise time (from 10\% to 90\% of the maximum), $\mu$s & $2.3 \pm 0.8$ \\
-			Duration of the initial burst of the electric field (at the half-peak level), $\mu$s & $4.7 \pm 1.3$ \\
+			Tempo de subida do campo (de 10\% a 90\% do máximo), $\mu$s & $2.3 \pm 0.8$ \\
+			Duração da rajada inicial do campo elétrico (no nível do meio pico), $\mu$s & $4.7 \pm 1.3$ \\
+			Duração total do pulso, $\mu$s & $25.8 \pm 4.9$ \\
+			Valor de pico do campo elétrico na rajada inicial (primeiro) de um pulso bipolar (a uma distância de 100 km da fonte), V/m & $9.5 \pm 3.6$ \\
+			Valor de pico do campo elétrico na segunda rajada de um pulso bipolar (a uma distância de 100 km da fonte), V/m & $-3.9 \pm 1.6$ \\
+			Razão das amplitudes de pico do campo elétrico na primeira e segunda rajadas de um pulso bipolar & $2.7$ \\
+			Razão das amplitudes de pico do campo elétrico de um pulso bipolar e do pulso devido ao retorno do raio & $0.71$ \\
+			Razão das amplitudes de pico do campo elétrico de um pulso bipolar e do pulso devido à descarga intra-nuvem & $2.6$ \\
 			\midrule
-			Total pulse duration, $\mu$s & $25.8 \pm 4.9$ \\
+			\multicolumn{2}{c}{\textbf{Características de Radiação de Alta Frequência}} \\
 			\midrule
-			Peak value of the electric field at the initial (first) burst of a bipolar pulse (at a distance of 100 km from the source), V/m & $9.5 \pm 3.6$ \\
-			\midrule
-			Peak value of the electric field at the second burst of a bipolar pulse (at a distance of 100 km from the source), V/m & $-3.9 \pm 1.6$ \\
-			\midrule
-			Ratio of the peak amplitudes of the electric field at the first and second bursts of a bipolar pulse & $2.7$ \\
-			\midrule
-			Ratio of the peak amplitudes of the electric field of a bipolar pulse and the pulse due to the return stroke & $0.71$ \\
-			\midrule
-			Ratio of the peak amplitudes of the electric field of a bipolar pulse and the pulse due to the intracloud discharge & $2.6$ \\
-			\midrule
-			\multicolumn{2}{c}{\textbf{Characteristics of High-Frequency Radiation}} \\
-			\midrule
-			Duration, $\mu$s & $2.8 \pm 0.8$ \\
-			Peak value of the field (at a distance of 10 km in the 1-kHz band), mV/m & $2.4 \pm 1.1$ \\
-			\midrule
-			Ratio of the peak amplitudes of the HF field of a compact intracloud discharge and return stroke & $9.9$ \\
-			\midrule
-			Ratio of the peak amplitude of the HF field of compact and conventional intracloud discharges & $29$ \\
+			Duração, $\mu$s & $2.8 \pm 0.8$ \\
+			Valor de pico do campo (a uma distância de 10 km na faixa de 1 kHz), mV/m & $2.4 \pm 1.1$ \\
+			Razão das amplitudes de pico do campo de alta frequência de uma descarga compacta intra-nuvem e do retorno do raio & $9.9$ \\
+			Razão da amplitude de pico do campo de alta frequência de descargas compactas e convencionais intra-nuvem & $29$ \\
 			\bottomrule
 		\end{tabularx}
 	\end{table}
@@ -163,7 +155,7 @@
 	
 	Cada célula elementar $i$ no domínio de simulação corresponde à carga elétrica acumulada $q_i$ nela. A distribuição de carga nas células no tempo inicial $t = 0$ é dada pela distribuição do campo elétrico intra-nuvem $E(\mathbf{r}, t = 0)$, que será considerado vertical. Como a região considerada é pequena em comparação com o tamanho da nuvem de tempestade, a distribuição inicial do campo pode ser assumida unidimensional: $E(\mathbf{r}, t = 0) = z_0 E_0(z)$, onde $z_0$ é o vetor unitário do eixo vertical $z$. Nesse caso, a distribuição inicial da densidade de carga na nuvem depende da coordenada vertical: $\rho(z, t = 0) = \varepsilon_0 \frac{\partial E_0(z, t)}{\partial z}$, onde $\varepsilon_0$ é a constante elétrica. A carga na célula elementar $i$, centrada no ponto de coordenada $\mathbf{r}i = (r{\perp i}, z_i)$, é igual a $q_i = a^3 \rho(z_i, t = 0)$. Para estimar o perfil inicial do campo na fronteira das camadas principais de carga positiva e a camada superior de blindagem, pode-se usar dados de sondagem de balão em nuvens de tempestade. Esses dados sugerem que nas proximidades da camada de blindagem, que varia de algumas centenas de metros a mais de um quilômetro de espessura e está localizada em altitudes de 8 a 15 km acima do nível do mar, a intensidade do campo elétrico pode atingir 50 $kV/m$ [59,60]. Sem entrar em detalhes sobre a formação da camada de blindagem (veja, por exemplo, [61,62]), assumimos, para cálculos, que o campo elétrico entre as camadas principais de carga positiva e a camada superior de blindagem é máximo a uma altitude de 12 $km$ e atinge 30 $kV/m$; a região de campo elétrico forte tem cerca de 500 $m$ de espessura.
 	
-	A dinâmica da carga elétrica em cada célula é determinada pela presença e estado do acoplamento elétrico com as células vizinhas. Assumimos que a probabilidade de ocorrência da descarga do streamer (ruptura) entre as células vizinhas $i$ e $j$ depende da diferença de seus potenciais e é descrita pela distribuição de Weibull:
+	A dinâmica da carga elétrica em cada célula é determinada pela presença e estado do acoplamento elétrico com as células vizinhas. Assumimos que a probabilidade de ocorrência da descarga do \textit{streamer} (ruptura) entre as células vizinhas $i$ e $j$ depende da diferença de seus potenciais e é descrita pela distribuição de \textit{Weibull}:
 	
 	\begin{equation}
 		P_{ij} = \begin{cases}
@@ -172,7 +164,7 @@
 				 \end{cases}
 	\end{equation}
 	
-	
+	Aqui, $m$ é o índice de \textit{Weibull}, $E_{ij} = |\phi_i - \phi_j |/L_{ij}$, $\phi_i$ e $\phi_j$ são os potenciais elétricos das i-ésima e j-ésima células, respectivamente, $L_{ij}$ é a distância entre as i-ésima e j-ésima células, e $E_s$ e $E_i$ são os campos crítico e de iniciação do \textit{streamer}, respectivamente, tal que $E_s > E_i$. Note que sob condições de laboratório (comprimento da ordem de metros), o campo é da ordem de 100 $kV/m$ [56] e pode ser muito menor sob condições de descargas em nuvens [63]. A razão física para o aumento local (em pequena escala em comparação com o tamanho da célula) do campo e, consequentemente, a diminuição dos campos $E_s$ e $E_i$ na escala da célula em comparação com os valores de laboratório pode ser irregularidades naturais em pequena escala da densidade de carga [64].
 	
 	
 \end{document}
