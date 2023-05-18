@@ -104,9 +104,3 @@ cp descargas_negativas_descendentes.pdf ../Portfolio/Trabalho_Primeira_Parcial.p
 
 cd ../Portfolio
 pdfunite atividade_remota_video_01.pdf atividade_remota_video_02.pdf atividade_remota_video_03.pdf atividade_remota_video_04.pdf aula_01.pdf aula_03.pdf aula_04.pdf aula_05.pdf aula_06.pdf aula_07.pdf aula_08.pdf aula_09.pdf aula_10.pdf aula_11.pdf aula_12.pdf aula_13.pdf aula_14.pdf aula_15.pdf aula_16.pdf aula_17.pdf aula_18.pdf aula_19.pdf aula_20.pdf aula_21.pdf Trabalho_Primeira_Parcial.pdf primeira_parcial.pdf
-
-
-
-
-
-
