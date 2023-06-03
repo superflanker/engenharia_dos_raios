@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  18 MAY 2023 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  26 MAY 2023 11:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1181,38 +1181,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
  [2] [3] [4]
-Underfull \hbox (badness 10000) in alignment at lines 115--115
+Underfull \hbox (badness 10000) in alignment at lines 116--116
 [][] 
  []
 
 [5] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (1.79225pt too wide) in paragraph at lines 152--152
+Overfull \hbox (1.79225pt too wide) in paragraph at lines 153--153
 |[]\T1/ptm/b/n/17.28 DESCRIÇÃO DE UMA ÚNICO \T1/ptm/b/it/17.28 STRE-A-MER \T1/p
 tm/b/n/17.28 DE DES-CARGA
  []
 
-[13] [14] [15] (./artigo_cid_01.aux) ) 
+[13] [14]
+<imagens/5.png, id=58, 1826.825pt x 1364.09625pt>
+File: imagens/5.png Graphic file (type png)
+<use imagens/5.png>
+Package pdftex.def Info: imagens/5.png  used on input line 178.
+(pdftex.def)             Requested size: 217.66211pt x 162.51888pt.
+<imagens/6.png, id=59, 1732.4725pt x 2281.52374pt>
+File: imagens/6.png Graphic file (type png)
+<use imagens/6.png>
+Package pdftex.def Info: imagens/6.png  used on input line 182.
+(pdftex.def)             Requested size: 217.66211pt x 286.61711pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] [16 <./imagens/5.png> <./imagens/6.png>] (./artigo_cid_01.aux) ) 
 Here is how much of TeX's memory you used:
- 33291 strings out of 478287
- 797361 string characters out of 5849290
- 1217779 words of memory out of 5000000
- 50845 multiletter control sequences out of 15000+600000
+ 33322 strings out of 478287
+ 797877 string characters out of 5849290
+ 1217863 words of memory out of 5000000
+ 50872 multiletter control sequences out of 15000+600000
  539362 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,131p,3441b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo_cid_01.pdf (15 pages, 132161 bytes).
+{/usr/shar
+e/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/u
+syr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on artigo_cid_01.pdf (16 pages, 184348 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

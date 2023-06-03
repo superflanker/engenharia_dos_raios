@@ -1,0 +1,10 @@
+\frametitle{Good luck with your presentation!}
+\begin{itemize}
+\item This template is hosted on GitHub
+    \begin{itemize}
+    \item  \verb|https://github.com/usamamuneeb/uic-beamer-template|
+    \end{itemize}
+\item  I would appreciate contributions of all sorts (pull requests, identifying issues, etc).
+\item  If you have any suggestions,
+\hrefcol{mailto:umunee2@uic.edu}{send them to me!}
+\end{itemize}
