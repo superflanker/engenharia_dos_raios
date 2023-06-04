@@ -60,9 +60,10 @@
 \footlinecolor{} % Default: no footline
 
 \pgfdeclareimage[width=0.09\paperwidth]{redlogo}{images/logo_FEA_ufpr.png}
+\pgfdeclareimage[width=0.2\paperwidth]{biglogo}{images/logo_FEA_ufpr.png}
 \pgfdeclareimage[width=0.09\paperwidth]{whitelogo}{images/logo_FEA_ufpr.png}
 \pgfdeclareimage[width=0.09\paperwidth]{nologo}{images/placeholder.png}
-\newcommand{\@UIClogo}{redlogo}
+\newcommand{\@UIClogo}{biglogo}
 
 % Set colours
 % NOTE! Beamer colors should be set in the preamble. It often works fine in the 
@@ -87,6 +88,13 @@
 		\setbeamercolor{normal text}{fg=uicblue,bg=white}
 		\setbeamercolor{structure}{fg=uicblue}
 		\renewcommand{\@UIClogo}{nologo}
+		\setbeamercolor{block title}{fg=white,bg=uicblue}
+		\setbeamercolor{block body}{fg=white,bg=uicblue}
+	}{}
+	\ifstrequal{#1}{maintitle}{%
+		\setbeamercolor{normal text}{fg=uicblue,bg=white}
+		\setbeamercolor{structure}{fg=uicblue}
+		\renewcommand{\@UIClogo}{biglogo}
 		\setbeamercolor{block title}{fg=white,bg=uicblue}
 		\setbeamercolor{block body}{fg=white,bg=uicblue}
 	}{}
@@ -141,7 +149,7 @@
 \setbeamertemplate{title page}{%
   \vskip0pt plus 1filll%
   \hspace{-12mm}% Pull back the box in an inelegant way - but it works!
-  \begin{beamercolorbox}[wd=0.45\textwidth,sep=10pt,leftskip=8mm]{title}%
+  \begin{beamercolorbox}[wd=0.8\textwidth,sep=10pt,leftskip=8mm]{title}%
     {\usebeamerfont{title}\inserttitle}
   
     {\usebeamerfont{subtitle}\insertsubtitle}

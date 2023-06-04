@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  3 JUN 2023 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  3 JUN 2023 21:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1055,77 +1055,81 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 23.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 24.
+(Font)              scaled to size 12.9599pt on input line 25.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 24.
+(Font)              scaled to size 12.9599pt on input line 25.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 24.
+(Font)              scaled to size 8.09995pt on input line 25.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 24.
-<images/tema_fundo_6.png, id=18, 308.352pt x 205.4877pt>
-File: images/tema_fundo_6.png Graphic file (type png)
-<use images/tema_fundo_6.png>
-Package pdftex.def Info: images/tema_fundo_6.png  used on input line 24.
-(pdftex.def)             Requested size: 455.24408pt x 303.3833pt.
+(Font)              scaled to size 8.09995pt on input line 25.
+<images/tema_fundo_2.png, id=19, 616.704pt x 412.1799pt>
+File: images/tema_fundo_2.png Graphic file (type png)
+<use images/tema_fundo_2.png>
+Package pdftex.def Info: images/tema_fundo_2.png  used on input line 25.
+(pdftex.def)             Requested size: 455.24408pt x 304.27248pt.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 3.59998pt on input line 24.
- [1
+(Font)              scaled to size 3.59998pt on input line 25.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/tema_fundo_6.png>
+Overfull \vbox (50.07713pt too high) has occurred while \output is active []
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/tema_fundo_2.png>
  <./images/logo_FEA_ufpr.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for T1+Caladea-TLF on input
- line 41.
+ line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caladea/T1Caladea-TLF.fd
 File: T1Caladea-TLF.fd 2014/08/17 (autoinst) Font definitions for T1/Caladea-TL
 F.
 )
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 41.
+(Font)              scaled to size 10.95pt on input line 44.
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 41.
+(Font)              scaled to size 8.0pt on input line 44.
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 41.
+(Font)              scaled to size 6.0pt on input line 44.
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 41.
+(Font)              scaled to size 10.95pt on input line 44.
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 41.
+(Font)              scaled to size 8.0pt on input line 44.
 LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 41.
+(Font)              scaled to size 6.0pt on input line 44.
 LaTeX Font Info:    Trying to load font information for TS1+opensans-TLF on inp
-ut line 41.
+ut line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/opensans/TS1opensans-TLF.fd
 File: TS1opensans-TLF.fd 2019/06/24 Font definitions for TS1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 41.
+(Font)              scaled to size 9.85492pt on input line 44.
  [2
 
-]
+ <./images/logo_FEA_ufpr.png>]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/it' will be
-(Font)              scaled to size 9.85492pt on input line 46.
+(Font)              scaled to size 9.85492pt on input line 49.
 
-Underfull \hbox (badness 1122) in paragraph at lines 46--46
+Underfull \hbox (badness 1122) in paragraph at lines 49--49
 []\T1/opensans-TLF/m/it/10.95 An over-view of some dif-fe-rent
  []
 
-<images/bg_1.png, id=44, 308.352pt x 173.448pt>
+<images/bg_1.png, id=46, 308.352pt x 173.448pt>
 File: images/bg_1.png Graphic file (type png)
 <use images/bg_1.png>
-Package pdftex.def Info: images/bg_1.png  used on input line 46.
+Package pdftex.def Info: images/bg_1.png  used on input line 49.
 (pdftex.def)             Requested size: 455.26694pt x 256.0748pt.
 [3
 
@@ -1175,7 +1179,7 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 5.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 5.
-<images/bg_3.png, id=101, 481.8pt x 321.1197pt>
+<images/bg_3.png, id=103, 481.8pt x 321.1197pt>
 File: images/bg_3.png Graphic file (type png)
 <use images/bg_3.png>
 Package pdftex.def Info: images/bg_3.png  used on input line 17.
@@ -1183,19 +1187,19 @@ Package pdftex.def Info: images/bg_3.png  used on input line 17.
 ) [13
 
  <./images/bg_3.png>]
-<plots/min_fuel.png, id=109, 1124.2pt x 843.15pt>
+<plots/min_fuel.png, id=111, 1124.2pt x 843.15pt>
 File: plots/min_fuel.png Graphic file (type png)
 <use plots/min_fuel.png>
-Package pdftex.def Info: plots/min_fuel.png  used on input line 123.
+Package pdftex.def Info: plots/min_fuel.png  used on input line 126.
 (pdftex.def)             Requested size: 139.42093pt x 104.55724pt.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 123.
+(Font)              scaled to size 8.99994pt on input line 126.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 123.
-<plots/min_time.png, id=110, 1124.2pt x 843.15pt>
+(Font)              scaled to size 9.85492pt on input line 126.
+<plots/min_time.png, id=112, 1124.2pt x 843.15pt>
 File: plots/min_time.png Graphic file (type png)
 <use plots/min_time.png>
-Package pdftex.def Info: plots/min_time.png  used on input line 123.
+Package pdftex.def Info: plots/min_time.png  used on input line 126.
 (pdftex.def)             Requested size: 139.42093pt x 104.55724pt.
  [14
 
@@ -1212,7 +1216,7 @@ Package pdftex.def Info: plots/min_time.png  used on input line 123.
 ]
 File: images/bg_1.png Graphic file (type png)
 <use images/bg_1.png>
-Package pdftex.def Info: images/bg_1.png  used on input line 169.
+Package pdftex.def Info: images/bg_1.png  used on input line 172.
 (pdftex.def)             Requested size: 455.26694pt x 256.0748pt.
  [17
 
@@ -1236,16 +1240,16 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/sc' will be
 (Font)              scaled to size 7.19995pt on input line 16.
 )
-Overfull \vbox (19.52196pt too high) detected at line 206
+Overfull \vbox (19.52196pt too high) detected at line 209
  []
 
 [18
 
 ]
-<images/bg_2.png, id=140, 616.704pt x 308.352pt>
+<images/bg_2.png, id=142, 616.704pt x 308.352pt>
 File: images/bg_2.png Graphic file (type png)
 <use images/bg_2.png>
-Package pdftex.def Info: images/bg_2.png  used on input line 213.
+Package pdftex.def Info: images/bg_2.png  used on input line 216.
 (pdftex.def)             Requested size: 512.1559pt x 256.0748pt.
  [19
 
@@ -1298,23 +1302,22 @@ LaTeX Font Info:    Font shape `T1/Caladea-TLF/m/it' will be
 ]
 File: images/bg_3.png Graphic file (type png)
 <use images/bg_3.png>
-Package pdftex.def Info: images/bg_3.png  used on input line 367.
+Package pdftex.def Info: images/bg_3.png  used on input line 370.
 (pdftex.def)             Requested size: 384.23483pt x 256.0748pt.
  [28
 
 ]
-<images/tema_fundo_2.png, id=204, 616.704pt x 412.1799pt>
 File: images/tema_fundo_2.png Graphic file (type png)
 <use images/tema_fundo_2.png>
-Package pdftex.def Info: images/tema_fundo_2.png  used on input line 371.
+Package pdftex.def Info: images/tema_fundo_2.png  used on input line 374.
 (pdftex.def)             Requested size: 383.15239pt x 256.0748pt.
  [29
 
- <./images/tema_fundo_2.png>]
+]
 <images/tema_fundo_3.png, id=211, 240.9pt x 160.6803pt>
 File: images/tema_fundo_3.png Graphic file (type png)
 <use images/tema_fundo_3.png>
-Package pdftex.def Info: images/tema_fundo_3.png  used on input line 377.
+Package pdftex.def Info: images/tema_fundo_3.png  used on input line 380.
 (pdftex.def)             Requested size: 383.97385pt x 256.0748pt.
  [30
 
@@ -1322,24 +1325,23 @@ Package pdftex.def Info: images/tema_fundo_3.png  used on input line 377.
 <images/tema_fundo_4.png, id=219, 462.528pt x 260.172pt>
 File: images/tema_fundo_4.png Graphic file (type png)
 <use images/tema_fundo_4.png>
-Package pdftex.def Info: images/tema_fundo_4.png  used on input line 381.
+Package pdftex.def Info: images/tema_fundo_4.png  used on input line 384.
 (pdftex.def)             Requested size: 455.26457pt x 256.0748pt.
-
-[31
+ [31
 
  <./images/tema_fundo_4.png>]
 <images/tema_fundo_5.png, id=227, 487.5816pt x 365.6862pt>
 File: images/tema_fundo_5.png Graphic file (type png)
 <use images/tema_fundo_5.png>
-Package pdftex.def Info: images/tema_fundo_5.png  used on input line 385.
+Package pdftex.def Info: images/tema_fundo_5.png  used on input line 388.
 (pdftex.def)             Requested size: 341.4536pt x 256.0748pt.
- [32
+
+[32
 
  <./images/tema_fundo_5.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb)
-[33
+ (./main.vrb) [33
 
 ]
 \openout4 = `main.vrb'.
@@ -1348,7 +1350,7 @@ Package pdftex.def Info: images/tema_fundo_5.png  used on input line 385.
 
 ]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 419.
+(Font)              scaled to size 18.66588pt on input line 422.
  [35
 
 ]
@@ -1361,7 +1363,8 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
- (./main.aux)
+
+(./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1369,10 +1372,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28525 strings out of 478287
- 565674 string characters out of 5849289
- 810425 words of memory out of 5000000
- 45971 multiletter control sequences out of 15000+600000
+ 28519 strings out of 478287
+ 565507 string characters out of 5849289
+ 811757 words of memory out of 5000000
+ 45966 multiletter control sequences out of 15000+600000
  528989 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,414b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1394,7 +1397,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (35 pages, 15339093 bytes).
+Output written on main.pdf (35 pages, 14520583 bytes).
 PDF statistics:
  341 PDF objects out of 1000 (max. 8388607)
  236 compressed objects within 3 object streams
