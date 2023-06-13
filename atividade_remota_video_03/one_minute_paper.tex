@@ -34,6 +34,22 @@
 \usepackage{makecell}
 \usepackage{pdfpages}
 
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyhf{} % limpa os cabecalhos e rodapés
+\fancyhead[C]{\textit{CURSO DE ENGENHARIA DOS RAIOS - TE981} } % define o cabeçalho personalizado
+\fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS}}
+\pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+	pdftitle={ENGENHARIA DOS RAIOS - TE981 - ATIVIDADE REMOTA 3}
+}
 \renewcommand\theadalign{bc}
 \renewcommand\theadfont{\bfseries}
 \renewcommand\theadgape{\Gape[4pt]}
@@ -50,13 +66,32 @@
 
 % padrao 1.5 de espacamento entre linhas
 \setstretch{1.5}
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	\null
+	\vskip 2em%
+	\begin{center}%
+		\let \footnote \thanks
+		{\LARGE \@title \par}%
+		\vskip 1.5em%
+		{\large
+			\lineskip .5em%
+			\begin{tabular}[t]{c}%
+				\@author
+			\end{tabular}\par}%
+		%\vskip 1em%
+		%{\large \@date}%
+	\end{center}%
+	\par
+	\vskip 1.5em}
+\makeatother
 
-\title{Atividade Remota (Video 03)}
-
-\author[1]{Augusto Mathias Adams}
-\affil[1]{augusto.adams@ufpr.br}
+\title{\normalsize{ENGENHARIA DOS RAIOS - TE981}\\ \huge{\textbf\textit{{ATIVIDADE REMOTA - VÍDEO 3}}\\}}
+\author{\small{AUGUSTO MATHIAS ADAMS}}
 \setcounter{Maxaffil}{0}
 \renewcommand\Affilfont{\itshape\small}
+
 
 \begin{document}
 	% Seleciona o idioma do documento
@@ -67,7 +102,7 @@
 	
 	\section{Aprendizado da Aula}
 	
-	Atividade remota sobre o \textbf{\textit{Vídeo 3 - Raios de Fogo☇Documentário FULL HD }}.
+	Atividade remota sobre o \textbf{\textit{Vídeo 3 - Raios de Fogo - Documentário FULL HD }}.
 	
 	Sugestão do Professor: levar ao menos uma dúvida para discussão em sala de aula.
 	

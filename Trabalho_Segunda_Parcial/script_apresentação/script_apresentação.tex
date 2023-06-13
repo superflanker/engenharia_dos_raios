@@ -1,0 +1,137 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyhf{} % limpa os cabecalhos e rodapés
+\fancyhead[C]{\textit{CURSO DE ENGENHARIA DOS RAIOS - TE981} } % define o cabeçalho personalizado
+\fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS}}
+\pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	\null
+	\vskip 2em%
+	\begin{center}%
+		\let \footnote \thanks
+		{\LARGE \@title \par}%
+		\vskip 1.5em%
+		{\large
+			\lineskip .5em%
+			\begin{tabular}[t]{c}%
+				\@author
+			\end{tabular}\par}%
+		%\vskip 1em%
+		%{\large \@date}%
+	\end{center}%
+	\par
+	\vskip 1.5em}
+\makeatother
+
+\title{\normalsize{ENGENHARIA DOS RAIOS - TE981}\\ \huge{\textbf\textit{{APRESENTAÇÃO DE MODELO FRACTAL DE UMA DESCARGA COMPACTA INTRA-NUVEM. I. CARACTERÍSTICAS DA ESTRUTURA E EVOLUÇÃO. - D. I. Iudin and S. S. Davydenko}}\\}}
+\author{\small{AUGUSTO MATHIAS ADAMS}}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Slide 01}
+	
+	Boa noite, meu nome é Augusto Adams e apresento o artigo MODELO FRACTAL DE UMA DESCARGA COMPACTA INTRA-NUVEM. I. CARACTERÍSTICAS DA ESTRUTURA E EVOLUÇÃO, de Iudin e Davydenko.
+	
+	\section{Slide 02}
+	
+		O artigo apresenta um novo modelo para explicar as descargas compactas intra-nuvem em tempestades, que envolve a interação de estruturas de \textit{streamer} bipolar em um campo elétrico de grande escala. Ele descreve duas etapas no desenvolvimento da descarga: uma etapa preliminar, na qual as estruturas de \textit{streamer} bipolar se formam sequencialmente em regiões de campo elétrico intenso, e uma etapa principal, na qual ocorre a conexão elétrica entre as estruturas, gerando um pulso de corrente. O modelo considera a sincronização espacial e temporal das estruturas de \textit{streamer}, as características das cargas elétricas acumuladas nessas estrutura.
+	
+	\section{Slide 03}
+	
+		A motivação da construção do novo modelo se deve ao fato dos modelos anteriores de \textit{CID} possuírem restrições. Por exemplo, alguns modelos possuem restrições de crescimento de vários ramos de descarga e alguns não modelam a estrutura da corrente ao longo do canal. Este modelo resolve estes problemas dividindo o espaço considerado em células cúbicas que representam o centro da nuvem, fazendo as ligações elétricas entre as células através de descargas elétrica, supondo a presença de um sistema de corrente que	se desenvolve na estrutura condutora criada entre as células.
+		
+	\section{Slide 04}
+	
+	Consideremos os detalhes do modelo proposto.
+	
+	\section{Slide 05}
+	
+	O modelo supõe um volume pequeno no centro da nuvem, de 500 por 500 por 500 metros, e o divide em células ou autômatos de 10 por 10 por 10 metros. Cada autômato ou célula é representado por um índice de nó, sua posição espacial e a carga da célula concentrada em seu centro.
+	
+	\section{Slide 06}
+	
+	O autômato celular é utilizado pelo modelo para iniciar e desenvolver a estrutura do \textit{streamer}, da seguinte maneira $\Rightarrow$ em cada passo, calcula-se:
+	
+	\begin{itemize}
+		\item a partir da carga do autômato, calcula-se o potencial elétrico através da capacitância efetiva, considerada por simplificação como a capacitância de uma esfera condutora de raio igual a $a/2$, assim como assim como o potencial total do campo elétrico, que é externo em relação ao domínio de simulação, e outras células carregadas do sistema;
+		\item A partir do campo elétrico é determinado as condições de abertura do canal condutor entre duas células, através da equação 1
+		\item Nos canais abertos, há o desenvolvimento de uma corrente elétrica que iguala o potencial de duas células enquanto satisfaz a lei da continuidade. As equações 2 e 3 representam a transferência de cargas do modelo de corrente de canal. 
+		\item a resistência linear é variável com a corrente. Por não haver uma descrição detalhada desta, é suposto que, na abertura do canal, a resistência linear seja de 100 $k\Omega/m$, caindo rapidamente para 1 $m\Omega/m$ para correntes acima de 1 $A$
+		
+	\end{itemize}
+	
+	\section{Slide 07}
+
+	Repetindo este procedimento vezes o suficiente, tem-se o que é apresentado na figura. O mecanismo do \textit{streamer} bipolar pode ser comparado a um mecanismo de bombeamento ou separação de cargas, fato este que pode ser notado nos gráficos do potencial e campo elétrico. à medida que o \textit{streamer} se desenvolve, o módulo do potencial elétrico aumenta onde as cargas estão se acumulando, e o campo elétrico por consequência também é mais proeminente nestas regiões,
+	
+	\section{Slide 08}
+	
+	Para a ocorrência de um \textit{CID}, é necessário que duas ou mais estruturas de \textit{streamer} bipolar ocorram simultaneamente e a sincronização espaço-temporal das	descargas de \textit{streamer} é importante dos eventos se tornas necessária. Um possível mecanismo para a formação da distribuição inomogênea da densidade de carga com a escala espacial necessária pode ser a instabilidade do fluxo, se desenvolve em um meio interno multicomponente em presença de um fluxo de ar fracamente condutor em relação às partículas mais pesadas presentes na nuvem. Como resultado, uma onda de carga espacial com crescimento exponencial é formada na nuvem; ela se desloca com o fluxo convectivo em direção ao topo da nuvem.  As equações importantes do modelo são a densidade
+	
+	
+	
+\end{document}

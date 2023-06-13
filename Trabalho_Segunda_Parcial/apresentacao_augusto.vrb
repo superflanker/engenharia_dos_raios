@@ -1,0 +1,21 @@
+\frametitle{Fonts}
+\begin{itemize}
+\item Fonts play a huge role in the look and feel of your presentation
+  \begin{itemize}
+  \item Their main purpose however, is clarity!
+  \end{itemize}
+\item \textrm{Serif} vs \textsf{Sans-Serif} fonts
+  \begin{itemize}
+  \item \hrefcol{https://www.adobe.com/creativecloud/design/discover/serif-vs-sans-serif.html}{This} is a good read on when to use which.
+  \item \textbf{Open Sans} and \textbf{IBM Plex Serif} have been provided with this template.
+  \item To conveniently switch from Open Sans to IBM Plex Serif, please use \verb|\usefonttheme{serif}| in the preamble.
+    \begin{itemize}
+    \item IBM Plex Serif is not available on \verb|pdfLaTeX|, so Caladea will be used instead.
+    \end{itemize}
+  \end{itemize}
+\item The fonts provided in the \verb|fonts| folder (or your own fonts) can only be used with \verb|XeLaTeX|.
+    \begin{itemize}
+    \item The Overleaf version of this template uses \verb|XeLaTeX| by default.
+    \item Next few slides talk about font formats and how they work with different compilers.
+    \end{itemize}
+\end{itemize}
