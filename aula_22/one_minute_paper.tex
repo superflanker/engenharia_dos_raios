@@ -1,0 +1,212 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{bm}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyhf{} % limpa os cabecalhos e rodapés
+\fancyhead[C]{\textit{CURSO DE ENGENHARIA DOS RAIOS - TE981} } % define o cabeçalho personalizado
+\fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS}}
+\pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+	pdftitle={ENGENHARIA DOS RAIOS - TE981 - ONE MINUTE PAPER}
+}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	\null
+	\vskip 2em%
+	\begin{center}%
+		\let \footnote \thanks
+		{\LARGE \@title \par}%
+		\vskip 1.5em%
+		{\large
+			\lineskip .5em%
+			\begin{tabular}[t]{c}%
+				\@author
+			\end{tabular}\par}%
+		%\vskip 1em%
+		%{\large \@date}%
+	\end{center}%
+	\par
+	\vskip 1.5em}
+\makeatother
+
+\title{\normalsize{ENGENHARIA DOS RAIOS - TE981}\\ \huge{\textbf\textit{{AULA 22 - RAIOS EM LINHAS DE TRANSMISSÃO E COORDENAÇÃO DE ISOLADORES}}\\}}
+\author{\small{AUGUSTO MATHIAS ADAMS}}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+	\subsection{Introdução ao Tema}
+		
+		\paragraph{Raios em linhas de transmissão}
+		
+		Os raios representam um desafio significativo para as linhas de transmissão de energia elétrica. Eles podem causar danos nos componentes da linha, interrupções no fornecimento de energia e até mesmo incêndios. O comportamento dos raios em linhas de transmissão é influenciado por fatores como a altura das torres, a configuração da linha, a resistência do solo e as condições climáticas. Estratégias de proteção contra raios, como o uso de para-raios e sistemas de aterramento adequados, são adotadas para minimizar os impactos dos raios nas linhas de transmissão.
+		
+		\paragraph{Coordenação de isoladores}
+		
+		Os isoladores são componentes essenciais nas linhas de transmissão, responsáveis por isolar eletricamente os condutores das torres e do solo. A coordenação de isoladores envolve o dimensionamento adequado dos isoladores para suportar as tensões elétricas presentes na linha, garantindo uma operação segura e confiável. É importante considerar fatores como o nível de tensão, o tipo de isolador, as condições ambientais, a contaminação e a distância de fuga necessária para evitar o fenômeno do \textit{flashover}, no qual o isolador perde sua capacidade isolante devido a um arco elétrico. A coordenação de isoladores é realizada por meio de cálculos e simulações para determinar a configuração adequada dos isoladores ao longo da linha de transmissão, levando em conta as características elétricas e ambientais específicas da região.
+	
+	\subsection{Tópicos da Aula}
+	
+	\paragraph{Descargas Atmosféricas} As linhas de transmissão e distribuição de energia elétrica estão sujeitas a desligamentos não programados devido a sobretensões causadas por descargas atmosféricas. Essas descargas podem ocorrer diretamente nos condutores ou nas proximidades, resultando em sobretensões transitórias que se propagam ao longo da linha. Se essas sobretensões excederem os limites de suportabilidade do sistema, podem ocorrer descargas disruptivas que evoluem para arcos de potência, causando faltas entre fases ou com a terra. Para resolver esse problema, é necessário o uso de dispositivos de proteção contra sobrecorrentes. As condições ambientais são importantes para determinar a frequência de incidência de raios nas linhas de transmissão. Descargas atmosféricas são a principal causa de desligamentos não programados no sistema elétrico, representando cerca de 65\% dos desligamentos em linhas de transmissão de até 230 $kV$ no Brasil.
+	
+	Duas diferentes abordagens devem ser consideradas na avaliação do desempenho dos sistemas elétricos frente às sobretensões resultantes das descargas atmosféricas:
+	
+	\begin{itemize}
+		\item Os efeitos originados por descargas atmosféricas incidindo diretamente sobre os condutores fase ou sobre os cabos para-raios.
+		\item Os efeitos originados pelas descargas atmosféricas incidindo (indiretamente) nas proximidades das redes de distribuição ou linhas, gerando sobretensões induzidas.
+	\end{itemize}
+	
+	Descargas diretas em linhas de transmissão resultam em sobretensões transitórias que podem exceder a capacidade de isolamento das linhas. A frequência dessas descargas depende de vários fatores, incluindo densidade de descargas atmosféricas, características físicas da linha (altura em relação ao solo e espaçamento entre condutores) e a presença de objetos próximos que atuam como blindagem natural (árvores altas, estruturas metálicas, edificações próximas e outras linhas de transmissão). A incidência de descargas em uma determinada linha de transmissão pode variar de ano para ano, dependendo da quantidade de descargas atmosféricas na região.
+	
+	A avaliação do desempenho de sistemas elétricos diante de descargas atmosféricas requer o conhecimento da densidade de descargas para terra ($N_g$). É altamente recomendado medir esse parâmetro, que representa o número médio anual de descargas para terra por quilômetro quadrado em uma região específica, utilizando dispositivos ou sistemas projetados para essa finalidade. No entanto, quando $N_g$ não é conhecido, é comum relacioná-lo com o nível isoceráunico da região ($T_d$), que representa o número de dias do ano com incidência de trovoadas, usando a seguinte expressão:
+	
+	\begin{equation}
+	N_g = 0.04 \times T_d^{1.25}	
+	\end{equation}
+
+	Uma vez que conhecemos a densidade de descargas para terra em uma determinada região, podemos estimar o número médio anual de descargas que ocorrem em uma linha ou estrutura específica (descargas diretas). Para uma linha de transmissão com uma área de atração equivalente A em uma região com uma densidade média de descargas para terra de $N_g$ (descargas por quilômetro quadrado por ano), o número médio de descargas diretas Nd coletadas por essa linha a cada 100 quilômetros por ano é dado por:
+	
+	\begin{equation}
+		N_d = N_g \times A \times 10^{-2} \times 100
+	\end{equation}
+	
+	Onde:
+	\begin{itemize}
+		\item 	\textbf{\textit{$N_d$ }}:Número esperado de descargas atmosféricas que incidem diretamente sobre a linha de transmissão (descargas por 100 $km^2/ano$);
+		\item \textbf{\textit{$N_g$}} - Densidade de descargas para terra (descargas por $km^2/ano$);
+		\item \textbf{\textit{$A$}} - Área de atração equivalente ($m^2$).
+	\end{itemize}
+
+	Quando as descargas atmosféricas incidem diretamente em linhas de transmissão sem cabos para-raios, elas atingem os condutores fase. Supondo que não haja interrupção no ponto de impacto, a corrente da descarga $i(t)$ se divide ao incidir no condutor. Considerando que a impedância do canal de descarga seja infinita, a corrente se propaga como um surto em ambas as direções da linha, resultando no desenvolvimento de sobretensões $v(t)$ na linha em ambas as direções.
+	
+	Considerando uma linha de transmissão sem perdas e distorções, as sobretensões resultantes podem ser calculadas multiplicando o surto de corrente variável ao longo do tempo pela impedância de surto monofásica da linha.
+	
+	\begin{equation}
+		\begin{split}
+			v(t) = \frac{Z_o \times i(t)}{2}\\
+			Z_o = \sqrt{\frac{L}{C}}\\
+			L = \frac{\mu_r \mu_0}{2\pi} \ln{\left( 2\frac{h}{r}\right)}\\
+			C = \frac{2 \pi \epsilon_r \epsilon_0}{\ln{\left( 2\frac{h}{r}\right)}} \therefore Z_o = 60 \ln{\left( 2\frac{h}{r}\right)}
+		\end{split}
+	\end{equation}
+	
+	Sendo $h$ a altura do condutor em relação ao solo ($m$) e $r$ o raio do condutor ($m$).
+	
+	Uma análise simplificada mostra que quase todas as descargas atmosféricas que incidem diretamente nos condutores fase das linhas de transmissão causam uma interrupção na isolação, independentemente da resposta transitória do sistema de aterramento. Portanto, o número de desligamentos de uma linha de transmissão devido à incidência de descargas diretas nos condutores fase pode ser estimado por:
+	
+	\begin{equation}
+		N_{desl} = N_{d} \times P_{disrup} \times P_{arco}
+	\end{equation}
+	
+	\begin{itemize}
+		\item $N_{\text{desl}}$ - Número estimado de desligamentos da linha de transmissão (desligamentos por 100 $km/ano$);
+		\item $N_{\text{d}}$ - Número estimado de descargas que incidem diretamente sobre os condutores fase (descargas por 100 $km/ano$);
+		\item $P_{\text{disrup}}$ - Probabilidade da ocorrência de descarga disruptiva da isolação;
+		\item $P_{\text{arco}}$ - Probabilidade da descarga disruptiva ser seguida pelo arco de potência.
+	\end{itemize}
+	
+	\subsection{Modelos de Progressão do Líder e de Aterramento}
+	
+	\subparagraph{Modelo de Progressão do Líder} O Modelo de Progressão do Líder (LPM, do inglês "Leader Progression Model") é uma abordagem teórica que descreve o processo de formação e progressão do líder de descarga em um fenômeno de descarga atmosférica, como um raio. O LPM propõe que a descarga atmosférica começa com a formação de um líder ascendente a partir de um ponto inicial, geralmente conhecido como "ponto de partida". Esse líder ascendente é caracterizado por uma elevada taxa de subida de corrente e percorre um caminho em direção à nuvem.
+	
+	O LPM considera que o líder ascendente pode seguir diferentes trajetórias em sua progressão, como seguir um caminho retilíneo ou se ramificar em múltiplos ramos. Essa ramificação pode ocorrer devido à influência de condições ambientais, como a presença de obstáculos ou a distribuição de cargas elétricas na nuvem.
+	
+	À medida que o líder ascendente progride, ele pode encontrar diferentes caminhos, como seguir uma linha de transmissão, um cabo para-raios ou até mesmo se ramificar em múltiplos canais. Essa progressão do líder de descarga é influenciada por diversos fatores, como a condutividade do ar, a geometria dos objetos próximos e as características elétricas do meio em que se propaga.
+	
+	\subparagraph{Modelo de Aterramento}
+	
+	A modelagem do sistema de aterramento é de extrema importância e requer uma representação precisa da impedância, levando em consideração sua dependência não linear com a frequência. No entanto, muitas vezes a informação necessária para derivar um modelo preciso não está prontamente disponível.
+	
+	Nesses casos, é comum utilizar um modelo de circuito concentrado para representar a impedância de base do sistema de aterramento. Embora esse modelo possa não ser sempre adequado em todas as situações, é uma escolha razoável quando informações detalhadas não estão disponíveis.
+	
+	No entanto, é importante ressaltar que a escolha de um modelo de circuito concentrado pode introduzir certas simplificações e limitações na simulação do sistema de aterramento. Portanto, sempre que possível, é recomendado obter informações mais precisas e detalhadas para derivar um modelo mais realista e confiável. Isso pode envolver medições de campo, estudos de impedância ou 
+	outras técnicas de caracterização do sistema de aterramento.
+	
+	\subsection{Coordenação de Isoladores}
+	
+	\paragraph{\textit{Flashover}} \textit{Flashover} é um fenômeno elétrico que ocorre quando um arco elétrico se forma entre um condutor energizado e um objeto de referência, como o solo ou uma estrutura adjacente. Isso resulta na perda da capacidade isolante de um material dielétrico, como um isolador, devido ao arco elétrico que se estabelece. O \textit{flashover} ocorre quando a tensão elétrica aplicada excede a tensão de ruptura dielétrica do material, fazendo com que o isolamento elétrico seja comprometido.
+	
+	Durante o \textit{flashover}, ocorre uma descarga elétrica de alta intensidade e elevada temperatura, que pode causar danos aos equipamentos, incêndios e interrupções no fornecimento de energia elétrica. A contaminação do isolador por partículas suspensas no ar, como poeira, umidade ou poluentes, pode aumentar o risco de ocorrência do \textit{flashover}, reduzindo ainda mais a capacidade isolante do material.
+	
+	A coordenação de isoladores e o uso adequado de sistemas de limpeza, como lavagem ou revestimentos hidrofóbicos, são medidas tomadas para prevenir ou mitigar o \textit{flashover}. Essas práticas visam garantir que os isoladores possuam resistência dielétrica suficiente para suportar as tensões elétricas esperadas e evitar a formação de arcos elétricos prejudiciais.
+	
+	\paragraph{\textit{Back Flashover}}
+	
+	\textit{Back flashover}, também conhecido como \textit{flashover reverso} ou \textit{descarga disruptiva de retorno}, é um fenômeno que ocorre em sistemas de transmissão de energia elétrica onde a sobretensão gerada por uma descarga atmosférica é conduzida de volta para a linha de transmissão, causando um \textit{flashover} ao longo da linha.
+	
+	Normalmente, o \textit{flashover} ocorre quando uma descarga atmosférica incide diretamente sobre um condutor ou estrutura e provoca um arco elétrico entre a linha e o solo. No entanto, no caso do \textit{back flashover}, a sobretensão gerada pela descarga atmosférica é conduzida de volta para a linha através de objetos próximos, como árvores, edifícios ou outras linhas de transmissão, resultando em um \textit{flashover} ao longo da linha.
+	
+	A causa mais comum para a ocorrência de \textit{back flashover} é a diferença de impedâncias em uma interface, que causa reflexão. Por exemplo, supondo que o raio atinja uma torre aterrada, o \textit{back flashover} pode ser causado por mau aterramento da torre, causando reflexão entre o aterramento e a impedância de pé de torre, levando a tensão da descarga até os isoladores dos cabos fase, causando ruptura dos mesmos.
+	
+	
+	\section{Temas Impactantes, dúvidas e questionamentos}
+	Equações, equações, equações......
+	
+\end{document}

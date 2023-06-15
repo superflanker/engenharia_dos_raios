@@ -1,0 +1,166 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{bm}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyhf{} % limpa os cabecalhos e rodapés
+\fancyhead[C]{\textit{CURSO DE ENGENHARIA DOS RAIOS - TE981} } % define o cabeçalho personalizado
+\fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS}}
+\pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+	pdftitle={ENGENHARIA DOS RAIOS - TE981 - ONE MINUTE PAPER}
+}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+\makeatletter
+\def\@maketitle{%
+	\newpage
+	\null
+	\vskip 2em%
+	\begin{center}%
+		\let \footnote \thanks
+		{\LARGE \@title \par}%
+		\vskip 1.5em%
+		{\large
+			\lineskip .5em%
+			\begin{tabular}[t]{c}%
+				\@author
+			\end{tabular}\par}%
+		%\vskip 1em%
+		%{\large \@date}%
+	\end{center}%
+	\par
+	\vskip 1.5em}
+\makeatother
+
+\title{\normalsize{ENGENHARIA DOS RAIOS - TE981}\\ \huge{\textbf\textit{{AULA 23 - PRINCIPIOS DE SISTEMAS DE PROTEÇÃO CONTRA DESCARGAS ATMOSFÉRICAS}}\\}}
+\author{\small{AUGUSTO MATHIAS ADAMS}}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Aprendizado da Aula}
+	
+		\paragraph{Raio Crítico}
+		O termo "raio crítico" refere-se ao conceito de raio de proteção efetivo de um Sistema de Proteção contra Descargas Atmosféricas (\textit{SPDA}), também conhecido como para-raios.
+		
+		O raio crítico representa a distância máxima a partir da qual o \textit{SPDA} é capaz de proteger efetivamente uma estrutura contra os efeitos diretos de um raio. Em outras palavras, é a distância a partir da qual o para-raios é capaz de atrair e capturar um raio antes que ele atinja a estrutura protegida.
+		
+		\paragraph{Raio de Atração}
+		
+		O termo "raio de atração" é utilizado para descrever a distância máxima a partir da qual um Sistema de Proteção contra Descargas Atmosféricas (\textit{SPDA}), como um para-raios, é capaz de atrair um raio para si, em vez de permitir que ele atinja diretamente uma estrutura ou equipamento a ser protegido.
+		
+		O raio de atração é determinado pela geometria e altura do sistema de proteção, bem como pelas características do solo e das condições atmosféricas. Em geral, quanto maior for a altura e o dimensionamento adequado do \textit{SPDA}, maior será o raio de atração.
+		
+		É importante ressaltar que o raio de atração não garante a completa prevenção de raios, mas visa a redirecionar as descargas atmosféricas para pontos seguros, como hastes de aterramento ou sistemas de captação adequados. O objetivo principal do raio de atração é minimizar os riscos de danos estruturais, incêndios e lesões causadas por raios, oferecendo uma rota preferencial para a corrente do raio seguir em direção ao solo.
+		
+		\paragraph{Método Eletrogeométrico}
+		
+		O Método Eletrogeométrico é uma abordagem utilizada para estimar o raio de atração de um Sistema de Proteção contra Descargas Atmosféricas (\textit{SPDA}) ou de uma estrutura exposta a raios. Esse método leva em consideração a geometria da estrutura e do sistema de proteção, bem como as características do solo e as condições atmosféricas.
+		
+		O Método Eletrogeométrico utiliza equações matemáticas e fórmulas empíricas para calcular o raio de atração com base nas dimensões da estrutura, como altura, comprimento e largura, bem como na altura e configuração do sistema de proteção. Estas consideram, principalmente, a altura do objeto e o pico da corrente de retorno.
+		
+		\paragraph{Modelos de Corrente de Retorno}
+		
+		\subparagraph{Modelos Físicos} Muito laborados, baseados em equações dinâmicas de gás, que representam as conservações de massa, momento e energia no canal do raio. Aplicado geralmente para avaliar o comportamento de variáveis físicas, como temperatura, pressão e densidade de massa do canal, como função do tempo e da coordenada radial em relação ao canal do raio. Sua formulação não é dirigida à	determinação dos parâmetros de interesse direto da engenharia de proteção.
+		
+		\subparagraph{Modelos De Engenharia}
+		
+		Prevalece a simplicidade da formulação e buscam observar a concordância entre os campos
+		eletromagnéticos gerados pela distribuição de corrente, que definem ao longo do canal, com aqueles observados através	de medições, sem maiores preocupações com os aspectos físicos envolvidos.
+		
+		\subparagraph{Modelos Eletromagnéticos}
+		
+		Representam o canal do raio como uma antena com perdas, constituída por um conjunto de
+		dipolos. Através da solução numérica das equações de Maxwell, aplicadas a partir do início de fluxo de corrente de retorno, os modelos calculam a distribuição dessa corrente no canal da descarga atmosférica.
+		
+		\subparagraph{Modelo a Parâmetros Distribuídos}
+		
+		Descrevem o canal de descarga como uma linha de transmissão vertical, uniforme. São atribuídos parâmetros por unidade de comprimento ($R$), ($L$), ($G$) e ($C$). A resistência por unidade de comprimento possui perdas ao longo do canal, os demais parâmetros são determinados em função da geometria assumida. Estes modelos calculam a distribuição de corrente no canal em função do tempo e altura. Não consideram as ramificações nem a tortuosidade do canal.
+		
+		\paragraph{Modelos de Acoplamento}
+		
+		\subparagraph{Modelo de Acoplamento de Rusck} Utilizado até hoje, é baseado na formulação analítica de que o solo comporta-se	como um condutor perfeito. Expressa o valor máximo de tensão induzida em função do valor de pico da corrente na base do canal.
+		
+		\paragraph{Tensões Induzidas Em linhas de Média Tensão}
+		
+		Em linhas de média tensão, o desligamento da rede pode ocorrer devido à atuação dos dispositivos de proteção, como relés e disjuntores. Para evitar desligamentos frequentes em áreas com alta incidência de descargas, especialmente em redes rurais, algumas concessionárias de energia aumentam o nível básico de isolamento da linha (NBI) de 95 kV para 170 kV. O NBI é responsável por determinar a capacidade dos dispositivos de suportar sobretensões externas, como descargas atmosféricas.
+		
+		\paragraph{Métodos de Simulação de Carga em Linhas de Transmissão}
+		
+		Falhas de blindagem (\textit{flashover}) podem ser reduzidas mesmo se utilizados cabos de proteção mal instalados. Para determinar o Número de Falhas de Blindagem em linhas de transmissão, é necessário estudar as relações entre os parâmetros estruturais e elétricos do projeto da linha. O cálculo do Número de Falhas de Blindagem (\textit{NFB}) envolve o uso dos seguintes métodos e modelos:
+		
+		\begin{enumerate}
+			\item Método de Simulação de Carga (MSC)
+			\item Modelo de Progressão do Líder (MPL)
+			\item Modelo de Comprimento Crítico Equivalente de Streamers (CCES)
+		\end{enumerate}
+		
+		O modelo CCES descreve a condição estável de início de um Líder Ascendente positivo, que posteriormente se conectará com um Líder Descendente negativo.
+		
+	\section{Temas Impactantes, dúvidas e questionamentos}
+	
+	Nada que os artigos do SIPDA não consigam resolver (Tem, inclusive, um compilado das equações de coordenação de isoladores lá.....) 
+	
+\end{document}
