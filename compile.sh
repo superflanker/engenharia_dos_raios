@@ -98,6 +98,10 @@ cd ../atividade_remota_video_04
 pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "one_minute_paper".tex
 cp one_minute_paper.pdf ../Portfolio/atividade_remota_video_04.pdf
 
+cd ../atividade_remota_video_05
+pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "one_minute_paper".tex
+cp one_minute_paper.pdf ../Portfolio/atividade_remota_video_05.pdf
+
 cd ../Trabalho_Primeira_Parcial
 pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "descargas_negativas_descendentes".tex
 cp descargas_negativas_descendentes.pdf ../Portfolio/Trabalho_Primeira_Parcial.pdf
@@ -108,7 +112,7 @@ pdfunite atividade_remota_video_01.pdf atividade_remota_video_02.pdf atividade_r
 cd ../artigos/artigo_cid_01/
 pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "artigo_cid_01".tex
 
-cp artigo_cid_01.pdf ../artigo_apresentacao_segunda_parcial.pdf
+cp artigo_cid_01.pdf ../../Portfolio/artigo_apresentacao_segunda_parcial.pdf
 
 cd ../../Trabalho_Segunda_Parcial
 pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "apresentacao_augusto".tex
@@ -118,4 +122,13 @@ cd script_apresentação
 pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "script_apresentação".tex
 cp script_apresentação.pdf ../../Portfolio/Trabalho_Segunda_Parcial_script_apresentação.pdf
 
+cd ../../aula_22
+pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "one_minute_paper".tex
+cp one_minute_paper.pdf ../Portfolio/aula_22.pdf
 
+cd ../../aula_23
+pdflatex -synctex=1 -interaction=nonstopmode  --shell-escape "one_minute_paper".tex
+cp one_minute_paper.pdf ../Portfolio/aula_23.pdf
+
+cd ../Portfolio
+pdfunite atividade_remota_video_04.pdf atividade_remota_video_05.pdf aula_22.pdf aula_23.pdf artigo_apresentacao_segunda_parcial.pdf Trabalho_Segunda_Parcial.pdf Trabalho_Segunda_Parcial_script_apresentação.pdf segunda_parcial.pdf
